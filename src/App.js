@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <nav className="nav_container">
         <div className="name">
-          <p>이 새 봄</p>
-          <small><span className="name_pink">Creative</span> Saebom Lee</small>
+          <p><strong> 이 새 봄 </strong></p>
+          <small><span className="name_pink">CREATIVE</span> SAEBOM LEE </small>
         </div>
         <div className="active" id="nav">
           <ul>
