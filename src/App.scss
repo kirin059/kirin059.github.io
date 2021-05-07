@@ -11,94 +11,127 @@ $blue : #47596B;
   background-color: #ffffff;
   color: $black;
 
-  #nav {
-    position: relative;
-    top: 20px;
-    left: 2%;
+  .nav_container {
+    position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     padding: 20px;
-    width: 80px;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: width 0.6s linear;
-    overflow-x: hidden;
+    background-color: $blue;
 
-    ul {
-      display: flex;
-      list-style-type: none;
+    .name {
+      position: relative;
+      top: 0px;
+      left: 2%;
       padding: 0;
       margin: 0;
-      width: 0;
-      transition: width 0.6s ease-in;
+      color: #ffffff;
+      text-align: left;
 
-      .li {
-        color: #000;
-        text-decoration: none;
-        margin: 0 10px;
-        transform: rotateY(0deg);
-        opacity: 0;
-        transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+      p {
+        margin: 0;
+        padding-bottom: 3px;
+        font-size: 35px;
+      }
+
+      small {
+        font-size: 20px;
+
+        .name_pink {
+          color: $pink;
+        }
       }
     }
-  }
 
-  #nav.active {
-    width: 400px;
-  }
+    #nav {
+      position: relative;
+      top: 0px;
+      right: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 80px;
+      color: #fff;
+      font-size: 30px;
+      transition: width 0.6s linear;
+      overflow-x: hidden;
 
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        transition: width 0.6s ease-in;
 
-  #nav.active ul {
-    width: 100%;
-  }
+        .li {
+          margin: 0 15px 20px;
+          color: #ffffff;
+          text-decoration: none;
+          transform: rotateY(0deg);
+          opacity: 0;
+          transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+        }
+      }
 
+      .icon {
+        position: relative;
+        height: 40px;
+        width: 30px;
+        padding: 0;
+        color: $pink;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
 
-  #nav.active ul .li {
-    opacity: 1;
-    transform: rotateY(360deg);
-  }
+        .line {
+          position: absolute;
+          top: 10px;
+          left: 5px;
+          color: $pink;
+          background-color: $pink;
+          height: 3px;
+          width: 40px;
+          transition: transform 0.6s linear;
+        }
 
+        .line2 {
+          top: auto;
+          bottom: 10px;
+        }
+      }
 
+      .icon:focus {
+        outline: 0;
+      }
+    }
 
-  /* button */
+    #nav.active {
+      width: 680px;
 
-  .icon {
-    position: relative;
-    height: 30px;
-    width: 30px;
-    background-color: #fff;
-    border: 0;
-    cursor: pointer;
-    padding: 0;
-  }
+      ul {
+        width: 100%;
 
-  .icon:focus {
-    outline: 0;
-  }
+        .li {
+          opacity: 1;
+          transform: rotateY(360deg);
+        }
+      }
 
-  .icon .line {
-    background-color: #5290f9;
-    height: 2px;
-    width: 20px;
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    transition: transform 0.6s linear;
-  }
+      .icon {
+        .line1 {
+          transform: rotate(-765deg) translateY(5.5px);
+        }
 
-  .icon .line2 {
-    top: auto;
-    bottom: 10px;
-  }
+        .line2 {
+          transform: rotate(765deg) translateY(-5.5px);
+          top: auto;
+          bottom: 20px;
+        }
+      }
+    }
 
-  nav.active .icon .line1 {
-    transform: rotate(-765deg) translateY(5.5px);
-  }
-  
-  nav.active .icon .line2 {
-    transform: rotate(765deg) translateY(-5.5px);
   }
 }
 
@@ -110,20 +143,7 @@ $blue : #47596B;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

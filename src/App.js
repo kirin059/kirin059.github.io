@@ -12,6 +12,10 @@ function App() {
   return (
     <div className="App">
       <nav className="nav_container">
+        <div className="name">
+          <p>이 새 봄</p>
+          <small><span className="name_pink">Creative</span> Saebom Lee</small>
+        </div>
         <div className="active" id="nav">
           <ul>
               <Link className="li" to="/"> Home </Link>
