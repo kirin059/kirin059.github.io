@@ -8,10 +8,12 @@ $blue : #47596B;
 .home {
     background-color: $black;
     margin: 103px 0 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-align: center;
-
     color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
+    z-index: 1;
 }
