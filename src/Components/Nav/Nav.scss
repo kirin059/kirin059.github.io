@@ -4,6 +4,7 @@
 $pink : #D09E88;
 $black : #534847;
 $blue : #47596B;
+$grey : #f3efef;
 
 .Nav{
   margin: 0;
@@ -37,7 +38,7 @@ $blue : #47596B;
         margin: 0;
         padding-bottom: 3px;
         font-size: 23px;
-        font-weight: 900;
+        font-weight: 700;
 
         .name_pink {
           color: $pink;

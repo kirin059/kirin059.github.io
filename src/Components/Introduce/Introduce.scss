@@ -4,25 +4,36 @@
 $pink : #D09E88;
 $black : #534847;
 $blue : #47596B;
+$grey : #f3efef;
+
 
 .introduce {
     display: flex;
     justify-content: space-between;
-    margin: 0 350px;
     height: 100vh;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: $black;
-    background-color: #ffffff;
+    background-color: $grey;
     font-family: 'Noto Sans KR', sans-serif;
 
     .left {
-        margin-top: 100px;
+        margin-top: 130px;
+        margin-left: 350px;
 
         h4 {
             margin: 0 0 80px 0;
             color: $pink;
             font-size: 60px;
+        }
+
+        h4::after {
+            display: block;
+            content: "";
+            width: 500px;
+            margin-top: 30px;
+            border-bottom: 1px solid #bcbcbc;
+            color: $pink;
         }
 
         .info {
@@ -54,7 +65,10 @@ $blue : #47596B;
                         font-size: 18px;
                     }
                 }
+            }
 
+            .last {
+                margin-top: 15px;
             }
 
         }
@@ -63,7 +77,8 @@ $blue : #47596B;
     .right {
         display: flex;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 200px;
+        margin-right: 350px;
 
         .img {
             width: 300px;
@@ -78,13 +93,21 @@ $blue : #47596B;
         .tags {
             display: flex;
             flex-direction: column;
+            margin-top: 50px;
+            font-size: 20px;
 
+            div {
+                padding-right: 30px;
+                padding-bottom: 10px;
+            }
             .upper {
                 display: flex;
+                justify-content: space-between;
             }
 
             .lower {
                 display: flex;
+                justify-content: space-between;
             }
         }
     }

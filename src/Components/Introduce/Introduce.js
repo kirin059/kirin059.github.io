@@ -27,7 +27,7 @@ const Introduce = () => {
                             <p className="major">유아교육학과 전공/ 영어영문학과 복수전공</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="last">
                         <i class="fas fa-building"></i>
                         <p>마케팅 기획자(AE)로 2년 근무</p>
                     </div>
@@ -39,14 +39,14 @@ const Introduce = () => {
 
                 <div className="tags">
                     <div className="upper">
-                        <div className="">프론트엔드</div>
-                        <div className="">오픈마인드</div>
-                        <div className="">초긍정</div>
+                        <div className="">#프론트엔드</div>
+                        <div className="">#오픈마인드</div>
+                        <div className="">#초긍정</div>
                     </div>
                         <div className="lower">
-                        <div className="">책임감</div>
-                        <div className="">시멘틱웹</div>
-                        <div className="">취미는코딩</div>
+                        <div className="">#책임감</div>
+                        <div className="">#시멘틱웹</div>
+                        <div className="">#취미는코딩</div>
                     </div>
                 </div>
             </div>
