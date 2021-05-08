@@ -5,7 +5,7 @@ $pink : #D09E88;
 $black : #534847;
 $blue : #47596B;
 
-.App {
+%function default {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -13,6 +13,10 @@ $blue : #47596B;
   background-color: #ffffff;
   color: $black;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.App {
+  @extend default;
 
 }
 

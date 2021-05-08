@@ -6,18 +6,48 @@ $black : #534847;
 $blue : #47596B;
 
 .home {
-    background-color: $black;
-    margin: 80px 0 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    text-align: center;
-    color: #ffffff;
+    color: $black;
+    background-image: url('./team.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     font-family: 'Noto Sans KR', sans-serif;
-    z-index: 1;
+    // z-index: 1;
 
-    p {
-        height: 160px;
+    .contents {
+        padding-right: 88px;
+        padding-top: 200px;
+        text-align: right;
+
+        .main {
+            span {
+                font-size: 50px;
+            }
+    
+            .pink {
+                color: $pink;
+                font-size: 53px;
+                font-weight: 900;
+            }
+        }
+
+        .story {
+            padding-top: 40px;
+            font-size: 25px;
+    
+            .pinks {
+                color: $pink;
+                font-size: 25px;
+                font-weight: 800;
+            }
+        }
+
+        .icons {
+            padding-top: 250px;
+        }
     }
 }

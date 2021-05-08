@@ -11,32 +11,26 @@ const Nav = () => {
 
     function scrollHome() {
         let location = document.querySelector(".home").offsetTop;
-        let menuHeight = document.querySelector(".Nav").offsetHeight;
-        window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
     function scrollIntroduce() {
         let location = document.querySelector(".introduce").offsetTop;
-        let menuHeight = document.querySelector(".Nav").offsetHeight;
-        window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
-    // function scrollHome() {
-    //     let location = document.querySelector(".home").offsetTop;
-    //     let menuHeight = document.querySelector(".Nav").offsetHeight;
-    //     window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-    // }
-
-    // function scrollHome() {
-    //     let location = document.querySelector(".home").offsetTop;
-    //     let menuHeight = document.querySelector(".Nav").offsetHeight;
-    //     window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+    // function scrollIntroduce() {
+    //     let location = document.querySelector(".introduce").offsetTop;
+    //     let navHeight = document.querySelector(".Nav").offsetHeight;
+    //     window.scrollTo({top:location - navHeight, behavior:'smooth'});
     // }
 
     function scrollContact() {
         let location = document.querySelector(".contact").offsetTop;
-        let menuHeight = document.querySelector(".Nav").offsetHeight;
-        window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
     
     return (

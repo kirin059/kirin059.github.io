@@ -79,6 +79,10 @@ $blue : #47596B;
         .li:hover {
             color: $pink;
         }
+
+        .li:active {
+          transition : all .3s ease-out;
+        }
       }
 
       .icon {
