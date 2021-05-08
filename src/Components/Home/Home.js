@@ -3,10 +3,10 @@ import './Home.scss';
 
 const Home = () => {
 
-    function linkToGithub() {
-        let link = "https://github.com/kirin059";
-        window.open(link, '_blank')
-    }
+    // function linkToGithub() {
+    //     let link = "https://github.com/kirin059";
+    //     window.open(link, '_blank')
+    // }
 
     return (
         <div className="home">
