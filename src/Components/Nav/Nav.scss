@@ -21,14 +21,14 @@ $blue : #47596B;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: $blue;
 
     .name {
       position: relative;
       top: 0px;
       left: 2%;
-      padding-bottom: 3px;
+      padding: 10px;
       margin: 0;
       color: #ffffff;
       text-align: left;
@@ -36,11 +36,8 @@ $blue : #47596B;
       p {
         margin: 0;
         padding-bottom: 3px;
-        font-size: 35px;
-      }
-
-      small {
-        font-size: 18px;
+        font-size: 23px;
+        font-weight: 900;
 
         .name_pink {
           color: $pink;
@@ -58,7 +55,7 @@ $blue : #47596B;
       padding: 0px;
       width: 80px;
       color: #fff;
-      font-size: 30px;
+      font-size: 23px;
       transition: width 0.6s linear;
       overflow-x: hidden;
 
@@ -66,17 +63,21 @@ $blue : #47596B;
         display: flex;
         list-style-type: none;
         padding: 0;
-        margin: -10px -10px;
+        margin: -10px 10px;
         width: 0;
         transition: width 0.6s ease-in;
 
         .li {
-          margin: 0 15px 13px;
+          margin: 0 15px 10px;
           color: #ffffff;
           text-decoration: none;
           transform: rotateY(0deg);
           opacity: 0;
           transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+        }
+
+        .li:hover {
+            color: $pink;
         }
       }
 
@@ -114,7 +115,7 @@ $blue : #47596B;
     }
 
     #nav.active {
-      width: 750px;
+      width: 665px;
 
       ul {
         width: 100%;

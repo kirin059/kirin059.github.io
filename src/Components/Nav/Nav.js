@@ -13,8 +13,7 @@ const Nav = () => {
         <div className="Nav">
             <nav className="nav_container">
                 <div className="name">
-                <p><strong> 이 새 봄 </strong></p>
-                <small><span className="name_pink">CREATIVE</span> SAEBOM LEE </small>
+                <p><span className="name_pink">CREATIVE</span> SAEBOM LEE </p>
                 </div>
                 <div className="active" id="nav">
                 <ul>
