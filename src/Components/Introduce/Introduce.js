@@ -1,4 +1,5 @@
 import React from 'react';
+import './Introduce.scss';
 
 const Introduce = () => {
     return (

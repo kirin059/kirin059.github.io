@@ -3,6 +3,8 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home';
 import Introduce from './Components/Introduce/Introduce';
+
+import Footer from './Components/Footer/Footer';
 import './App.scss';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route exact path='/'> 
           <Home />
           <Introduce />
+
+          <Footer />
         </Route>
 
         <Route path="/:id"> 
