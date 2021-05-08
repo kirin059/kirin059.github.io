@@ -2,6 +2,12 @@ import React from 'react';
 import './Home.scss';
 
 const Home = () => {
+
+    function linkToGithub() {
+        let link = "https://github.com/kirin059";
+        window.open(link, '_blank')
+    }
+
     return (
         <div className="home">
             <div className="contents">
@@ -17,17 +23,21 @@ const Home = () => {
 
                 <div className="icons">
                     <div className="stack">
-                        <span>html5</span>
-                        <span>css3</span>
-                        <span>javascript</span>
-                        <span>React</span>
-                        <span>redux</span>
-                        <span>sass</span>
-                        <span>styledcomponents</span>
+                        <div className="styled"></div>
+                        <div className="sass"></div>
+                        <div className="redux"></div>
+                        <div className="react"></div>
+                        <div className="javascript"></div>
+                        <div className="css"></div>
+                        <div className="html"></div>
+
                     </div>
                     <div className="link">
-                        <span>github</span>
-                        <span>velog</span>
+                        <div className="velog" onClick={() => {
+                            window.open('https://github.com/kirin059', '_blank')
+                        }}></div>
+
+                        <div className="github"></div>
                     </div>
                 </div>
             </div>

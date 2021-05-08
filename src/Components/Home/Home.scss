@@ -12,7 +12,7 @@ $blue : #47596B;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: $black;
-    background-image: url('./team.png');
+    background-image: url('./img/team.png');
     background-repeat: no-repeat;
     background-size: contain;
     font-family: 'Noto Sans KR', sans-serif;
@@ -47,7 +47,76 @@ $blue : #47596B;
         }
 
         .icons {
-            padding-top: 250px;
+            padding-top: 200px;
+
+            .stack {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-grow: 1;
+                width: 100%;
+
+                div {
+                    margin-right: 10px;
+                    width: 70px;
+                    height: 70px;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .html {
+                    background-image: url('./img/html.png');
+                }
+
+                .css {
+                    background-image: url('./img/css3.png');
+                }
+
+                .javascript {
+                    background-image: url('./img/javascript.png');
+                }
+
+                .react {
+                    background-image: url('./img/react.png');
+                }
+
+                .redux {
+                    background-image: url('./img/redux.png');
+                }
+
+                .sass {
+                    background-image: url('./img/sass.jpeg');
+                }
+
+                .styled {
+                    background-image: url('./img/styled.png');
+                }
+            }
+
+            .link {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-grow: 1;
+                width: 100%;
+                margin-top: 20px;
+
+                div {
+                    margin-right: 10px;
+                    width: 70px;
+                    height: 70px;
+                    background-size: cover;
+                    background-position: center;
+                    cursor: pointer;
+                }
+
+                .github {
+                    background-image: url('./img/github.png');
+                }
+
+
+                .velog {
+                    background-image: url('./img/velog.PNG');
+                }
+            }
         }
     }
 }
