@@ -43,9 +43,6 @@ const Nav = () => {
                 <ul>
                     <li className="li" onClick={scrollHome}> Home </li>
                     <li className="li" onClick={scrollIntroduce}> Introduce </li>
-                    <li className="li" onClick={() => {
-                          
-                    }}> Skills </li>
                      <li className="li" onClick={() => {
                          
                     }}> Portfolio </li>
