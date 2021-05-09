@@ -1,0 +1,48 @@
+.modal_sass {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    .bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 400;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+
+        .content {
+            position: absolute;
+            left: 78%;
+            top: 54%;
+            width: 390px;
+            height: 130px;
+            background-color:#fff;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 17px;
+            z-index: 410;
+
+            p {
+                margin: 0;
+            }
+
+            .fa-caret-down {
+                position: absolute;
+                bottom: -30px;
+                left: 185px;
+                color: #fff;
+                font-size: 60px;
+            }
+
+            .title {
+                padding: 20px;
+                font-size: 20px;
+            }
+        }
+
+    }
+}
