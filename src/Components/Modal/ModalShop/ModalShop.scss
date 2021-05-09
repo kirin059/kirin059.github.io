@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+// color
+$pink : #D09E88;
+$black : #534847;
+$blue : #47596B;
+$grey : #f3efef;
+
+.modal_shop {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    .bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 400;
+
+        .content {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 50vw;
+            height: 80vh;
+            padding: 20px 90px;
+            transform: translate(-50%, -50%);
+            background-color:#fff;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 410;
+
+            p {
+                text-align: left;
+
+                span {
+                    color: $pink;
+                }
+            }
+
+            .title {
+                font-size: 40px;
+                font-weight: 800;
+            }
+
+            button {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 50px;
+                border: 0;
+            }
+
+            .contents {
+                display: flex;
+
+                .img_container {
+                    display: flex;
+                    flex-direction: column;
+
+                    .imgs {
+                        width: 500px;
+                        height: 380px;
+                        margin: 10px 40px 0px 0;
+                        background: #f4f4f4;
+                        border-radius: 10px;
+                        box-shadow: 3px 3px 5px 3px silver;
+                        background-image: url('./img/shop.PNG');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+    
+                    .second {
+                        background-image: url('./img/shop2.PNG');
+                    }
+                }
+
+                .script {
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+}

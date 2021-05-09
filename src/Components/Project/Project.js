@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ModalShop from '../../Components/Modal/ModalShop/ModalShop';
 import './Project.scss';
 
 const Portfolio = () => {
+
+    let [shopModal, setshopModal] = useState(true);
+
     return (
         <div className="project">
             <div className="header">
@@ -10,7 +14,14 @@ const Portfolio = () => {
 
             <div className="project_container">
                 <div className="projects first">
-                    <div className="img"></div>
+                    {
+                         shopModal === true
+                        ? <ModalShop setshopModal={setshopModal}/>
+                        : null
+                    }
+                    <div className="img" onClick={() => {
+                            setshopModal(true)
+                        }}></div>
                     <div className="contents">#Shopping Mall</div>
                 </div>
                 <div className="projects second">
