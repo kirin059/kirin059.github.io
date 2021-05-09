@@ -6,6 +6,7 @@ import ModalReact from '../Modal/ModalReact/ModalReact';
 import ModalRedux from '../Modal/ModalRedux/ModalRedux';
 import ModalSass from '../Modal/ModalSass/ModalSass';
 import './Home.scss';
+import ModalStyled from '../Modal/ModalStyled/ModalStyled';
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
     let [reactAlert, setreactAlert] = useState(false);
     let [reduxAlert, setreduxAlert] = useState(false);
     let [sassAlert, setsassAlert] = useState(false);
+    let [styledAlert, setstyledAlert] = useState(false);
 
     return (
         <div className="home">
@@ -60,13 +62,20 @@ const Home = () => {
                         ? <ModalRedux setreduxAlert={setreduxAlert}/>
                         : null
                     }
-                     {
+                    {
                          sassAlert === true
                         ? <ModalSass setsassAlert={setsassAlert}/>
                         : null
                     }
+                    {
+                         styledAlert === true
+                        ? <ModalStyled setstyledAlert={setstyledAlert}/>
+                        : null
+                    }
                     <div className="stack">
-                        <div className="styled"></div>
+                        <div className="styled" onClick={() => {
+                            setstyledAlert(true)
+                        }}></div>
                         <div className="sass" onClick={() => {
                             setsassAlert(true)
                         }}></div>
