@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import ModalHtml from '../../Components/Modal/ModalHtml/ModalHtml';
 import ModalCss from '../../Components/Modal/ModalCss/ModalCss';
+import ModalJavascript from '../Modal/ModalJavascript/ModalJavascript';
+import ModalReact from '../Modal/ModalReact/ModalReact';
 import './Home.scss';
+
 
 const Home = () => {
 
@@ -11,7 +14,9 @@ const Home = () => {
     // }
 
     let [htmlAlert, sethtmlAlert] = useState(false);
-    let [cssAlert, setcssAlert] = useState(false)
+    let [cssAlert, setcssAlert] = useState(false);
+    let [javascriptAlert, setjavascriptAlert] = useState(false);
+    let [reactAlert, setreactAlert] = useState(false);
 
     return (
         <div className="home">
@@ -38,16 +43,25 @@ const Home = () => {
                         : null
                     }
                     {
-                         htmlAlert === true
-                        ? <ModalHtml sethtmlAlert={sethtmlAlert}/>
+                         javascriptAlert === true
+                        ? <ModalJavascript setjavascriptAlert={setjavascriptAlert}/>
+                        : null
+                    }
+                    {
+                         reactAlert === true
+                        ? <ModalReact setreactAlert={setreactAlert}/>
                         : null
                     }
                     <div className="stack">
                         <div className="styled"></div>
                         <div className="sass"></div>
                         <div className="redux"></div>
-                        <div className="react"></div>
-                        <div className="javascript"></div>
+                        <div className="react" onClick={() => {
+                            setreactAlert(true)
+                        }}></div>
+                        <div className="javascript" onClick={() => {
+                            setjavascriptAlert(true)
+                        }}></div>
                         <div className="css" onClick={() => {
                             setcssAlert(true)
                         }}></div>

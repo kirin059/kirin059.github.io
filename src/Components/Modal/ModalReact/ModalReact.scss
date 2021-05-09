@@ -1,4 +1,4 @@
-.modal_css {
+.modal_react {
     margin: 0px;
     padding: 0px;
     border: none;
@@ -15,10 +15,10 @@
         background-color: rgba(0,0,0,0.5);
 
         .content {
-            position: fixed;
-            left: 60.5%;
+            position: absolute;
+            left: 69.5%;
             top: 52%;
-            width: 420px;
+            width: 380px;
             height: 150px;
             background-color:#fff;
             border-radius: 10px;
@@ -33,13 +33,13 @@
             .fa-caret-down {
                 position: absolute;
                 bottom: -30px;
-                left: 200px;
+                left: 185px;
                 color: #fff;
                 font-size: 60px;
             }
 
             .title {
-                padding: 15px;
+                padding: 20px;
                 font-size: 20px;
             }
         }
