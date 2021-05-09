@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ModalHtml from '../../Components/Modal/ModalHtml/ModalHtml';
 import './Home.scss';
 
 const Home = () => {
@@ -7,6 +8,8 @@ const Home = () => {
     //     let link = "https://github.com/kirin059";
     //     window.open(link, '_blank')
     // }
+
+   let [htmlAlert, sethtmlAlert] = useState(false)
 
     return (
         <div className="home">
@@ -22,8 +25,15 @@ const Home = () => {
                 </div>
 
                 <div className="icons">
+                    {
+                            htmlAlert === true
+                            ? <ModalHtml htmlAlert={htmlAlert}/>
+                            : null
+                        }
                     <div className="stack">
-                        <div className="styled"></div>
+                        <div className="styled" onClick={() => {
+                            sethtmlAlert(!htmlAlert)
+                        }}></div>
                         <div className="sass"></div>
                         <div className="redux"></div>
                         <div className="react"></div>
@@ -34,10 +44,11 @@ const Home = () => {
                     </div>
                     <div className="link">
                         <div className="velog" onClick={() => {
+                            window.open('https://velog.io/@kirin', '_blank')
+                        }}></div>
+                        <div className="github"  onClick={() => {
                             window.open('https://github.com/kirin059', '_blank')
                         }}></div>
-
-                        <div className="github"></div>
                     </div>
                 </div>
             </div>

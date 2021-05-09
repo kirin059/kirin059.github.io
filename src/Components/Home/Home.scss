@@ -62,34 +62,63 @@ $grey : #f3efef;
                     height: 70px;
                     background-size: cover;
                     background-position: center;
+                    cursor: pointer;
                 }
 
                 .html {
                     background-image: url('./img/html.png');
                 }
 
+                .html:hover {
+                    transform: scale(1.1);
+                }
+
                 .css {
                     background-image: url('./img/css3.png');
+                }
+
+                .css:hover {
+                    transform: scale(1.1);
                 }
 
                 .javascript {
                     background-image: url('./img/javascript.png');
                 }
 
+                .javascript:hover {
+                    transform: scale(1.1);
+                }
+
                 .react {
                     background-image: url('./img/react.png');
+                }
+
+                .react:hover {
+                    transform: scale(1.1);
                 }
 
                 .redux {
                     background-image: url('./img/redux.png');
                 }
 
+                .redux:hover {
+                    transform: scale(1.1);
+                }
+
                 .sass {
                     background-image: url('./img/sass.jpeg');
                 }
 
+                .sass:hover {
+                    transform: scale(1.1);
+                }
+
                 .styled {
                     background-image: url('./img/styled.png');
+                }
+
+                .styled:hover {
+                    transform: scale(1.1);
                 }
             }
 
@@ -113,9 +142,16 @@ $grey : #f3efef;
                     background-image: url('./img/github.png');
                 }
 
+                .github:hover {
+                    transform: scale(1.1);
+                }
 
                 .velog {
                     background-image: url('./img/velog.PNG');
+                }
+
+                .velog:hover {
+                    transform: scale(1.1);
                 }
             }
         }
