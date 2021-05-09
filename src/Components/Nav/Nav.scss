@@ -39,9 +39,11 @@ $grey : #f3efef;
         padding-bottom: 3px;
         font-size: 23px;
         font-weight: 700;
+        cursor: pointer;
 
         .name_pink {
           color: $pink;
+          cursor: pointer;
         }
       }
     }

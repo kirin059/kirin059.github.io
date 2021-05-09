@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
 import './Nav.scss';
 
 const Nav = () => {
-    let history = useHistory();
+
+    function handleHome() {
+        let location = document.querySelector(".home").offsetTop;
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
+    }
+
     function handleNav() {
         let nav = document.querySelector('#nav');
         nav.classList.toggle('active')
@@ -21,11 +26,11 @@ const Nav = () => {
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
-    // function scrollIntroduce() {
-    //     let location = document.querySelector(".introduce").offsetTop;
-    //     let navHeight = document.querySelector(".Nav").offsetHeight;
-    //     window.scrollTo({top:location - navHeight, behavior:'smooth'});
-    // }
+    function scrollProject() {
+        let location = document.querySelector(".project").offsetTop;
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
+    }
 
     function scrollContact() {
         let location = document.querySelector(".contact").offsetTop;
@@ -36,16 +41,14 @@ const Nav = () => {
     return (
         <div className="Nav">
             <nav className="nav_container">
-                <div className="name">
-                <p><span className="name_pink">CREATIVE</span> SAEBOM LEE </p>
+                <div className="name" onClick={handleHome}>
+                    <p><span className="name_pink">CREATIVE</span> SAEBOM LEE </p>
                 </div>
                 <div className="active" id="nav">
                 <ul>
                     <li className="li" onClick={scrollHome}> Home </li>
                     <li className="li" onClick={scrollIntroduce}> Introduce </li>
-                     <li className="li" onClick={() => {
-                         
-                    }}> Portfolio </li>
+                     <li className="li" onClick={scrollProject}> Project </li>
                      <li className="li" onClick={scrollContact}> Contact </li>
                 </ul>
                 <button className="icon" onClick={handleNav}>
