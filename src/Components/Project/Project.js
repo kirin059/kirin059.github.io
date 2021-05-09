@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import ModalShop from '../../Components/Modal/ModalShop/ModalShop';
+import ModalInsta from '../../Components/Modal/ModalInsta/ModalInsta';
 import './Project.scss';
 
 const Portfolio = () => {
 
-    let [shopModal, setshopModal] = useState(true);
+    let [shopModal, setshopModal] = useState(false);
+    let [instaModal, setinstaModal] = useState(false);
 
     return (
         <div className="project">
@@ -25,7 +27,14 @@ const Portfolio = () => {
                     <div className="contents">#Shopping Mall</div>
                 </div>
                 <div className="projects second">
-                    <div className="img"></div>
+                    {
+                         instaModal === true
+                        ? <ModalInsta setinstaModal={setinstaModal}/>
+                        : null
+                    }
+                    <div className="img" onClick={() => {
+                            setinstaModal(true)
+                        }}></div>
                     <div className="contents">#인스타그램 Clone</div>
                 </div>
                 <div className="projects third">

@@ -6,7 +6,7 @@ $black : #534847;
 $blue : #47596B;
 $grey : #f3efef;
 
-.modal_shop {
+.modal_insta {
     margin: 0px;
     padding: 0px;
     border: none;
@@ -72,14 +72,14 @@ $grey : #f3efef;
                         background: #f4f4f4;
                         border-radius: 10px;
                         box-shadow: 3px 3px 5px 3px silver;
-                        background-image: url('./img/shop.PNG');
+                        background-image: url('./img/insta_main.PNG');
                         background-position: center;
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
     
                     .second {
-                        background-image: url('./img/shop2.PNG');
+                        background-image: url('./img/insta_profile.PNG');
                     }
                 }
 
