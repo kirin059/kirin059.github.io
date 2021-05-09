@@ -1,29 +1,40 @@
-import React from 'react';
-import { useHistory } from 'react-router';
+import React, { useEffect } from 'react';
 import './Top.scss';
 
 const Top = () => {
+    // useEffect(() => {
+    //     function handleHome() {
+    //         let location = document.querySelector(".home").offsetTop;
+    //         console.log(location)
+    //         let navHeight = document.querySelector(".Nav").offsetHeight;
+    //         console.log(navHeight)
+    //         window.scrollTo({ top: location - navHeight, behavior: 'smooth' });
+            
+    //         if (document.querySelector('top_btn').scrollTop < 1) {
+    //             let top = document.getElementsByClassName('top');
+    //             let result = top.style.display = 'none';
+    //             return result
+    //         }
+    //     }
+    // })
+
     function handleHome() {
         let location = document.querySelector(".home").offsetTop;
+        console.log(location)
         let navHeight = document.querySelector(".Nav").offsetHeight;
+        console.log(navHeight)
         window.scrollTo({ top: location - navHeight, behavior: 'smooth' });
-        
-        if () {
-            let top = document.getElementsByClassName('top');
-            top.style.opacity = '0';
-        }
+
     }
 
     return (
         <div className="top">
-            <div className="arrow">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-up"></i>
+            <div className="arrows">
+                <div className="arrow"></div>
+                <div className="arrow"></div>
+                <div className="arrow"></div>
             </div>
-            <div className="top_btn" onClick={() => {
-                useHistory.push('')
-            }}>TOP</div>
+            <div className="top_btn" onClick={ handleHome }>TOP</div>
         </div>
     );
 };
