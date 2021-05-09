@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ModalHtml from '../../Components/Modal/ModalHtml/ModalHtml';
+import ModalCss from '../../Components/Modal/ModalCss/ModalCss';
 import './Home.scss';
 
 const Home = () => {
@@ -9,7 +10,8 @@ const Home = () => {
     //     window.open(link, '_blank')
     // }
 
-   let [htmlAlert, sethtmlAlert] = useState(false)
+    let [htmlAlert, sethtmlAlert] = useState(false);
+    let [cssAlert, setcssAlert] = useState(false)
 
     return (
         <div className="home">
@@ -26,20 +28,32 @@ const Home = () => {
 
                 <div className="icons">
                     {
-                            htmlAlert === true
-                            ? <ModalHtml htmlAlert={htmlAlert}/>
-                            : null
-                        }
+                         htmlAlert === true
+                        ? <ModalHtml sethtmlAlert={sethtmlAlert}/>
+                        : null
+                    }
+                    {
+                         cssAlert === true
+                        ? <ModalCss setcssAlert={setcssAlert}/>
+                        : null
+                    }
+                    {
+                         htmlAlert === true
+                        ? <ModalHtml sethtmlAlert={sethtmlAlert}/>
+                        : null
+                    }
                     <div className="stack">
-                        <div className="styled" onClick={() => {
-                            sethtmlAlert(!htmlAlert)
-                        }}></div>
+                        <div className="styled"></div>
                         <div className="sass"></div>
                         <div className="redux"></div>
                         <div className="react"></div>
                         <div className="javascript"></div>
-                        <div className="css"></div>
-                        <div className="html"></div>
+                        <div className="css" onClick={() => {
+                            setcssAlert(true)
+                        }}></div>
+                        <div className="html" onClick={() => {
+                            sethtmlAlert(true)
+                        }}></div>
 
                     </div>
                     <div className="link">
