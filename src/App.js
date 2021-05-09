@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Introduce from './Components/Introduce/Introduce';
 import Project from './Components/Project/Project';
 import Footer from './Components/Footer/Footer';
+import Top from './Components/Top/Top';
 import './App.scss';
 
 function App() {
@@ -14,14 +15,13 @@ function App() {
   return (
     <div className="App">
       <Nav />
-    <Switch>
-      
-  
+      <Switch>
         <Route exact path='/'> 
           <Home />
           <Introduce />
           <Project />
           <Footer />
+          <Top />
         </Route>
 
         <Route path="/:id"> 
@@ -30,7 +30,7 @@ function App() {
             <p>Please click below to back to the main page.</p>
             <p><Link to="./">Move to main page</Link></p>
           </div>
-    </Route>
+      </Route>
 
       </Switch>
       </div>

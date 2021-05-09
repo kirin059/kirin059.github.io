@@ -36,6 +36,7 @@ const ModalShop = (props) => {
                             <div>React-Router를 활용한 SPA 라우팅</div>
                             <div>reduce를 활용한 상태관리</div>
                             <div>React hook(useHistory, lestContext, useContext, useState)등을 활용한 </div>
+                            <div>useParams를 통해 상품고유 id와 매치되는 url을 특정하여 객체에 접근 </div>
                             <div>axios를 통한 서버 api 용청/응답 처리</div>
                         </div>
                     </div>
