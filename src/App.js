@@ -27,8 +27,8 @@ function App() {
         <Route path="/:id"> 
           <div>
             <p>🚫 Invalid Page</p> 
-            <p>Please click below to back to the main page on our website.</p>
-            <p><Link to="./">Move to main page on Shoe Shop site</Link></p>
+            <p>Please click below to back to the main page.</p>
+            <p><Link to="./">Move to main page</Link></p>
           </div>
     </Route>
 
