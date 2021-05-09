@@ -11,21 +11,15 @@ const Portfolio = () => {
             <div className="project_container">
                 <div className="projects first">
                     <div className="img"></div>
-                    <div className="contents">
-                        프로젝트를 진행하였다
-                    </div>
+                    <div className="contents">#Shopping Mall</div>
                 </div>
                 <div className="projects second">
-                <div className="img"></div>
-                    <div className="contents">
-                        프로젝트를 진행하였다
-                    </div>
+                    <div className="img"></div>
+                    <div className="contents">#인스타그램 Clone</div>
                 </div>
                 <div className="projects third">
                     <div className="img"></div>
-                    <div className="contents">
-                        프로젝트를 진행하였다
-                    </div>
+                    <div className="contents">#Goodal Clone</div>
                 </div>
             </div>
         </div>
