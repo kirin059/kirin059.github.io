@@ -146,16 +146,16 @@ $grey : #f3efef;
                         padding-top: 13px;
                         padding-bottom: 0px;
                         margin-bottom: 20px;
-                        color: #fff;
                         background-color: transparent;
                         border: 0;
                         border-bottom: 2px solid #fff;
-                        font-size: 20px;
-                        font-weight: 400;
+                        font-size: 18px;
+                        font-weight: 700;
                         line-height: 25px;
                         box-sizing: initial;
                         overflow: auto;
                         resize: none;
+                        overflow-wrap: break-word;
                     }
 
                     textarea:focus {
