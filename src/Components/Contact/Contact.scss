@@ -39,45 +39,37 @@ $grey : #f3efef;
             display: flex;
             flex-direction: column;
 
+            p {
+                margin: 0;
+                font-size: 20px;
+            }
+
+            .second {
+                margin-top: 20px;
+            }
+
+            .third {
+                margin-bottom: 80px;
+            }
+
+            div {
+                display: flex;
+                margin-bottom: 15px;
 
                 .fas {
                     width: 62px;
-                    padding-bottom: 40px;
+                    padding-bottom: 10px;
                     color: $pink;
-                    font-size: 35px;
-                    text-align: center;
-                }
+                    font-size: 38px;
+                }   
 
                 p {
                     margin: 0;
                     margin-left: 20px;
                     font-size: 23px;
                 }
-
-                .text {
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 23px;
-
-                    .major {
-                        font-size: 18px;
-                    }
-
-                    .motto {
-                        font-size: 20px;
-                    }
-
-                    .lower {
-                        margin-top: 15px;
-                    }
-                }
             }
-
-            .last {
-                margin-top: 15px;
-            }
-
-        
+        }       
     }
 
     .right {
@@ -86,34 +78,69 @@ $grey : #f3efef;
         margin-top: 200px;
         margin-right: 350px;
 
-        .img {
-            width: 300px;
-            height: 300px;
-           
-            background-position: center;
-            background-size: cover;
-            border: 10px solid $pink;
-            border-radius: 50%;;
-        }
-
-        .tags {
+        .form_container {
+            float: right;
             display: flex;
             flex-direction: column;
-            margin-top: 50px;
+            margin: 0;
+            padding: 65px 65px 45px 65px;
+            width: 420px;
+            background-color: $pink;
             font-size: 20px;
+           
+            p {
+                margin: 0;
+                margin-bottom: 20px;
+                line-height: 30px;
+                font-weight: 400;
 
-            div {
-                padding-right: 30px;
-                padding-bottom: 10px;
-            }
-            .upper {
-                display: flex;
-                justify-content: space-between;
-            }
+                span {
+                    position: relative;
 
-            .lower {
-                display: flex;
-                justify-content: space-between;
+                    input {
+                        width: 100%;
+                        height: 28px;
+                        padding-top: 13px;
+                        padding-bottom: 0px;
+                        margin-bottom: 20px;
+                        color: #fff;
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 2px solid #fff;
+                        font-size: 16px;
+                        line-height: 25px;
+                        box-sizing: initial;
+                    }
+
+                    input:focus {
+                        outline: none;
+
+                        input:focus::placeholder {
+                            color: transparent;
+                        }
+                    }
+
+                    input::placeholder {
+                        color: #fff;
+                    }
+
+                    input[type=submit] {
+                        display: inline-block;
+                        border: 2px solid;
+                        text-align: center;
+                        padding: 20px 0px;
+                        font-size: 14px;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        background-color: transparent;
+                        color: #fff;
+                        font-weight: 700;
+                        width: 100%;
+                        letter-spacing: 8px;
+                        transition: opacity .3s ease;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
