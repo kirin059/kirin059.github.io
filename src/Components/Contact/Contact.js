@@ -2,6 +2,12 @@ import React from 'react';
 import './Contact.scss';
 
 const Contact = () => {
+
+    window.onload = function () {
+        document.getElementById('submit').addEventListener('submit', function (e) {
+            e.preventDefault();
+        })
+    }
     return (
         <div className="contact">
             <div className="left">
@@ -23,18 +29,27 @@ const Contact = () => {
                         <i class="fas fa-phone-alt"></i>
                         <p className="motto">010 . 9152 . 5192</p>
                     </div>
+
+                    <div>
+                        <i class="fab fa-github" onClick={() => {
+                            window.open('https://github.com/kirin059', '_blank')
+                        }}></i>
+                        <i class="fab fa-blogger" onClick={() => {
+                            window.open('https://velog.io/@kirin', '_blank')
+                        }}></i>
+                    </div>
                 </div>     
             </div>
            
             
             <div className="right">
 
-                <form className="form_container">          
+                <form className="form_container" method="POST" action="boma91@gmail.com">          
                     <p><span><input type="text" placeholder="Name"/></span></p>
                     <p><span><input type="text" placeholder="Email"/></span></p>
                     <p><span><input type="text" placeholder="Subject"/></span></p>
-                    <p><span><input type="text" placeholder="Message" className="message"/></span></p>
-                    <p><span><input type="submit" value="SEND"/></span></p>                 
+                    <p><span><textarea cols="40" rows="50" placeholder="Message" className="message"></textarea></span></p>
+                    <p><span><input type="submit" value="SEND" id="submit"/></span></p>                 
                 </form>
 
             </div>
