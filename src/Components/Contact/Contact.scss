@@ -88,7 +88,7 @@ $grey : #f3efef;
         margin-top: 150px;
         margin-right: 350px;
 
-        .form_container {
+        .gform {
             float: right;
             display: flex;
             flex-direction: column;
@@ -99,7 +99,7 @@ $grey : #f3efef;
             background-color: $pink;
             font-size: 20px;
             box-shadow: 3px 3px 5px 3px silver;
-           
+
             p {
                 margin: 0;
                 margin-bottom: 20px;
@@ -188,6 +188,12 @@ $grey : #f3efef;
                     }
                 }
             }
+        }
+
+        .thankyou_message {
+            display: none;
+            font-size: 18px;
+            color: $blue;
         }
     }
 }

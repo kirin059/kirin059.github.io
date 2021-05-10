@@ -3,11 +3,87 @@ import './Contact.scss';
 
 const Contact = () => {
 
-    window.onload = function () {
-        document.getElementById('submit').addEventListener('submit', function (e) {
-            e.preventDefault();
-        })
-    }
+    // window.onload = function () {
+    //     document.getElementById('submit').addEventListener('submit', function (e) {
+    //         e.preventDefault();
+    //     })
+    // }
+
+    (function() {
+        function getFormData(form) {
+          let elements = form.elements;
+      
+          let fields = Object.keys(elements).map(function(k) {
+            if(elements[k].name !== undefined) {
+              return elements[k].name;
+            }else if(elements[k].length > 0){
+              return elements[k].item(0).name;
+            }
+          }).filter(function(item, pos, self) {
+            return self.indexOf(item) == pos && item;
+          });
+      
+          let formData = {};
+          fields.forEach(function(name){
+            let element = elements[name];
+
+            formData[name] = element.value;
+
+            if (element.length) {
+                let data = [];
+              for (let i = 0; i < element.length; i++) {
+                let item = element.item(i);
+                if (item.checked || item.selected) {
+                  data.push(item.value);
+                }
+              }
+              formData[name] = data.join(', ');
+            }
+          });
+
+          formData.formDataNameOrder = JSON.stringify(fields);
+          formData.formGoogleSheetName = form.dataset.sheet || "responses";
+          formData.formGoogleSendEmail = form.dataset.email || ""; 
+      
+          return {data: formData};
+        }
+      
+        function handleFormSubmit(event) {  
+          event.preventDefault();           
+          let form = event.target;
+          let formData = getFormData(form);
+          let data = formData.data;
+      
+          let url = form.action;
+          let xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                form.reset();
+
+                let thankYouMessage = form.querySelector(".thankyou_message");
+                if (thankYouMessage) {
+                  thankYouMessage.style.display = "block";
+                }
+              }
+          };
+
+          let encoded = Object.keys(data).map(function(k) {
+              return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+          }).join('&');
+          xhr.send(encoded);
+        }
+        
+        function loaded() {
+            let forms = document.querySelectorAll("form.gform");
+            for (let i = 0; i < forms.length; i++) {
+                forms[i].addEventListener("submit", handleFormSubmit, false);
+            }
+        };
+        document.addEventListener("DOMContentLoaded", loaded, false); 
+      })();
+    
     return (
         <div className="contact">
             <div className="left">
@@ -44,14 +120,17 @@ const Contact = () => {
             
             <div className="right">
 
-                <form className="form_container" method="POST" action="MAILTO:boma91@gmail.com">          
-                    <p><span><input type="text" placeholder="Name"/></span></p>
-                    <p><span><input type="email" placeholder="Email"/></span></p>
-                    <p><span><input type="text" placeholder="Subject"/></span></p>
-                    <p><span><textarea cols="40" rows="50" placeholder="Message..." className="message"></textarea></span></p>
+                <form className="gform" method="POST" data-email="boma91@gmail.com" action="https://script.google.com/macros/s/AKfycbxNDN1M6kzFBoWvH83Fu3VcHYDIUDJ8IcXvWQbl07jHcWSe_YiCGTfWUIlMkydkAld0/exec">          
+                    <p><span><input type="text" name="user_name" placeholder="Name"/></span></p>
+                    <p><span><input type="email" name="user_email" placeholder="Email"/></span></p>
+                    <p><span><input type="text" name="user_subject" placeholder="Subject"/></span></p>
+                    <p><span><textarea name="user_message" cols="40" rows="50" placeholder="Message..." className="message"></textarea></span></p>
                     <p><span><input type="submit" value="SEND" id="submit"/></span></p>                 
                 </form>
 
+                <div class="thankyou_message">
+                    <h2>Thanks for contacting! I will get back to you soon.</h2>
+                </div>
             </div>
         </div>
     );
