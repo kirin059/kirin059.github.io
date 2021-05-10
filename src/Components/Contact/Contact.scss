@@ -75,7 +75,7 @@ $grey : #f3efef;
     .right {
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-right: 350px;
 
         .form_container {
@@ -85,6 +85,7 @@ $grey : #f3efef;
             margin: 0;
             padding: 65px 65px 45px 65px;
             width: 420px;
+            height: 600px;
             background-color: $pink;
             font-size: 20px;
            
@@ -96,6 +97,10 @@ $grey : #f3efef;
 
                 span {
                     position: relative;
+
+                    .message {
+                        padding-bottom: 160px;
+                    }
 
                     input {
                         width: 100%;
@@ -114,10 +119,10 @@ $grey : #f3efef;
 
                     input:focus {
                         outline: none;
+                    }
 
-                        input:focus::placeholder {
-                            color: transparent;
-                        }
+                    input:focus::placeholder {
+                        color: transparent;
                     }
 
                     input::placeholder {
