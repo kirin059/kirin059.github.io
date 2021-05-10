@@ -2,11 +2,13 @@ import React from 'react';
 import './ModalSass.scss';
 
 const ModalSass = (props) => {
+    document.body.style.overflow = "hidden";
 
     return (
         <div className="modal_sass">
             <div className="bg" onClick={() => {
                 props.setsassAlert(false)
+                document.body.style.overflow = "unset"
             }}>
 
                 <div className="content">

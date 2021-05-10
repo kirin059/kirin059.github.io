@@ -2,11 +2,13 @@ import React from 'react';
 import './ModalHtml.scss';
 
 const ModalHtml = (props) => {
+    document.body.style.overflow = "hidden";
 
     return (
         <div className="modal_html">
             <div className="bg" onClick={() => {
-                props.sethtmlAlert(false)
+                props.sethtmlAlert(false);
+                document.body.style.overflow = "unset"
             }}>
 
                 <div className="content">

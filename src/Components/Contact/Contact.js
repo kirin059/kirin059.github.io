@@ -61,11 +61,6 @@ const Contact = () => {
           xhr.onreadystatechange = function() {
               if (xhr.readyState === 4 && xhr.status === 200) {
                 form.reset();
-
-                let thankYouMessage = form.querySelector(".thankyou_message");
-                if (thankYouMessage) {
-                  thankYouMessage.style.display = "block";
-                }
               }
           };
 
@@ -128,9 +123,6 @@ const Contact = () => {
                     <p><span><input type="submit" value="SEND" id="submit"/></span></p>                 
                 </form>
 
-                <div class="thankyou_message">
-                    <h2>Thanks for contacting! I will get back to you soon.</h2>
-                </div>
             </div>
         </div>
     );

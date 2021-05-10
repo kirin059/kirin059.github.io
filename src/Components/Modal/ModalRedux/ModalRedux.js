@@ -2,11 +2,13 @@ import React from 'react';
 import './ModalRedux.scss';
 
 const ModalRedux = (props) => {
+    document.body.style.overflow = "hidden";
 
     return (
         <div className="modal_redux">
             <div className="bg" onClick={() => {
                 props.setreduxAlert(false)
+                document.body.style.overflow = "unset"
             }}>
 
                 <div className="content">
