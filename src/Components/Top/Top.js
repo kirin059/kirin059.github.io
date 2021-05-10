@@ -19,16 +19,23 @@ const Top = () => {
     // })
 
     function handleHome() {
+
         let location = document.querySelector(".home").offsetTop;
         console.log(location)
         let navHeight = document.querySelector(".Nav").offsetHeight;
         console.log(navHeight)
         window.scrollTo({ top: location - navHeight, behavior: 'smooth' });
+        let locations = document.querySelector(".introduce").offsetTop;
+        console.log(locations) // 875
 
+        //         let top = document.querySelector(".top");
+        // top.classList.hide;
     }
 
+
     return (
-        <div className="top">
+        
+        <div className="top" >
             <div className="arrows">
                 <div className="arrow"></div>
                 <div className="arrow"></div>

@@ -4,6 +4,7 @@ import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home';
 import Introduce from './Components/Introduce/Introduce';
 import Project from './Components/Project/Project';
+import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Top from './Components/Top/Top';
 import './App.scss';
@@ -20,6 +21,7 @@ function App() {
           <Home />
           <Introduce />
           <Project />
+          <Contact />
           <Footer />
           <Top />
         </Route>
