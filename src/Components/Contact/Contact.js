@@ -46,7 +46,7 @@ const Contact = () => {
 
                 <form className="form_container" method="POST" action="MAILTO:boma91@gmail.com">          
                     <p><span><input type="text" placeholder="Name"/></span></p>
-                    <p><span><input type="text" placeholder="Email"/></span></p>
+                    <p><span><input type="email" placeholder="Email"/></span></p>
                     <p><span><input type="text" placeholder="Subject"/></span></p>
                     <p><span><textarea cols="40" rows="50" placeholder="Message..." className="message"></textarea></span></p>
                     <p><span><input type="submit" value="SEND" id="submit"/></span></p>                 
