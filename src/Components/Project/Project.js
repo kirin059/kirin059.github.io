@@ -15,16 +15,9 @@ const Portfolio = () => {
             </div>
 
             <div className="project_container">
-                <div className="projects first">
-                    {
-                         shopModal === true
-                        ? <ModalShop setshopModal={setshopModal}/>
-                        : null
-                    }
-                    <div className="img" onClick={() => {
-                            setshopModal(true)
-                        }}></div>
-                    <div className="contents">#Shopping Mall</div>
+                <div className="projects third">
+                    <div className="img"></div>
+                    <div className="contents">#Goodal Clone</div>
                 </div>
                 <div className="projects second">
                     {
@@ -37,10 +30,18 @@ const Portfolio = () => {
                         }}></div>
                     <div className="contents">#인스타그램 Clone</div>
                 </div>
-                <div className="projects third">
-                    <div className="img"></div>
-                    <div className="contents">#Goodal Clone</div>
+                <div className="projects first">
+                    {
+                         shopModal === true
+                        ? <ModalShop setshopModal={setshopModal}/>
+                        : null
+                    }
+                    <div className="img" onClick={() => {
+                            setshopModal(true)
+                        }}></div>
+                    <div className="contents">#Shopping Mall</div>
                 </div>
+
             </div>
         </div>
     );

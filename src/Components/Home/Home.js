@@ -5,15 +5,10 @@ import ModalJavascript from '../Modal/ModalJavascript/ModalJavascript';
 import ModalReact from '../Modal/ModalReact/ModalReact';
 import ModalRedux from '../Modal/ModalRedux/ModalRedux';
 import ModalSass from '../Modal/ModalSass/ModalSass';
-import './Home.scss';
 import ModalStyled from '../Modal/ModalStyled/ModalStyled';
+import './Home.scss';
 
 const Home = () => {
-
-    // function linkToGithub() {
-    //     let link = "https://github.com/kirin059";
-    //     window.open(link, '_blank')
-    // }
 
     let [htmlAlert, sethtmlAlert] = useState(false);
     let [cssAlert, setcssAlert] = useState(false);
