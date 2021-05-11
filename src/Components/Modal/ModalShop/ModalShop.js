@@ -23,9 +23,8 @@ const ModalShop = (props) => {
                         </div>
                         <div className="script">
                             <div style={{'margin-bottom':'30px'}}>React와 Redux를 통해 Store 전역상태 관리 및 비동기 요청을 중점적으로 활용하여 제작한 <strong>쇼핑몰</strong> 프로젝트입니다. </div>
-                            <div style={{ 'margin-bottom': '10px' }}>
-                                <i class="fas fa-circle" style={{ 'color': '#D09E88', 'paddingRight': '10px' }}></i>
-                                기술스택
+                            <div style={{'margin-bottom':'10px' }}>
+                                <i class="fas fa-circle"></i>기술스택
                             </div>
                             <div style={{'margin-bottom':'30px'}}> HTML5, Javascript, React, Redux, Sass, Bootstrap, axios</div>
 
@@ -35,9 +34,8 @@ const ModalShop = (props) => {
                             <div>카트 페이지: 수량 증감 기능이 있으며 </div>
                             <div>로그인/회원가입 페이지: validaton을 통해 유효성검사 </div> */}
                             
-                            <div style={{ 'margin-bottom': '10px' }}>
-                                <i class="fas fa-circle" style={{ 'color': '#D09E88', 'paddingRight': '10px' }}></i>
-                                구현사항
+                            <div style={{'margin-bottom':'10px'}}>
+                                <i class="fas fa-circle"></i>구현사항
                             </div>
                             <div>React-Router를 활용한 SPA 라우팅</div>
                             <div>reduce를 활용한 상태관리</div>
@@ -46,8 +44,8 @@ const ModalShop = (props) => {
                             <div>axios를 통한 서버 API 용청/응답 처리</div>
 
                             <div style={{'margin-top': '30px'}}>
-                                <i class="fab fa-github" style={{ 'color': '#D09E88', 'fontSize': '40px', 'paddingRight':'20px' }}></i>
-                                <i class="fas fa-link" style={{ 'color': '#D09E88', 'fontSize': '40px' }}></i>
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-link"></i>
                             </div>
                         </div>
                     </div>

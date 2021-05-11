@@ -24,15 +24,13 @@ const ModalShop = (props) => {
                         <div className="script">
                             <div style={{'margin-bottom':'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal</strong> 사이트 클론 제작 및 netlify로 직접 서버 구현한 프로젝트입니다. </div>
                             <div style={{'margin-bottom':'10px' }}>
-                                <i class="fas fa-circle" style={{ 'color':'#D09E88', 'paddingRight':'10px' }}></i>
-                                기술스택
+                                <i class="fas fa-circle"></i>기술스택
                             </div>
                             <div style={{'margin-bottom':'30px'}}>HTML5, CSS3, Javascript</div>
                             
 
                             <div style={{'margin-bottom':'10px'}}>
-                                <i class="fas fa-circle" style={{ 'color':'#D09E88', 'paddingRight':'10px' }}></i>
-                                구현사항
+                                <i class="fas fa-circle"></i>구현사항
                             </div>
                             <div>Jumbotron Auto Slide 기능 구현 </div>
                             <div>Nav-bar Drop-down 기능 구현</div>
@@ -40,8 +38,8 @@ const ModalShop = (props) => {
                             <div>link 연동된 image에 mouse-over하면 크기가 커지도록 설정하여 UX 유용하게 접근 </div>
                             
                             <div style={{'margin-top': '30px'}}>
-                                <i class="fab fa-github" style={{ 'color': '#D09E88', 'fontSize': '40px', 'paddingRight':'20px' }}></i>
-                                <i class="fas fa-link" style={{ 'color': '#D09E88', 'fontSize': '40px' }}></i>
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-link"></i>
                             </div>
                         </div>
                     </div>

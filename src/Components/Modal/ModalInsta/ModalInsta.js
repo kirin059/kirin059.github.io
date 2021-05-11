@@ -24,9 +24,8 @@ const ModalInsta = (props) => {
                         </div>
                         <div className="script">
                             <div style={{'margin-bottom':'30px'}}>React 함수형 컴포넌트와 Sass를 활용하여 Instagram Clone 제작 및 Netlify로 직접 웹사이트 배포한 프로젝트입니다. </div>
-                            <div style={{ 'margin-bottom': '10px' }}>
-                                <i class="fas fa-circle" style={{ 'color': '#D09E88', 'paddingRight': '10px' }}></i>
-                                기술스택
+                            <div style={{'margin-bottom':'10px' }}>
+                                <i class="fas fa-circle"></i>기술스택
                             </div>
                             <div style={{'margin-bottom':'30px'}}>HTML5, Javascript, React, Redux, React-router-dom, Sass, axios</div>
 
@@ -35,9 +34,8 @@ const ModalInsta = (props) => {
                             <div>카트 페이지: 수량 증감 기능이 있으며 </div>
                             <div>로그인/회원가입 페이지: validaton을 통해 유효성검사 </div> */}
                             
-                            <div style={{ 'margin-bottom': '10px' }}>
-                                <i class="fas fa-circle" style={{ 'color': '#D09E88', 'paddingRight': '10px' }}></i>
-                                구현사항
+                            <div style={{'margin-bottom':'10px'}}>
+                                <i class="fas fa-circle"></i>구현사항
                             </div>
                             <div>React-Router를 활용한 SPA 라우팅</div>
                             <div>reduce를 활용한 상태관리</div>
@@ -45,8 +43,8 @@ const ModalInsta = (props) => {
                             <div>axios를 통한 서버 api 용청/응답 처리</div>
 
                             <div style={{'margin-top': '30px'}}>
-                                <i class="fab fa-github" style={{ 'color': '#D09E88', 'fontSize': '40px', 'paddingRight':'20px' }}></i>
-                                <i class="fas fa-link" style={{ 'color': '#D09E88', 'fontSize': '40px' }}></i>
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-link"></i>
                             </div>
                         </div>
                     </div>
