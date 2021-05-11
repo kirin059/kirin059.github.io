@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import ModalShop from '../../Components/Modal/ModalShop/ModalShop';
 import ModalInsta from '../../Components/Modal/ModalInsta/ModalInsta';
+import ModalGoodal from '../../Components/Modal/ModalGoodal/ModalGoodal';
 import './Project.scss';
 
 const Portfolio = () => {
 
     let [shopModal, setshopModal] = useState(false);
     let [instaModal, setinstaModal] = useState(false);
+    let [goodalModal, setgoodalModal] = useState(false);
 
     return (
         <div className="project">
@@ -16,7 +18,14 @@ const Portfolio = () => {
 
             <div className="project_container">
                 <div className="projects third">
-                    <div className="img"></div>
+                    {
+                         goodalModal === true
+                        ? <ModalGoodal setgoodalModal={setgoodalModal}/>
+                        : null
+                    }
+                    <div className="img" onClick={() => {
+                            setgoodalModal(true)
+                        }}></div>
                     <div className="contents">#Goodal Clone</div>
                 </div>
                 <div className="projects second">
