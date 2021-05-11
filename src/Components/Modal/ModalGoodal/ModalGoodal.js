@@ -11,7 +11,7 @@ const ModalShop = (props) => {
                 <div className="content">
                     <p className="title"><span>Goodal Clone</span> Project</p>
                     <button className="close" onClick={() => {
-                        props.setshopModal(false)
+                        props.setgoodalModal(false)
                     }}>
                         <i class="fas fa-window-close"></i>
                     </button>
