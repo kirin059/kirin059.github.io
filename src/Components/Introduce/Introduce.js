@@ -45,14 +45,14 @@ const Introduce = () => {
 
                 <div className="tags">
                     <div className="upper">
-                        <div className="">#프론트엔드</div>
-                        <div className="">#오픈마인드</div>
-                        <div className="">#초긍정</div>
+                        <div>#프론트엔드</div>
+                        <div>#오픈마인드</div>
+                        <div>#초긍정</div>
                     </div>
                         <div className="lower">
-                        <div className="">#책임감</div>
-                        <div className="">#시멘틱웹</div>
-                        <div className="">#취미는코딩</div>
+                        <div>#책임감</div>
+                        <div>#시멘틱웹</div>
+                        <div>#취미는코딩</div>
                     </div>
                 </div>
             </div>
