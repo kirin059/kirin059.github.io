@@ -37,7 +37,7 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> 로그인 페이지 유효성 검사 기능 구현 </div>
                             <div><i class="fas fa-check"></i> Image feed에 mouse-over 크기 설정을 통해 유용한 UX 접근 </div>
                             
-                            <div style={{'margin-top': '30px'}}>
+                            <div style={{'margin-top': '50px'}}>
                                 <i class="fab fa-github"></i>
                                 <i class="fas fa-link"></i>
                             </div>

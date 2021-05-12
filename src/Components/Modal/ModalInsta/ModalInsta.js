@@ -37,12 +37,12 @@ const ModalInsta = (props) => {
                             <div style={{'margin-bottom':'10px'}}>
                                 <i class="fas fa-circle"></i>구현사항
                             </div>
-                            <div>React-Router를 활용한 SPA 라우팅</div>
-                            <div>reduce를 활용한 상태관리</div>
-                            <div>React hook(useHistory, lestContext, useContext, useState)등을 활용한 </div>
-                            <div>axios를 통한 서버 api 용청/응답 처리</div>
+                            <div><i class="fas fa-check"></i> React-Router를 활용한 SPA 라우팅</div>
+                            <div><i class="fas fa-check"></i> reduce를 활용한 상태관리</div>
+                            <div><i class="fas fa-check"></i> React hook(useHistory, lestContext, useContext, useState)등을 활용한 </div>
+                            <div><i class="fas fa-check"></i> axios를 통한 서버 api 용청/응답 처리</div>
 
-                            <div style={{'margin-top': '30px'}}>
+                            <div style={{'margin-top': '50px'}}>
                                 <i class="fab fa-github"></i>
                                 <i class="fas fa-link"></i>
                             </div>
