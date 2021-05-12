@@ -22,7 +22,7 @@ const ModalShop = (props) => {
                             <div className="imgs second"></div>
                         </div>
                         <div className="script">
-                            <div style={{'margin-bottom':'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal</strong> 사이트 클론 제작 및 netlify로 직접 서버 구현한 프로젝트입니다. </div>
+                            <div style={{'margin-bottom':'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal</strong> 사이트 클론 제작 및 netlify로 직접 웹호스팅한 프로젝트입니다. </div>
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
