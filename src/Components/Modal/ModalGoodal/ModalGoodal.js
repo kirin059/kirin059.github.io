@@ -32,10 +32,10 @@ const ModalShop = (props) => {
                             <div style={{'margin-bottom':'10px'}}>
                                 <i class="fas fa-circle"></i>구현사항
                             </div>
-                            <div>Jumbotron Auto Slide 기능 구현 </div>
-                            <div>Nav-bar Drop-down 기능 구현</div>
-                            <div>로그인 페이지 유효성 검사 기능 구현 </div>
-                            <div>link 연동된 image에 mouse-over하면 크기가 커지도록 설정하여 UX 유용하게 접근 </div>
+                            <div><i class="fas fa-check"></i> Jumbotron Auto Slide 기능 구현 </div>
+                            <div><i class="fas fa-check"></i> Nav-bar Drop-down 기능 구현</div>
+                            <div><i class="fas fa-check"></i> 로그인 페이지 유효성 검사 기능 구현 </div>
+                            <div><i class="fas fa-check"></i> Image feed에 mouse-over 크기 설정을 통해 유용한 UX 접근 </div>
                             
                             <div style={{'margin-top': '30px'}}>
                                 <i class="fab fa-github"></i>
