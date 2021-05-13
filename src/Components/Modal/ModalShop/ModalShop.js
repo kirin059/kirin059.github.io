@@ -26,25 +26,24 @@ const ModalShop = (props) => {
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
-                            <div style={{'margin-bottom':'30px'}}> HTML5, Javascript, React, Redux, Sass, Bootstrap, axios</div>
-
-                            {/* <div>페이지별 기능</div>
-                            <div>메인페이지: 더보기버튼을 누르면 상품이 추가적으로 나오도록 함</div>
-                            <div>디테이페이지: 상품을 클릭하면 고유 상품 id에 매칭되는 상품의 상세 페이지가 보입니다. 주문하기를 누르면 cart페이지로 이동하며 상품 갯수가 추가됩니다</div>
-                            <div>카트 페이지: 수량 증감 기능이 있으며 </div>
-                            <div>로그인/회원가입 페이지: validaton을 통해 유효성검사 </div> */}
+                            <div style={{'margin-bottom':'30px'}}> HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition</div>
                             
                             <div style={{'margin-bottom':'10px'}}>
                                 <i class="fas fa-circle"></i>구현사항
                             </div>
                             <div><i class="fas fa-check"></i> React-Router를 활용한 SPA 라우팅</div>
-                            <div><i class="fas fa-check"></i> reduce를 활용한 상태관리</div>
-                            <div><i class="fas fa-check"></i> React hook(useHistory, lestContext, useContext, useState)등을 활용한 </div>
-                            <div><i class="fas fa-check"></i> useParams를 통해 상품고유 id와 매치되는 url을 특정하여 객체에 접근 </div>
-                            <div><i class="fas fa-check"></i> axios를 통한 서버 API 용청/응답 처리</div>
+                            <div><i class="fas fa-check"></i> reducer를 활용한 전역 상태 관리 및 디스패치</div>
+                            <div><i class="fas fa-check"></i> useParams를 통해 상품고유 id와 매칭되는 url을 특정하여 객체에 접근 </div>
+                            <div><i class="fas fa-check"></i> Axios를 통한 서버 API 요청</div>
+                            <div><i class="fas fa-check"></i> Sass 라이브러리를 활용한 스타일링</div>
+                            <div><i class="fas fa-check"></i> Bootstrap 라이브러리를 활용한 레이아웃 구성</div>
+                            <div><i class="fas fa-check"></i> CSSTransition으로 transition효과 적용</div>
+                            <div><i class="fas fa-check"></i> React hook(useState, useHistory, Context API, useEffect 등) 적극 활용 </div>
 
                             <div class="bottom_container">
-                                <i class="fab fa-github"></i>
+                                <i class="fab fa-github" onClick={() => {
+                                    window.open('https://github.com/kirin059/React_shoppingmall_project', '_blank')
+                                }}></i>
                                 <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                             </div>
                         </div>

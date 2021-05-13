@@ -38,7 +38,9 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> Image feed에 mouse-over 및 transition 효과를 활용한 UX 설계를 통해 사용성 개선 </div>
                             
                             <div class="bottom_container">
-                                <i class="fab fa-github"></i>
+                                <i class="fab fa-github" onClick={() => {
+                                    window.open('https://github.com/kirin059/goodal-clone', '_blank')
+                                }}></i>
                                 <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                             </div>
                         </div>
