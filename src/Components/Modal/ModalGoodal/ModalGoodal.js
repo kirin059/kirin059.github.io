@@ -22,7 +22,7 @@ const ModalShop = (props) => {
                             <div className="imgs second"></div>
                         </div>
                         <div className="script">
-                            <div style={{'margin-bottom':'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal</strong> 사이트 클론 제작 및 netlify로 직접 웹호스팅한 프로젝트입니다. </div>
+                            <div style={{'margin-bottom':'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal 사이트 클론</strong> 제작 및 netlify로 직접 웹호스팅한 프로젝트입니다. </div>
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
@@ -35,11 +35,11 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> Jumbotron Auto Slide 기능 구현 </div>
                             <div><i class="fas fa-check"></i> Nav-bar Drop-down 기능 구현</div>
                             <div><i class="fas fa-check"></i> 로그인 페이지 유효성 검사 기능 구현 </div>
-                            <div><i class="fas fa-check"></i> Image feed에 mouse-over 크기 설정을 통해 유용한 UX 접근 </div>
+                            <div><i class="fas fa-check"></i> Image feed에 mouse-over 및 transition 효과를 활용한 UX 설계를 통해 사용성 개선 </div>
                             
-                            <div style={{'margin-top': '50px'}}>
+                            <div class="bottom_container">
                                 <i class="fab fa-github"></i>
-                                <i class="fas fa-link"></i>
+                                <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                             </div>
                         </div>
                     </div>

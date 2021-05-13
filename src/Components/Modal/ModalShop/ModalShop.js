@@ -43,9 +43,9 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> useParams를 통해 상품고유 id와 매치되는 url을 특정하여 객체에 접근 </div>
                             <div><i class="fas fa-check"></i> axios를 통한 서버 API 용청/응답 처리</div>
 
-                            <div style={{'margin-top': '50px'}}>
+                            <div class="bottom_container">
                                 <i class="fab fa-github"></i>
-                                <i class="fas fa-link"></i>
+                                <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                             </div>
                         </div>
                     </div>

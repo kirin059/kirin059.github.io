@@ -23,11 +23,11 @@ const ModalInsta = (props) => {
                             <div className="imgs second"></div>
                         </div>
                         <div className="script">
-                            <div style={{'margin-bottom':'30px'}}>React 함수형 컴포넌트와 Sass를 활용하여 Instagram Clone 제작 및 Netlify로 직접 웹사이트 배포한 프로젝트입니다. </div>
+                            <div style={{'margin-bottom':'30px'}}>React 함수형 컴포넌트와 Sass를 활용하여 <strong>Instagram Clone</strong> 제작하였습니다. 비동기 API통신 요청 숙달에 중점을 둔 프로젝트 입니다.</div>
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
-                            <div style={{'margin-bottom':'30px'}}>HTML5, Javascript, React, Redux, React-router-dom, Sass, axios</div>
+                            <div style={{'margin-bottom':'30px'}}>HTML5, CSS3, Javascript, React, Redux, React-router-dom, Sass, axios</div>
 
                             {/* <div>페이지별 기능</div>
                             <div>디테이페이지: 상품을 클릭하면 고유 상품 id에 매칭되는 상품의 상세 페이지가 보입니다. 주문하기를 누르면 cart페이지로 이동하며 상품 갯수가 추가됩니다</div>
@@ -38,13 +38,13 @@ const ModalInsta = (props) => {
                                 <i class="fas fa-circle"></i>구현사항
                             </div>
                             <div><i class="fas fa-check"></i> React-Router를 활용한 SPA 라우팅</div>
-                            <div><i class="fas fa-check"></i> reduce를 활용한 상태관리</div>
+                            <div><i class="fas fa-check"></i> reducer를 활용한 상태관리</div>
                             <div><i class="fas fa-check"></i> React hook(useHistory, lestContext, useContext, useState)등을 활용한 </div>
-                            <div><i class="fas fa-check"></i> axios를 통한 서버 api 용청/응답 처리</div>
+                            <div><i class="fas fa-check"></i> axios를 통한 서버 API 요청/응답 처리</div>
 
-                            <div style={{'margin-top': '50px'}}>
+                            <div class="bottom_container">
                                 <i class="fab fa-github"></i>
-                                <i class="fas fa-link"></i>
+                                <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                             </div>
                         </div>
                     </div>
