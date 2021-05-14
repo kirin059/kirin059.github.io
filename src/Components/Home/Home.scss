@@ -156,3 +156,153 @@ $grey : #f3efef;
         }
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .home {
+        background-image: none;
+        height: 100vh;
+        
+        .contents {
+            padding: 150px 15px 0;
+            text-align: center;
+    
+            .main {
+                span {
+                    font-size: 22px;
+                }
+        
+                .pink {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+    
+            .story {
+                padding-top: 30px;
+                font-size: 15px;
+        
+                .pinks {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+
+            .icons {
+                padding-top: 60px;
+    
+                .stack {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    flex-grow: 1;
+                    width: 100%;
+    
+                    div {
+                        margin-right: 2px;
+                        width: 45px;
+                        height: 45px;
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                    }
+
+                    div:last-child {
+                        margin-right: 0;
+                    }
+    
+                    .html {
+                        background-image: url('./img/html.png');
+                    }
+    
+                    .html:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .css {
+                        background-image: url('./img/css3.png');
+                    }
+    
+                    .css:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .javascript {
+                        background-image: url('./img/javascript.png');
+                    }
+    
+                    .javascript:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .react {
+                        background-image: url('./img/react.png');
+                    }
+    
+                    .react:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .redux {
+                        background-image: url('./img/redux.png');
+                    }
+    
+                    .redux:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .sass {
+                        background-image: url('./img/sass.png');
+                    }
+    
+                    .sass:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .styled {
+                        background-image: url('./img/styled.png');
+                    }
+    
+                    .styled:hover {
+                        transform: scale(1.1);
+                    }
+                }
+    
+                .link {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    flex-grow: 1;
+                    width: 100%;
+                    margin-top: 10px;
+    
+                    div {
+                        margin-right: 0px;
+                        width: 45px;
+                        height: 45px;
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                    }
+    
+                    .github {
+                        background-image: url('./img/github.png');
+                    }
+    
+                    .github:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .velog {
+                        background-image: url('./img/velog.PNG');
+                    }
+    
+                    .velog:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
