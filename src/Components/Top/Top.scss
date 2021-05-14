@@ -57,3 +57,23 @@
         transition: all .4s;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .top {
+        .top_btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #303a48;
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 400;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all .4s;
+        }
+    }
+}
