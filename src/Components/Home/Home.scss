@@ -190,6 +190,21 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 1270px) {
+    .home {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: $black;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-family: 'Noto Sans KR', sans-serif; 
+    } 
+}
+
 @media only screen and (max-width: 1024px) {
     .home {
         margin: 0;
