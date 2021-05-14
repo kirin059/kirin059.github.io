@@ -44,6 +44,8 @@ $grey : #f3efef;
         .projects {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+
 
             .img {
                 width: 400px;
@@ -92,7 +94,83 @@ $grey : #f3efef;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1600px) {
+    .project {
+        .header {
+            margin-top: 130px;
+            margin-left: 150px;
+    
+            h4 {
+                margin: 0 0 80px 0;
+                color: $pink;
+                font-size: 60px;
+            }
+        }
+    
+        .project_container {
+            display: flex;
+            margin: 30px 150px 0;
+    
+            .projects {
+                display: flex;
+                flex-direction: column;
+    
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .project{
+        .header {
+            margin-top: 130px;
+            margin-left: 80px;
+
+            h4 {
+                margin: 0 0 50px 0;
+                color: $pink;
+                font-size: 60px;
+            }
+        }
+    
+        .project_container {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 80px 0;
+    
+            .projects {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                }
+    
+                .img {
+                    width: 400px;
+                    height: 220px;
+                    margin: 0 40px 10px 0;
+                    background: #f4f4f4;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 5px 3px silver;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transition: all .2s ease-in-out;
+                    cursor: pointer;
+                }
+
+                .contents {
+                    margin: 0 40px 50px 0;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }    
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .project{
         display: flex;
         flex-direction: column;

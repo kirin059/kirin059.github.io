@@ -10,6 +10,7 @@ $grey : #f3efef;
 .introduce {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -139,7 +140,103 @@ $grey : #f3efef;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1600px) {
+    .introduce {
+    
+        .left {
+            margin-top: 130px;
+            margin-left: 150px;
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+            margin-right: 150px;
+    
+        }   
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .introduce {
+    
+        .left {
+            margin-top: 130px;
+            margin-left: 80px;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+    
+                div {
+                    display: flex;
+    
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 23px;
+                        width: 400px;
+                    }
+                }
+    
+                .last {
+                    margin-top: 15px;
+                }
+    
+            }
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            margin-top: 300px;
+            margin-right: 80px;
+    
+            .img {
+                width: 250px;
+                height: 250px;
+                background-image: url('./img/fruit.jpg');
+                background-position: center;
+                background-size: cover;
+                border: 10px solid $pink;
+                border-radius: 50%;;
+            }
+    
+            .tags {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-top: 50px;
+                font-size: 18px;
+    
+                div {
+                    margin-right: 15px;
+                    margin-bottom: 8px;
+                }
+                .upper {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    div:hover {
+                        display: none;
+                    }
+                }
+    
+                .lower {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    div:hover {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .introduce {
         display: flex;
         flex-direction: column;
