@@ -212,9 +212,14 @@ $grey : #f3efef;
             .projects {
                 display: flex;
                 justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                }
     
                 .img {
-                    width: 200px;
+                    width: 250px;
                     height: 150px;
                     margin: 0 ;
                     background: #f4f4f4;
