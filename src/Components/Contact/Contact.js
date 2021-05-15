@@ -3,12 +3,6 @@ import './Contact.scss';
 
 const Contact = () => {
 
-    // window.onload = function () {
-    //     document.getElementById('submit').addEventListener('submit', function (e) {
-    //         e.preventDefault();
-    //     })
-    // }
-
     (function() {
         function getFormData(form) {
           let elements = form.elements;
@@ -16,7 +10,8 @@ const Contact = () => {
           let fields = Object.keys(elements).map(function(k) {
             if(elements[k].name !== undefined) {
               return elements[k].name;
-            }else if(elements[k].length > 0){
+            }
+            else if (elements[k].length > 0) {
               return elements[k].item(0).name;
             }
           }).filter(function(item, pos, self) {
@@ -49,11 +44,11 @@ const Contact = () => {
         }
       
         function handleFormSubmit(event) {  
-          event.preventDefault();           
+          event.preventDefault();
+          
           let form = event.target;
           let formData = getFormData(form);
           let data = formData.data;
-      
           let url = form.action;
           let xhr = new XMLHttpRequest();
           xhr.open('POST', url);
@@ -63,6 +58,10 @@ const Contact = () => {
                 form.reset();
               }
           };
+
+          const btnElement = document.getElementById('submit');
+          btnElement.value = "SENT SUCCESSFULLY";
+          btnElement.style.color = "#47596B"
 
           let encoded = Object.keys(data).map(function(k) {
               return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
@@ -74,11 +73,13 @@ const Contact = () => {
             let forms = document.querySelectorAll("form.gform");
             for (let i = 0; i < forms.length; i++) {
                 forms[i].addEventListener("submit", handleFormSubmit, false);
-            }
+          }
+          
         };
         document.addEventListener("DOMContentLoaded", loaded, false); 
-      })();
-    
+  })();
+  
+  
     return (
         <div className="contact">
             <div className="left">
@@ -120,7 +121,7 @@ const Contact = () => {
                     <p><span><input type="email" name="user_email" placeholder="Email"/></span></p>
                     <p><span><input type="text" name="user_subject" placeholder="Subject"/></span></p>
                     <p><span><textarea name="user_message" cols="40" rows="50" placeholder="Message..." className="message"></textarea></span></p>
-                    <p><span><input type="submit" value="SEND" id="submit"/></span></p>                 
+                    <p><span><input type="submit" value="SEND" id="submit" /></span></p>
                 </form>
 
             </div>
