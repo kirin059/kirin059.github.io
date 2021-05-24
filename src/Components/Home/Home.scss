@@ -8,7 +8,7 @@ $grey : #f3efef;
 
 .home {
     margin: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -217,6 +217,143 @@ $grey : #f3efef;
         background-repeat: no-repeat;
         background-size: contain;
         font-family: 'Noto Sans KR', sans-serif; 
+
+        .contents {
+           
+            padding-top: 130px;
+            text-align: center;
+    
+            .main {
+                span {
+                    font-size: 40px;
+                }
+        
+                .pink {
+                    color: $pink;
+                    font-size: 43px;
+                    font-weight: 900;
+                }
+            }
+    
+            .story {
+                padding-top: 40px;
+                font-size: 20px;
+        
+                .pinks {
+                    color: $pink;
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+            }
+    
+            .icons {
+                padding-top: 70px;
+    
+                .stack {
+                    display: flex;
+        
+                    width: 100%;
+    
+                    div {
+                        margin: auto;
+                        width: 70px;
+                        height: 70px;
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                    }
+    
+                    .html {
+                        background-image: url('./img/html.png');
+                    }
+    
+                    .html:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .css {
+                        background-image: url('./img/css3.png');
+                    }
+    
+                    .css:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .javascript {
+                        background-image: url('./img/javascript.png');
+                    }
+    
+                    .javascript:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .react {
+                        background-image: url('./img/react.png');
+                    }
+    
+                    .react:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .redux {
+                        background-image: url('./img/redux.png');
+                    }
+    
+                    .redux:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .sass {
+                        background-image: url('./img/sass.png');
+                    }
+    
+                    .sass:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .styled {
+                        background-image: url('./img/styled.png');
+                    }
+    
+                    .styled:hover {
+                        transform: scale(1.1);
+                    }
+                }
+    
+                .link {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-grow: 1;
+                    width: 100%;
+                    margin-top: 20px;
+    
+                    div {
+                        margin-right: 10px;
+                        width: 70px;
+                        height: 70px;
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                    }
+    
+                    .github {
+                        background-image: url('./img/github.png');
+                    }
+    
+                    .github:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    .velog {
+                        background-image: url('./img/velog.PNG');
+                    }
+    
+                    .velog:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
     } 
 }
 
