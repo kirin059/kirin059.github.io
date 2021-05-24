@@ -5,29 +5,17 @@ $pink : #D09E88;
 $black : #534847;
 $blue : #47596B;
 
-%function default {
-  margin: 0;
+
+.App {
+  width: 100vw;
+  height: 100vh;
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-align: center;
   background-color: #ffffff;
   color: $black;
   font-family: 'Noto Sans KR', sans-serif;
-}
 
-.App {
-  @extend default;
-
-  .invalid {
-    margin: 200px auto;
-    width: 500px;
-    text-align: center;
-
-  .alert {
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
 }
 
 

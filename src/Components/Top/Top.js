@@ -15,7 +15,8 @@ const Top = () => {
     }
 
     function handleScroll() {
-       setIsShow(window.pageYOffset > 300)
+        setIsShow(window.pageYOffset > 300)
+        console.log(window.pageYOffset)
     }
 
     return (      

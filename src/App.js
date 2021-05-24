@@ -20,8 +20,8 @@ function App() {
           <Introduce />
           <Project />
           <Contact />
-          <Footer />
           <Top />
+          <Footer />
         </Route>
 
         <Route path="/:id"> 
