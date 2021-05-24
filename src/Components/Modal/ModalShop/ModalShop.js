@@ -26,7 +26,7 @@ const ModalShop = (props) => {
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
-                            <div style={{'margin-bottom':'30px'}}> HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition</div>
+                            <div style={{'margin-bottom':'30px'}}> HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition, Express.js</div>
                             
                             <div style={{'margin-bottom':'10px'}}>
                                 <i class="fas fa-circle"></i>구현사항

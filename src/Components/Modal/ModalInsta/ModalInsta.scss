@@ -7,8 +7,8 @@ $blue : #47596B;
 $grey : #f3efef;
 
 .modal_insta {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: none;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
@@ -26,13 +26,14 @@ $grey : #f3efef;
             position: fixed;
             left: 50%;
             top: 50%;
-            width: 60vw;
-            height: 80vh;
-            padding: 20px 60px;
+            width: 68vw;
+            height: 90vh;
+            padding: 2% 3%;
             transform: translate(-50%, -50%);
             background-color:#fff;
             border-radius: 10px;
             text-align: center;
+            box-sizing: border-box;
             z-index: 410;
 
             p {
@@ -44,7 +45,7 @@ $grey : #f3efef;
             }
 
             .title {
-                margin: 10px 0 35px 0;
+                margin: 0 0 3%;
                 font-size: 40px;
                 font-weight: 800;
             }
@@ -61,15 +62,17 @@ $grey : #f3efef;
 
             .contents {
                 display: flex;
+                width: 100%;
 
                 .img_container {
                     display: flex;
                     flex-direction: column;
+                    margin-right: 4%;
 
                     .imgs {
                         width: 450px;
                         height: 300px;
-                        margin: 0px 40px 20px 0;
+                        margin: 0 0 5% 0;
                         background: #f4f4f4;
                         border-radius: 10px;
                         box-shadow: 3px 3px 5px 3px silver;
@@ -80,31 +83,36 @@ $grey : #f3efef;
                     }
     
                     .second {
+                        margin: 0;
                         background-image: url('./img/insta_profile.PNG');
                     }
                 }
 
                 .script {
+                    position: relative;
                     text-align: left;
+                    font-size: .9em;
 
                     .fa-circle {
                         color: $pink;
-                        padding-right: 10px;
+                        padding-right: 1.3%;
                     }
 
                     .fa-check{
-                        padding-right: 5px;
+                        padding-right: 1.3%;
                         color: $pink;
-                        font-size: 15px;
+                        font-size: 0.8em;
                     }
 
                     .bottom_container {
+                        position: absolute;
                         display: flex;
-                        margin-top: 150px;
+                        bottom: 0;
+                        width: 100%;
 
                         .fa-github {
                             color: $pink;
-                            padding-right: 10px;
+                            padding-right: 1.5%;
                             font-size: 40px;
                             cursor: pointer;
                         }
@@ -114,8 +122,9 @@ $grey : #f3efef;
                         }
 
                         div {
+                            width: 100%;
                             color: $pink;
-                            font-size: 16px;
+                            font-size: 0.8em;
                             line-height: 3.4;
                         }
                     }
