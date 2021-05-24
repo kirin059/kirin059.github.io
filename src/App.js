@@ -30,7 +30,7 @@ function App() {
             <p>Please click below to back to the main page.</p>
             <p><Link to="./">Move to main page</Link></p>
           </div>
-      </Route>
+        </Route>
 
       </Switch>
       </div>

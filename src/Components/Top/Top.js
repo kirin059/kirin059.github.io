@@ -4,6 +4,7 @@ import './Top.scss';
 const Top = () => {
 
     let [isShow, setIsShow] = useState(false)
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -15,8 +16,11 @@ const Top = () => {
     }
 
     function handleScroll() {
-        setIsShow(window.pageYOffset > 300)
-        console.log(window.pageYOffset)
+        setIsShow(window.pageYOffset > 250)
+        if (window.pageYOffset > 3000) {
+            
+            setIsShow(false)
+        }
     }
 
     return (      
