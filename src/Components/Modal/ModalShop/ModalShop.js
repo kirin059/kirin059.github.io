@@ -39,7 +39,7 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> Bootstrap 라이브러리를 활용한 레이아웃 구성</div>
                             <div><i class="fas fa-check"></i> CSSTransition으로 transition효과 적용</div>
                             <div><i class="fas fa-check"></i> React hook(useState, useHistory, Context API, useEffect 등) 적극 활용 </div>
-                            <div><i class="fas fa-check"></i> Express.js로 서버 구현 </div>
+                            <div><i class="fas fa-check"></i> Express.js로 서버 구현▪연동 </div>
 
                             <div class="bottom_container">
                                 <i class="fab fa-github" onClick={() => {
