@@ -120,7 +120,7 @@ const Contact = () => {
                     <p><span><input type="text" name="user_name" placeholder="Name"/></span></p>
                     <p><span><input type="email" name="user_email" placeholder="Email"/></span></p>
                     <p><span><input type="text" name="user_subject" placeholder="Subject"/></span></p>
-                    <p><span><textarea name="user_message" cols="40" rows="50" placeholder="Message..." className="message"></textarea></span></p>
+                    <p><span><textarea name="user_message" cols="40" rows="50" placeholder="Message" className="message"></textarea></span></p>
                     <p><span><input type="submit" value="SEND" id="submit" /></span></p>
                 </form>
 

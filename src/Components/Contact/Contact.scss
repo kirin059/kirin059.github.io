@@ -82,6 +82,7 @@ $grey : #f3efef;
     .right {
         display: flex;
         flex-direction: column;
+        height: 100%;
 
         .gform {
             box-sizing: border-box;
@@ -100,13 +101,14 @@ $grey : #f3efef;
             p {
                 margin: 0;
                 margin-bottom: 6%;
-                font-weight: 400;
+                height: 47%;
+                font-weight: 300;
 
                 span {
                     position: relative;
 
                     .message {
-                        padding-bottom: 40%;
+                        padding-bottom: 66%;
                     }
 
                     input {
@@ -117,8 +119,7 @@ $grey : #f3efef;
                         background-color: transparent;
                         border: 0;
                         border-bottom: 2px solid #fff;
-                        font-size: 16px;
-                        line-height: 25px;
+                        font-size: 1.05em;
                         box-sizing: initial;
                     }
 
@@ -137,19 +138,18 @@ $grey : #f3efef;
                     textarea {
                         width: 100%;
                         height: 5%;
-                        padding-top: 13px;
-                        padding-bottom: 0px;
-                        margin-bottom: 20px;
+                        padding-top: 2%;
                         background-color: transparent;
                         border: 0;
                         border-bottom: 2px solid #fff;
-                        font-size: 18px;
-                        font-weight: 700;
+                        font-size: 1.2em;
+                        font-weight: 300;
                         line-height: 25px;
                         box-sizing: initial;
                         overflow: auto;
                         resize: none;
                         overflow-wrap: break-word;
+                        overflow: hidden;
                         font-family: 'Noto Sans KR', sans-serif;
                     }
 
@@ -167,10 +167,10 @@ $grey : #f3efef;
 
                     input[type=submit] {
                         display: inline-block;
-                        border: 2px solid;
+                        border: 1px solid;
                         text-align: center;
                         padding: 1px 0px;
-                        font-size: 1.2em;
+                        font-size: 1em;
                         vertical-align: middle;
                         text-decoration: none;
                         background-color: transparent;
