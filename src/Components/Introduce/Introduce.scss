@@ -29,7 +29,7 @@ $grey : #f3efef;
         h4::after {
             display: block;
             content: "";
-            width: 80%;
+            width: 100%;
             margin-top: 5%;
             border-bottom: 1px solid #bcbcbc;
             color: $pink;
@@ -43,7 +43,7 @@ $grey : #f3efef;
                 display: flex;
 
                 .fas {
-                    padding-bottom: 6%;
+                    padding-bottom: 7%;
                     color: $pink;
                     font-size: 2em;
                     text-align: center;
