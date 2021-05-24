@@ -162,44 +162,118 @@ $grey : #f3efef;
 }
 
 @media only screen and (max-width: 1600px) {
-    .home {  
-        .contents {
-            padding-right: 40px;
-            padding-top: 200px;
-            text-align: right;
-    
+    .home {
+        padding: 10% 5% 0;
+
+        .contents {               
             .main {
                 span {
-                    font-size: 40px;
-                }
-        
+                    font-size: 2.8em;
+                }      
                 .pink {
-                    color: $pink;
-                    font-size: 43px;
-                    font-weight: 800;
+                    font-size: 3em;
+                    font-weight: 900;
                 }
             }
     
             .story {
-                padding-top: 40px;
-                font-size: 20px;
+                font-size: 1.4em;
         
                 .pinks {
-                    color: $pink;
-                    font-size: 20px;
-                    font-weight: 600;
+                    font-size: 1.1em;
                 }
-            }
+            } 
         }
     }
 }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1500px) {
+    .home {
+        padding: 10% 4% 0;
     
+        .contents {               
+            .main {
+                span {
+                    font-size: 2.6em;
+                }       
+                .pink {
+                    font-size: 2.8em;
+                    font-weight: 700;
+                }
+            }   
+            .story {
+                font-size: 1.2em;
+        
+                .pinks {
+                    font-size: 1em;
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .home {
+        padding: 10% 3% 0;
+        background-size: 57%;
+        background-position-x: -22px;
+        background-position-y: 112px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .home {
+        padding: 10% 3% 0;
+        background-size: 50%;
+        background-position-x: -22px;
+        background-position-y: 150px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
+    .home {
+        padding: 14% 6.5% 0;
+        background-image: none;
     
+        .contents {
+            text-align: center;
+    
+            .main {
+                span {
+                    font-size: 2.6em;
+                }
+        
+                .pink {
+                    font-size: 2.8em;
+                    font-weight: 700;
+                }
+            }
+    
+            .story {
+                font-size: 1.2em;
+        
+                .pinks {
+                    font-size: 1em;
+                }
+            }
+    
+            .icons {
+                padding-top: 20%;
+    
+                .stack {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+    
+                .link {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 480px) {

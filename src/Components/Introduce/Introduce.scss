@@ -12,7 +12,7 @@ $grey : #f3efef;
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
-    padding: 8% 18% 0;
+    padding: 8% 17% 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: $black;
@@ -21,7 +21,7 @@ $grey : #f3efef;
 
     .left {
         text-align: left;
-        
+
         h4 {
             margin: 0 0 10% 0;
             color: $pink;
@@ -145,15 +145,125 @@ $grey : #f3efef;
 }
 
 @media only screen and (max-width: 1600px) {
-   
+    .introduce {
+        padding: 8% 15% 0;
+    }
 }
-@media only screen and (max-width: 1270px) {
-   
+@media only screen and (max-width: 1500px) {
+    .introduce {
+        padding: 8% 12% 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .introduce {
+        padding: 8% 9% 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .introduce {
+        padding: 8% 6% 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .introduce {
+        padding: 10% 6% 0;
+    
+        .left {   
+            h4 {
+                margin: 0 0 10% 0;
+                font-size: 3.5em;
+            }   
+            .info {
+                div {
+                    p {
+                        font-size: 1.27em;
+                    }  
+                    .text {
+                        font-size: 1.1em;
+    
+                        .major {
+                            font-size: 1.12em;
+                        }
+    
+                        .motto {
+                            font-size: 1.1em;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+        .right {
+            margin-top: 8%;
+    
+            .img {
+                width: 280px;
+                height: 280px;
+            }
+    
+            .tags {
+                font-size: 1.2em;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-   
+    .introduce {
+        padding: 10% 6% 0;
+    
+        .left {   
+            h4 {
+                margin: 0 0 10% 0;
+                font-size: 3.5em;
+            }
+            h4::after {
+                width: 70%;
+            }
+    
+            .info {
+
+                div {
+    
+                    p {
+                        font-size: 1.27em;
+                    }
+    
+                    .text {
+                        font-size: 1.1em;
+    
+                        .major {
+                            font-size: 1.12em;
+                        }
+    
+                        .motto {
+                            font-size: 1.1em;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+        .right {
+            margin-top: 20%;
+    
+            .img {
+                width: 280px;
+                height: 280px;
+            }
+    
+            .tags {
+                display: none;
+            }
+        }
+    }
 }
+
 
 @media only screen and (max-width: 480px) {
     .introduce {
