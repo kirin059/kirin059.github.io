@@ -14,6 +14,7 @@ $grey : #f3efef;
   background-color: #ffffff;
   color: $black;
   font-family: 'Noto Sans KR', sans-serif;
+  z-index: 900;
 
   .nav_container {
     position: fixed;
@@ -125,6 +126,7 @@ $grey : #f3efef;
 
     #nav.active {
       width: 560px;
+      overflow-x: hidden;
 
       ul {
         width: 100%;

@@ -21,7 +21,7 @@ $grey : #f3efef;
 
     .header {
         text-align: left;
-        
+
         h4 {
             margin: 0 0 7% 0;
             color: $pink;
@@ -63,6 +63,7 @@ $grey : #f3efef;
 
             .img:hover {
                 transform: scale(1.03);
+                z-index: 800;
             }
 
             .contents {

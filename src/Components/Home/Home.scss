@@ -10,44 +10,44 @@ $grey : #f3efef;
     margin: 0;
     width: 100vw;
     height: 100vh;
+    padding: 8% 6.5% 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: $black;
     background-image: url('./img/team.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-x: -17px;
     font-family: 'Noto Sans KR', sans-serif;
 
     .contents {
-        padding-right: 88px;
-        padding-top: 200px;
         text-align: right;
 
         .main {
             span {
-                font-size: 50px;
+                font-size: 3em;
             }
     
             .pink {
                 color: $pink;
-                font-size: 53px;
+                font-size: 3.3em;
                 font-weight: 900;
             }
         }
 
         .story {
-            padding-top: 40px;
-            font-size: 25px;
+            padding-top: 5%;
+            font-size: 1.6em;
     
             .pinks {
                 color: $pink;
-                font-size: 25px;
-                font-weight: 700;
+                font-size: 1.2em;
+                font-weight: 500;
             }
         }
 
         .icons {
-            padding-top: 200px;
+            padding-top: 10%;
 
             .stack {
                 display: flex;
@@ -56,12 +56,16 @@ $grey : #f3efef;
                 width: 100%;
 
                 div {
-                    margin-right: 10px;
+                    margin-left: 1%;
                     width: 70px;
                     height: 70px;
                     background-size: cover;
                     background-position: center;
                     cursor: pointer;
+
+                    div:last-child {
+                        margin: 0;
+                    }
                 }
 
                 .html {
@@ -126,10 +130,10 @@ $grey : #f3efef;
                 flex-direction: row-reverse;
                 flex-grow: 1;
                 width: 100%;
-                margin-top: 20px;
+                margin-top: 2%;
 
                 div {
-                    margin-right: 10px;
+                    margin-left: 1%;
                     width: 70px;
                     height: 70px;
                     background-size: cover;
@@ -191,170 +195,11 @@ $grey : #f3efef;
 }
 
 @media only screen and (max-width: 1270px) {
-    .home {
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        color: $black;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-family: 'Noto Sans KR', sans-serif; 
-    } 
+    
 }
 
 @media only screen and (max-width: 1024px) {
-    .home {
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        color: $black;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-family: 'Noto Sans KR', sans-serif; 
-
-        .contents {
-           
-            padding-top: 130px;
-            text-align: center;
     
-            .main {
-                span {
-                    font-size: 40px;
-                }
-        
-                .pink {
-                    color: $pink;
-                    font-size: 43px;
-                    font-weight: 900;
-                }
-            }
-    
-            .story {
-                padding-top: 40px;
-                font-size: 20px;
-        
-                .pinks {
-                    color: $pink;
-                    font-size: 23px;
-                    font-weight: 700;
-                }
-            }
-    
-            .icons {
-                padding-top: 70px;
-    
-                .stack {
-                    display: flex;
-        
-                    width: 100%;
-    
-                    div {
-                        margin: auto;
-                        width: 70px;
-                        height: 70px;
-                        background-size: cover;
-                        background-position: center;
-                        cursor: pointer;
-                    }
-    
-                    .html {
-                        background-image: url('./img/html.png');
-                    }
-    
-                    .html:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .css {
-                        background-image: url('./img/css3.png');
-                    }
-    
-                    .css:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .javascript {
-                        background-image: url('./img/javascript.png');
-                    }
-    
-                    .javascript:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .react {
-                        background-image: url('./img/react.png');
-                    }
-    
-                    .react:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .redux {
-                        background-image: url('./img/redux.png');
-                    }
-    
-                    .redux:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .sass {
-                        background-image: url('./img/sass.png');
-                    }
-    
-                    .sass:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .styled {
-                        background-image: url('./img/styled.png');
-                    }
-    
-                    .styled:hover {
-                        transform: scale(1.1);
-                    }
-                }
-    
-                .link {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    flex-grow: 1;
-                    width: 100%;
-                    margin-top: 20px;
-    
-                    div {
-                        margin-right: 10px;
-                        width: 70px;
-                        height: 70px;
-                        background-size: cover;
-                        background-position: center;
-                        cursor: pointer;
-                    }
-    
-                    .github {
-                        background-image: url('./img/github.png');
-                    }
-    
-                    .github:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .velog {
-                        background-image: url('./img/velog.PNG');
-                    }
-    
-                    .velog:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
-    } 
 }
 
 @media only screen and (max-width: 480px) {
