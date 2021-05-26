@@ -26,8 +26,11 @@ $grey : #f3efef;
             position: fixed;
             left: 50%;
             top: 50%;
-            width: 68vw;
-            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            height: 90%;
             padding: 2% 3%;
             transform: translate(-50%, -50%);
             background-color:#fff;
@@ -52,8 +55,8 @@ $grey : #f3efef;
 
             button {
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 3%;
+                right: 3%;
                 background-color: transparent;
                 font-size: 50px;
                 border: 0;

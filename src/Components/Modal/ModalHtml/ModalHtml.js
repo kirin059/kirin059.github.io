@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ModalHtml.scss';
 
 const ModalHtml = (props) => {
     document.body.style.overflow = "hidden";
+
+    useEffect(() => {
+        function handleLocation() {
+            
+        }
+    })
 
     return (
         <div className="modal_html">

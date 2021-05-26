@@ -26,8 +26,11 @@ $grey : #f3efef;
             position: fixed;
             left: 50%;
             top: 50%;
-            width: 68vw;
-            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            height: 80%;
             padding: 2% 3%;
             transform: translate(-50%, -50%);
             background-color:#fff;
@@ -46,14 +49,14 @@ $grey : #f3efef;
 
             .title {
                 margin: 0 0 3%;
-                font-size: 40px;
+                font-size: 3em;
                 font-weight: 800;
             }
 
             button {
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 3%;
+                right: 3%;
                 background-color: transparent;
                 font-size: 50px;
                 border: 0;
@@ -63,11 +66,14 @@ $grey : #f3efef;
             .contents {
                 display: flex;
                 width: 100%;
-
+                
+         
                 .img_container {
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     margin-right: 4%;
+                    
 
                     .imgs {
                         width: 450px;
@@ -135,3 +141,214 @@ $grey : #f3efef;
 
     }
 }
+
+@media only screen and (max-width: 1600px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 80%;
+                }
+    
+                .title {
+                    margin: 0 0 5%;
+                }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {                       
+                    .img_container {                      
+                        .imgs {
+                            width: 400px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1215px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {
+                    height: 60%;                          
+                    .img_container {                      
+                        .imgs {
+                            width: 380px;
+                            height: 230px;
+                        }
+                    }
+                    .script {
+                          
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {                      
+                        .imgs {
+                            width: 350px;
+                            height: 200px;
+                        }
+                    }
+                    .script {
+                          
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 70%;
+                    
+                .title {
+                    font-size: 2.5em;
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {
+                                        
+                        .imgs {
+            
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                    .script {
+                        font-size: .8em;
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 60%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {
+                                        
+                        .imgs {
+            
+                            width: 280px;
+                            height: 180px;
+                        }
+                    }
+                    .script {
+                        font-size: .7em;
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                height: 50%;
+                    
+                .title {
+                    font-size: 2em;
+                    font-weight: 800;
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {
+                                        
+                        .imgs {
+            
+                            width: 250px;
+                            height: 150px;
+                        }
+                    }
+                    .script {
+                        font-size: .6em;
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+

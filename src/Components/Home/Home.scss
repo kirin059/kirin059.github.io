@@ -68,61 +68,39 @@ $grey : #f3efef;
                     }
                 }
 
-                .html {
-                    background-image: url('./img/html.png');
+                div:hover {
+                    transform: scale(1.1);
                 }
 
-                .html:hover {
-                    transform: scale(1.1);
+                .html {
+                    background-image: url('./img/html.png');
                 }
 
                 .css {
                     background-image: url('./img/css3.png');
                 }
 
-                .css:hover {
-                    transform: scale(1.1);
-                }
-
                 .javascript {
                     background-image: url('./img/javascript.png');
-                }
-
-                .javascript:hover {
-                    transform: scale(1.1);
                 }
 
                 .react {
                     background-image: url('./img/react.png');
                 }
 
-                .react:hover {
-                    transform: scale(1.1);
-                }
-
                 .redux {
                     background-image: url('./img/redux.png');
-                }
-
-                .redux:hover {
-                    transform: scale(1.1);
                 }
 
                 .sass {
                     background-image: url('./img/sass.png');
                 }
 
-                .sass:hover {
-                    transform: scale(1.1);
-                }
 
                 .styled {
                     background-image: url('./img/styled.png');
                 }
 
-                .styled:hover {
-                    transform: scale(1.1);
-                }
             }
 
             .link {
@@ -284,8 +262,7 @@ $grey : #f3efef;
             .main {
                 span {
                     font-size: 24px;
-                }
-        
+                }       
                 .pink {
                     font-size: 24px;
                     font-weight: 700;
@@ -313,12 +290,17 @@ $grey : #f3efef;
                     width: 100%;
     
                     div {
+                        position: relative;
                         margin-right: 2px;
                         width: 45px;
                         height: 45px;
                         background-size: cover;
                         background-position: center;
                         cursor: pointer;
+                    }
+
+                    div:hover {
+                        transform: scale(1.1);
                     }
 
                     div:last-child {
@@ -328,57 +310,29 @@ $grey : #f3efef;
                     .html {
                         background-image: url('./img/html.png');
                     }
-    
-                    .html:hover {
-                        transform: scale(1.1);
-                    }
-    
+                          
                     .css {
                         background-image: url('./img/css3.png');
                     }
-    
-                    .css:hover {
-                        transform: scale(1.1);
-                    }
-    
+                     
                     .javascript {
                         background-image: url('./img/javascript.png');
                     }
-    
-                    .javascript:hover {
-                        transform: scale(1.1);
-                    }
-    
+        
                     .react {
                         background-image: url('./img/react.png');
                     }
-    
-                    .react:hover {
-                        transform: scale(1.1);
-                    }
-    
+        
                     .redux {
                         background-image: url('./img/redux.png');
-                    }
-    
-                    .redux:hover {
-                        transform: scale(1.1);
                     }
     
                     .sass {
                         background-image: url('./img/sass.png');
                     }
     
-                    .sass:hover {
-                        transform: scale(1.1);
-                    }
-    
                     .styled {
                         background-image: url('./img/styled.png');
-                    }
-    
-                    .styled:hover {
-                        transform: scale(1.1);
                     }
                 }
     

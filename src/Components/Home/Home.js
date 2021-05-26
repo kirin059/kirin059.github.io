@@ -6,6 +6,7 @@ import ModalReact from '../Modal/ModalReact/ModalReact';
 import ModalRedux from '../Modal/ModalRedux/ModalRedux';
 import ModalSass from '../Modal/ModalSass/ModalSass';
 import ModalStyled from '../Modal/ModalStyled/ModalStyled';
+import Button from '../Button/Button';
 import './Home.scss';
 
 const Home = () => {
@@ -32,65 +33,11 @@ const Home = () => {
                 </div>
 
                 <div className="icons">
-                    {
-                         htmlAlert === true
-                        ? <ModalHtml sethtmlAlert={sethtmlAlert}/>
-                        : null
-                    }
-                    {
-                         cssAlert === true
-                        ? <ModalCss setcssAlert={setcssAlert}/>
-                        : null
-                    }
-                    {
-                         javascriptAlert === true
-                        ? <ModalJavascript setjavascriptAlert={setjavascriptAlert}/>
-                        : null
-                    }
-                    {
-                         reactAlert === true
-                        ? <ModalReact setreactAlert={setreactAlert}/>
-                        : null
-                    }
-                    {
-                         reduxAlert === true
-                        ? <ModalRedux setreduxAlert={setreduxAlert}/>
-                        : null
-                    }
-                    {
-                         sassAlert === true
-                        ? <ModalSass setsassAlert={setsassAlert}/>
-                        : null
-                    }
-                    {
-                         styledAlert === true
-                        ? <ModalStyled setstyledAlert={setstyledAlert}/>
-                        : null
-                    }
-                    <div className="stack">
-                        <div className="styled" onClick={() => {
-                            setstyledAlert(true)
-                        }}></div>
-                        <div className="sass" onClick={() => {
-                            setsassAlert(true)
-                        }}></div>
-                        <div className="redux" onClick={() => {
-                            setreduxAlert(true)
-                        }}></div>
-                        <div className="react" onClick={() => {
-                            setreactAlert(true)
-                        }}></div>
-                        <div className="javascript" onClick={() => {
-                            setjavascriptAlert(true)
-                        }}></div>
-                        <div className="css" onClick={() => {
-                            setcssAlert(true)
-                        }}></div>
-                        <div className="html" onClick={() => {
-                            sethtmlAlert(true)
-                        }}></div>
+                   
+       
+                    <Button />                        
+                
 
-                    </div>
                     <div className="link">
                         <div className="velog" onClick={() => {
                             window.open('https://velog.io/@kirin', '_blank')
