@@ -67,14 +67,12 @@ $grey : #f3efef;
                 display: flex;
                 width: 100%;
                 
-         
                 .img_container {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     margin-right: 4%;
                     
-
                     .imgs {
                         width: 450px;
                         height: 300px;
@@ -111,8 +109,8 @@ $grey : #f3efef;
                     }
 
                     .bottom_container {
-                        position: absolute;
                         display: flex;
+                        position: absolute;
                         bottom: 0;
                         width: 100%;
 
@@ -315,33 +313,46 @@ $grey : #f3efef;
     }
 }
 
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 850px) {
     .modal_goodal {    
         .bg {
            .content {
-                height: 50%;
-                    
-                .title {
-                    font-size: 2em;
-                    font-weight: 800;
-                    margin: 0 0 5%;
+               width: 80%;
+                height: 80%;
+                
+                p {
+                    text-align: center;
                 }
-                .contents {       
-                    height: 60%;               
+                .title {
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin: 10% 0;
+                }
+                .contents {     
+                    display: block;
+                    height: 100%; 
+
                     .img_container {
-                                        
+                        display: flex;   
+                        flex-direction: row;    
+                        margin: 0 0 10%;
+
                         .imgs {
-            
-                            width: 250px;
-                            height: 150px;
+                            display: block;   
                         }
                     }
                     .script {
-                        font-size: .6em;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: .65em;
+
                         .bottom_container {
-                
+                            text-align: left;
+                      
+                            bottom: -75px;
                             div {
-                                display: none;
+                                display: inline-block;
                             }
                         }
                         
@@ -352,3 +363,94 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 765px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+
+                .contents {     
+                    display: block;
+                    height: 100%; 
+
+                    .img_container {
+                        display: flex;   
+                        flex-direction: row;    
+                        margin: 0 0 10%;
+
+                        .imgs {
+                            display: block;  
+                            width: 270px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 230px;
+                            height: 130px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+            button {
+                position: absolute;
+                top: 2.5%;
+                right: 2.5%;
+                font-size: 30px;
+            }
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 200px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .modal_goodal {    
+        .bg {
+           .content {
+                button {
+                    position: absolute;
+                    top: 2%;
+                    right: 2%;
+                    font-size: 30px;
+                }
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 200px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}

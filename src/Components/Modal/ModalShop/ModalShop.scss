@@ -137,3 +137,339 @@ $grey : #f3efef;
 
     }
 }
+
+@media only screen and (max-width: 1600px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 80%;
+                }
+    
+                .title {
+                    margin: 0 0 5%;
+                }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1453px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 80%;
+
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {
+                    .script {
+                        font-size: .8em;
+                    }
+                }
+            }
+        
+        }    
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {                       
+                    .img_container {                      
+                        .imgs {
+                            width: 400px;
+                            height: 250px;
+                        }
+                    }
+                    .script {
+                        font-size: .7em;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1208px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {
+                    height: 60%;                          
+                    .img_container {                      
+                        .imgs {
+                            width: 380px;
+                            height: 230px;
+                        }
+                    }
+                    .script {
+                        font-size: .6em;
+                        .bottom_container {
+
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 80%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {   
+                        justify-content: space-between;                   
+                        .imgs {
+                            width: 350px;
+                            height: 200px;
+                        }
+                    }
+                    .script {
+                        font-size: .6em;
+                        .bottom_container {
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 75%;
+                    
+                .title {
+                    font-size: 2.5em;
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {
+                        justify-content: space-between;       
+                        .imgs {
+            
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                    .script {
+                        font-size: .6em;
+                        .bottom_container {
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                height: 75%;
+                    
+                .title {
+                    margin: 0 0 5%;
+                }
+                .contents {       
+                    height: 60%;               
+                    .img_container {
+                                        
+                        .imgs {
+                            width: 280px;
+                            height: 180px;
+                        }
+                    }
+                    .script {
+                        font-size: .6em;
+                        .bottom_container {
+                
+                            div {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    .modal_shop {    
+        .bg {
+           .content {
+               width: 80%;
+                height: 80%;
+                
+                p {
+                    text-align: center;
+                }
+                .title {
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin: 8% 0;
+                }
+                .contents {     
+                    display: block;
+                    height: 100%; 
+
+                    .img_container {
+                        display: flex;   
+                        flex-direction: row;    
+                        margin: 0 0 5%;
+
+                        .imgs {
+                            display: block;   
+                        }
+                    }
+                    .script {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: .65em;
+
+                        .bottom_container {
+                            text-align: left;
+                      
+                            bottom: -75px;
+                            div {
+                                display: inline-block;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .modal_shop {    
+        .bg {
+           .content {
+
+                .contents {     
+                    display: block;
+                    height: 100%; 
+
+                    .img_container {
+                        display: flex;   
+                        flex-direction: row;    
+                        margin: 0 0 10%;
+
+                        .imgs {
+                            display: block;  
+                            width: 270px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 230px;
+                            height: 130px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .modal_shop {    
+        .bg {
+           .content {
+            button {
+                position: absolute;
+                top: 2.5%;
+                right: 2.5%;
+                font-size: 30px;
+            }
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 200px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .modal_shop {    
+        .bg {
+           .content {
+                button {
+                    position: absolute;
+                    top: 2%;
+                    right: 2%;
+                    font-size: 30px;
+                }
+                .contents {     
+                    .img_container {
+                        .imgs {
+                            display: block;  
+                            width: 200px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
