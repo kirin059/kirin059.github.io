@@ -109,8 +109,8 @@ $grey : #f3efef;
 
                     .bottom_container {
                         position: absolute;
-                        display: flex;
                         bottom: 0;
+                        display: flex;
                         width: 100%;
 
                         .fa-github {
@@ -472,6 +472,7 @@ $grey : #f3efef;
                             display: block;  
                             width: 200px;
                             height: 110px;
+                            margin: 0 0 3% 0;
                         }
                     }
                     .script {
