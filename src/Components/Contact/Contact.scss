@@ -320,7 +320,7 @@ $grey : #f3efef;
                             padding-top: 2%;
                             background-color: transparent;
                             border: 0;
-                            border-bottom: 2px solid #fff;
+                            border-bottom: none;
                             font-size: 1.2em;
                             font-weight: 300;
                             box-sizing: initial;
@@ -333,8 +333,9 @@ $grey : #f3efef;
     
                         input[type=submit] {
                             font-weight: 500;
-                            width: 80%;
-                            letter-spacing: 6px;
+                            width: 100%;
+                            letter-spacing: 4px;
+                            font-size: 1em;
                         }
                     }
                 }
@@ -433,7 +434,7 @@ $grey : #f3efef;
                             margin-bottom: 20px;
                             background-color: transparent;
                             border: 0;
-                            border-bottom: 2px solid #fff;
+                            border-bottom: none;
                             font-size: 18px;
                             font-weight: 600;
                             line-height: 25px;
@@ -448,12 +449,11 @@ $grey : #f3efef;
                             border: 2px solid;
                             text-align: center;
                             padding: 10px 0px;
-                            font-size: 14px;
                             vertical-align: middle;
                             text-decoration: none;
                             background-color: transparent;
                             color: #fff;
-                            font-weight: 600;
+                            font-size: 0.8em;
                             width: 100%;
                             letter-spacing: 8px;
                             transition: opacity .3s ease;
