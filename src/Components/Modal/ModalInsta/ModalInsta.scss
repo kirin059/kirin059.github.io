@@ -433,6 +433,10 @@ $grey : #f3efef;
     .modal_insta {    
         .bg {
            .content {
+            width: 80%;
+                .title {
+                    margin: 5% 0;
+                }
                 button {
                     position: absolute;
                     top: 2%;
@@ -445,6 +449,13 @@ $grey : #f3efef;
                             display: block;  
                             width: 200px;
                             height: 110px;
+                        }
+                    }
+                    .script {
+                        .bottom_container {
+                            .fa-github {
+                                font-size: 25px;
+                            }
                         }
                     }
                 }

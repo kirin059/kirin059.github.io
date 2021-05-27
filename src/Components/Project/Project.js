@@ -26,7 +26,7 @@ const Portfolio = () => {
                     <div className="img" onClick={() => {
                             setgoodalModal(true)
                         }}></div>
-                    <div className="contents">#Goodal Clone</div>
+                    <div className="project_contents">#Goodal Clone</div>
                 </div>
                 <div className="projects second">
                     {
@@ -37,7 +37,7 @@ const Portfolio = () => {
                     <div className="img" onClick={() => {
                             setinstaModal(true)
                         }}></div>
-                    <div className="contents">#인스타그램 Clone</div>
+                    <div className="project_contents">#인스타그램 Clone</div>
                 </div>
                 <div className="projects first">
                     {
@@ -48,7 +48,7 @@ const Portfolio = () => {
                     <div className="img" onClick={() => {
                             setshopModal(true)
                         }}></div>
-                    <div className="contents">#Shopping Mall</div>
+                    <div className="project_contents">#Shopping Mall</div>
                 </div>
 
             </div>

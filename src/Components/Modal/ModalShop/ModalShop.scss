@@ -37,7 +37,7 @@ $grey : #f3efef;
             border-radius: 10px;
             text-align: center;
             box-sizing: border-box;
-            z-index: 410;
+            z-index: 999;
 
             p {
                 text-align: left;
@@ -367,8 +367,7 @@ $grey : #f3efef;
                         font-size: .65em;
 
                         .bottom_container {
-                            text-align: left;
-                      
+                            text-align: left;                     
                             bottom: -75px;
                             div {
                                 display: inline-block;
@@ -426,34 +425,40 @@ $grey : #f3efef;
     }
 }
 
-@media only screen and (max-width: 715px) {
-    .modal_shop {    
-        .bg {
-           .content {
-            button {
-                position: absolute;
-                top: 2.5%;
-                right: 2.5%;
-                font-size: 30px;
-            }
-                .contents {     
-                    .img_container {
-                        .imgs {
-                            display: block;  
-                            width: 200px;
-                            height: 110px;
-                        }
-                    }
-                }
-            }
-        }    
-    }
-}
+// @media only screen and (max-width: 715px) {
+//     .modal_shop {    
+//         .bg {
+//            .content {
+//             button {
+//                 position: absolute;
+//                 top: 2.5%;
+//                 right: 2.5%;
+//                 font-size: 30px;
+//             }
+//                 .contents {     
+//                     .img_container {
+//                         .imgs {
+//                             display: block;  
+//                             width: 200px;
+//                             height: 110px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }    
+//     }
+// }
 
 @media only screen and (max-width: 480px) {
     .modal_shop {    
         .bg {
            .content {
+            width: 80%;
+            height: 85%;
+            z-index: 998;
+                .title {
+                    margin: 9% 0;
+                }
                 button {
                     position: absolute;
                     top: 2%;
@@ -461,11 +466,20 @@ $grey : #f3efef;
                     font-size: 30px;
                 }
                 .contents {     
+                    height: 90%;
                     .img_container {
                         .imgs {
                             display: block;  
                             width: 200px;
                             height: 110px;
+                        }
+                    }
+                    .script {
+                        .bottom_container {
+                            bottom: -40px;
+                            .fa-github {
+                                font-size: 25px;
+                            }
                         }
                     }
                 }
