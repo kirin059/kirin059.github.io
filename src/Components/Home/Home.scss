@@ -46,96 +46,39 @@ $grey : #f3efef;
             }
         }
 
-        .icons {
-            padding-top: 10%;
+        .link {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-grow: 1;
+            width: 100%;
+            margin-top: 30%;
 
-            .stack {
-                display: flex;
-                flex-direction: row-reverse;
-                flex-grow: 1;
-                width: 100%;
-
-                div {
-                    margin-left: 1%;
-                    width: 70px;
-                    height: 70px;
-                    background-size: cover;
-                    background-position: center;
-                    cursor: pointer;
-
-                    div:last-child {
-                        margin: 0;
-                    }
-                }
-
-                div:hover {
-                    transform: scale(1.1);
-                }
-
-                .html {
-                    background-image: url('./img/html.png');
-                }
-
-                .css {
-                    background-image: url('./img/css3.png');
-                }
-
-                .javascript {
-                    background-image: url('./img/javascript.png');
-                }
-
-                .react {
-                    background-image: url('./img/react.png');
-                }
-
-                .redux {
-                    background-image: url('./img/redux.png');
-                }
-
-                .sass {
-                    background-image: url('./img/sass.png');
-                }
-
-
-                .styled {
-                    background-image: url('./img/styled.png');
-                }
-
+            div {
+                margin-left: 1%;
+                width: 70px;
+                height: 70px;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
             }
 
-            .link {
-                display: flex;
-                flex-direction: row-reverse;
-                flex-grow: 1;
-                width: 100%;
-                margin-top: 2%;
+            .github {
+                background-image: url('./img/github.png');
+            }
 
-                div {
-                    margin-left: 1%;
-                    width: 70px;
-                    height: 70px;
-                    background-size: cover;
-                    background-position: center;
-                    cursor: pointer;
-                }
+            .github:hover {
+                transform: scale(1.1);
+            }
 
-                .github {
-                    background-image: url('./img/github.png');
-                }
+            .velog {
+                background-image: url('./img/velog.PNG');
+            }
 
-                .github:hover {
-                    transform: scale(1.1);
-                }
-
-                .velog {
-                    background-image: url('./img/velog.PNG');
-                }
-
-                .velog:hover {
-                    transform: scale(1.1);
-                }
+            .velog:hover {
+                transform: scale(1.1);
             }
         }
+       
     }
 }
 
@@ -245,6 +188,7 @@ $grey : #f3efef;
                     flex-direction: row;
                     justify-content: center;
                 }
+                
             }
         }
     }
@@ -255,7 +199,7 @@ $grey : #f3efef;
         background-image: none;
         width: 100vw;
         height: 100vh;
-        padding: 30% 6% 0;
+        padding: 0% 6.5% 0;
 
         .contents {
             text-align: center;
@@ -282,60 +226,6 @@ $grey : #f3efef;
 
             .icons {
                 padding-top: 60px;
-    
-                .stack {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: center;
-                    flex-grow: 1;
-                    width: 100%;
-    
-                    div {
-                        position: relative;
-                        margin-right: 2px;
-                        width: 45px;
-                        height: 45px;
-                        background-size: cover;
-                        background-position: center;
-                        cursor: pointer;
-                    }
-
-                    div:hover {
-                        transform: scale(1.1);
-                    }
-
-                    div:last-child {
-                        margin-right: 0;
-                    }
-    
-                    .html {
-                        background-image: url('./img/html.png');
-                    }
-                          
-                    .css {
-                        background-image: url('./img/css3.png');
-                    }
-                     
-                    .javascript {
-                        background-image: url('./img/javascript.png');
-                    }
-        
-                    .react {
-                        background-image: url('./img/react.png');
-                    }
-        
-                    .redux {
-                        background-image: url('./img/redux.png');
-                    }
-    
-                    .sass {
-                        background-image: url('./img/sass.png');
-                    }
-    
-                    .styled {
-                        background-image: url('./img/styled.png');
-                    }
-                }
     
                 .link {
                     display: flex;

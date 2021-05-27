@@ -5,9 +5,15 @@ const ModalHtml = (props) => {
     document.body.style.overflow = "hidden";
 
     useEffect(() => {
-        function handleLocation() {
-            
+        let locationX = document.querySelector('.html').offsetTop;
+        let locationY = document.querySelector('.html').offsetLeft
+        console.log(locationY)
+
+        function location() {
+            let content = document.querySelector('.content').offsetTop;
+            content = locationX + '1500px';
         }
+        location()
     })
 
     return (

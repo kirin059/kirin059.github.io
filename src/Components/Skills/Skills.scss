@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+// color
+$pink : #D09E88;
+$black : #534847;
+$blue : #47596B;
+$grey : #f3efef;
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 17% 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: $black;
+    background-color: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    .header {
+        text-align: left;
+
+        h4 {
+            margin: 0 0 5% 0;
+            color: $pink;
+            font-size: 4em;
+        }
+
+        h4::after {
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+            border-bottom: 1px solid #bcbcbc;
+            margin-top: 3%;
+        }
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+
+        .stack_box {
+            display: flex;
+
+            .icon {
+                position: relative;
+                margin: 0 2% 2% 0%;
+                width: 70px;
+                height: 70px;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+            }
+    
+            .icon:hover {
+                transform: scale(1.1);
+            }
+    
+            .icon:last-child {
+                margin-right: 0;
+            }
+    
+            .html {
+                background-image: url('./img/html.png');
+            }
+                  
+            .css {
+                background-image: url('./img/css3.png');
+            }
+             
+            .javascript {
+                background-image: url('./img/javascript.png');
+            }
+    
+            .react {
+                background-image: url('./img/react.png');
+            }
+    
+            .redux {
+                background-image: url('./img/redux.png');
+            }
+    
+            .sass {
+                background-image: url('./img/sass.png');
+            }
+    
+            .styled {
+                background-image: url('./img/styled.png');
+            }
+
+            .content {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}

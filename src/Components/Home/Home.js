@@ -6,7 +6,6 @@ import ModalReact from '../Modal/ModalReact/ModalReact';
 import ModalRedux from '../Modal/ModalRedux/ModalRedux';
 import ModalSass from '../Modal/ModalSass/ModalSass';
 import ModalStyled from '../Modal/ModalStyled/ModalStyled';
-import Button from '../Button/Button';
 import './Home.scss';
 
 const Home = () => {
@@ -32,19 +31,15 @@ const Home = () => {
                     <p>긍정적인 에너지를 나누며, 남들과 함께할 때 <span className="pinks">시너지</span>를 낼 줄 아는 사람입니다.</p>
                 </div>
 
-                <div className="icons">
-                   
-                    <Button />                        
-                
-                    <div className="link">
-                        <div className="velog" onClick={() => {
-                            window.open('https://velog.io/@kirin', '_blank')
-                        }}></div>
-                        <div className="github"  onClick={() => {
-                            window.open('https://github.com/kirin059', '_blank')
-                        }}></div>
-                    </div>
+                <div className="link">
+                    <div className="velog" onClick={() => {
+                        window.open('https://velog.io/@kirin', '_blank')
+                    }}></div>
+                    <div className="github"  onClick={() => {
+                        window.open('https://github.com/kirin059', '_blank')
+                    }}></div>
                 </div>
+          
             </div>
 
             

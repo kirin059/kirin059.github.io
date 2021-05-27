@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Top from './Components/Top/Top';
 import './App.scss';
+import Skills from './Components/Skills/Skills';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/'> 
           <Home />
           <Introduce />
+          <Skills />
           <Project />
           <Contact />
           <Top />
