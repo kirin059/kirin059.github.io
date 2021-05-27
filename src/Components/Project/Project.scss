@@ -192,6 +192,14 @@ $grey : #f3efef;
                 margin: 0 0 10% 0;
                 font-size: 3.5em;
             }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
         }
         .project_container {    
             .projects {                
@@ -210,6 +218,14 @@ $grey : #f3efef;
             h4 {
                 margin: 0 0 10% 0;
                 font-size: 3.5em;
+            }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
             }
         }
         .project_container {   
@@ -234,7 +250,12 @@ $grey : #f3efef;
                 font-size: 3.5em;
             }
             h4::after {
-                width: 50%;
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
             }
         }
         .project_container {   
@@ -259,8 +280,13 @@ $grey : #f3efef;
                font-size: 3.5em;
            }
            h4::after {
-               width: 50%;
-           }
+            display: block;
+            content: "";
+            width: 100%;
+            margin-top: 30px;
+            border-bottom: 1px solid #bcbcbc;
+            color: $pink;
+        }
        }
        .project_container {   
            justify-content: center; 
@@ -284,8 +310,13 @@ $grey : #f3efef;
                font-size: 3.5em;
            }
            h4::after {
-               width: 50%;
-           }
+            display: block;
+            content: "";
+            width: 100%;
+            margin-top: 30px;
+            border-bottom: 1px solid #bcbcbc;
+            color: $pink;
+        }
        }
        .project_container {   
            justify-content: center; 
@@ -310,8 +341,13 @@ $grey : #f3efef;
                font-size: 3.5em;
            }
            h4::after {
-               width: 50%;
-           }
+            display: block;
+            content: "";
+            width: 100%;
+            margin-top: 30px;
+            border-bottom: 1px solid #bcbcbc;
+            color: $pink;
+        }
        }
        .project_container {  
            display: flex;
@@ -338,14 +374,14 @@ $grey : #f3efef;
         display: flex;
         flex-direction: column;
         padding: 5% 4% 0;
+        height: 100vh;
     
         .header {
             margin: 40px 0;
             h4 {
                 margin: 0 0 8% 0;
-                font-size: 2.8em;
+                font-size: 2.5em;
             }
-    
             h4::after {
                 display: block;
                 content: "";
@@ -373,7 +409,7 @@ $grey : #f3efef;
                 }
 
                 .contents {
-                    display: block;
+                    display: none;
                 }
             }
         }

@@ -163,6 +163,20 @@ $grey : #f3efef;
 @media only screen and (max-width: 1300px) {
     .introduce {
         padding: 8% 6% 0;
+        .left {   
+            h4 {
+                margin: 0 0 10% 0;
+                font-size: 3.5em;
+            }   
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
+        }
     }
 }
 
@@ -175,6 +189,14 @@ $grey : #f3efef;
                 margin: 0 0 10% 0;
                 font-size: 3.5em;
             }   
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
             .info {
                 div {
                     p {
@@ -221,7 +243,12 @@ $grey : #f3efef;
                 font-size: 3.5em;
             }
             h4::after {
-                width: 70%;
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
             }
     
             .info {
@@ -263,19 +290,137 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 915px) {
+    .introduce {
+        padding: 5% 6% 0;
+    
+        .left {   
+            h4 {
+                margin: 0 0 10% 0;
+                font-size: 3em;
+            }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
+    
+            .info {
+
+                div {
+    
+                    p {
+                        font-size: 1.2em;
+                    }
+    
+                    .text {
+                        font-size: 1em;
+    
+                        .major {
+                            font-size: 1em;
+                        }
+    
+                        .motto {
+                            font-size: 1em;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+        .right {
+            margin-top: 20%;
+    
+            .img {
+                width: 260px;
+                height: 260px;
+            }
+    
+            .tags {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    .introduce {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        padding: 3% 6% 0;
+    
+        .left {  
+            h4 {
+                margin: 0 0 10% 0;
+                font-size: 3em;
+            }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
+    
+            .info {
+
+                div {
+    
+                    p {
+                        font-size: 1.2em;
+                    }
+    
+                    .text {
+                        font-size: 1em;
+    
+                        .major {
+                            font-size: 1em;
+                        }
+    
+                        .motto {
+                            font-size: 1em;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+        .right {
+            margin-top: 10%;
+    
+            .img {
+                width: 260px;
+                height: 260px;
+            }
+    
+            .tags {
+                display: none;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 480px) {
     .introduce {
         display: flex;
         flex-direction: column;
-        padding:  5% 4% 0;
+        padding:  0 4% 0;
+        height: 100vh;
     
         .left {
             margin: 40px 0;
     
             h4 {
                 margin: 0 0 8% 0;
-                font-size: 2.8em;
+                font-size: 2.5em;
             }
 
             h4::after {

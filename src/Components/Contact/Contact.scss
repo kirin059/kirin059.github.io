@@ -237,6 +237,14 @@ $grey : #f3efef;
                 color: $pink;
                 font-size: 3.5em;
             }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
             .info {
                 p {
                     margin: 0;
@@ -260,9 +268,13 @@ $grey : #f3efef;
                 margin: 0 0 2% 0;
                 font-size: 3.5em;
             }
-    
-            h4::after {               
-                width: 50%;
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 30px;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
             }
             .info {
                 display: none;
@@ -349,7 +361,7 @@ $grey : #f3efef;
     
             h4 {
                 margin: 0 0 4% 0;
-                font-size: 2.8em;
+                font-size: 2.5em;
                 color: $pink;
             }
     
