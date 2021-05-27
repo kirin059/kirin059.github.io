@@ -253,10 +253,11 @@ $grey : #f3efef;
 @media only screen and (max-width: 480px) {
     .home {
         background-image: none;
+        width: 100vw;
         height: 100vh;
+        padding: 30% 6% 0;
 
         .contents {
-            padding: 100px 15px 0;
             text-align: center;
     
             .main {

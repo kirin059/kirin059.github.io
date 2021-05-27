@@ -413,6 +413,7 @@ $grey : #f3efef;
         display: flex;
         flex-direction: column;
         padding:  0 4% 0;
+        width: 100vw;
         height: 100vh;
     
         .left {
@@ -482,7 +483,7 @@ $grey : #f3efef;
         .right {
             display: flex;
             justify-content: center;
-            margin: 0px auto 200px;
+            margin: 0px auto 5%;
     
             .img {
                 width: 180px;
