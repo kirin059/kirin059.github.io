@@ -34,10 +34,8 @@ const Home = () => {
 
                 <div className="icons">
                    
-       
                     <Button />                        
                 
-
                     <div className="link">
                         <div className="velog" onClick={() => {
                             window.open('https://velog.io/@kirin', '_blank')
