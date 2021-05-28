@@ -22,7 +22,7 @@ $grey : #f3efef;
         text-align: left;
 
         h4 {
-            margin: 0 0 3% 0;
+            margin: 0 0 5% 0;
             color: $pink;
             font-size: 4em;
         }
@@ -49,8 +49,8 @@ $grey : #f3efef;
             .icon {
                 position: relative;
                 margin: 0 2% 1% 0%;
-                width: 70px;
-                height: 70px;
+                width: 65px;
+                height: 65px;
                 background-size: cover;
                 background-position: center;
                 cursor: pointer;
@@ -97,7 +97,7 @@ $grey : #f3efef;
             }
 
             .content {
-                width: 100%;
+                width: 90%;
                 text-align: left;
                 line-height: 20px;
 
@@ -111,4 +111,93 @@ $grey : #f3efef;
             }
         }
     }
+}
+
+@media only screen and (max-width: 1360px) {
+    .skills {
+        padding: 5% 8% 0;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .skills {
+        padding: 5% 8% 0;
+
+        .header {
+    
+            h4 {
+                font-size: 3.5em;
+            }
+    
+            h4::after {
+                display: block;
+                content: "";
+                width: 80%;
+                height: 100%;
+                border-bottom: 1px solid #bcbcbc;
+                margin-top: 3%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .skills {
+        padding: 5% 6% 0;
+        .header {
+            h4 {
+                margin: 0 0 8% 0;
+            }
+    
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid #bcbcbc;
+                margin-top: 3%;
+            }
+        }
+        .stack { 
+           .stack_box {     
+               .content {
+                   p {
+                      font-size: 0.8em;
+                   }             
+               }           
+           }
+       }
+   }
+}
+
+@media only screen and (max-width: 480px) {
+    .skills {
+        padding: 5% 6% 0;
+        width: 100vw;
+        height: 100vh;
+        .header {
+            h4 {
+                margin: 0 0 8% 0;
+                font-size: 2.5em;
+            }
+    
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid #bcbcbc;
+                margin-top: 3%;
+            }
+        }
+        .stack { 
+           .stack_box {     
+               .content {
+                   p {
+                      font-size: 0.8em;
+                   }             
+               }           
+           }
+       }
+   }
 }

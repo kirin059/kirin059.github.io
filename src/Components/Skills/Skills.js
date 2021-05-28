@@ -35,7 +35,7 @@ const Skills = () => {
                     <div className="icon react"></div>
                     <div className="content">
                         <p className="title"><strong>React</strong></p>
-                        <p>SPA Framework에 대한 깊은 이해가 있습니다. React Hook을 이용한 개발 경험이 있습니다. </p> 
+                        <p>SPA Framework에 대한 깊은 이해가 있으며 React Hook을 이용한 개발 경험이 있습니다. </p> 
                     </div>
                 </div>
                 <div className="stack_box">
@@ -63,7 +63,8 @@ const Skills = () => {
                     <div className="icon git"></div>
                     <div className="content">
                         <p className="title"><strong>Git & Github</strong></p>
-                        <p>Github와 Git의 사용법을 숙지하고 있습니다. Commit관리, Merge를 통한 branch병합 등 기본적인 기능을 다룰 수 있습니다. Git, Github를 이용해 능률적인 프로젝트 협업이 가능합니다.</p>
+                        <p>Github와 Git의 사용법을 숙지하고 있습니다. Commit관리, Merge를 통한 branch병합 등 기본적인 기능을 다룰 수 있습니다. </p>
+                        <p>Git, Github를 이용해 능률적인 프로젝트 협업이 가능합니다.</p>
                     </div>
                 </div>  
             </div>
