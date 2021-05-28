@@ -51,7 +51,7 @@ $grey : #f3efef;
             flex-direction: row-reverse;
             flex-grow: 1;
             width: 100%;
-            margin-top: 30%;
+            margin-top: 20%;
 
             div {
                 margin-left: 1%;
@@ -82,9 +82,21 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 1650px) {
+    .home {
+        padding: 10% 5% 0;
+        background-size: 70%;
+        background-position-x: -40px;
+        background-position-y: 50px;
+    }
+}
+
 @media only screen and (max-width: 1600px) {
     .home {
         padding: 10% 5% 0;
+        background-size: 70%;
+        background-position-x: -40px;
+        background-position-y: 50px;
 
         .contents {               
             .main {
@@ -111,6 +123,7 @@ $grey : #f3efef;
 @media only screen and (max-width: 1500px) {
     .home {
         padding: 10% 4% 0;
+        background-size: 70%;
     
         .contents {               
             .main {
@@ -175,20 +188,10 @@ $grey : #f3efef;
                     font-size: 1em;
                 }
             }
-            .icons {
-                padding-top: 20%;
-    
-                .stack {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                } 
-                .link {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                }
-                
+            .link {
+                display: flex;
+                justify-content: center;
+                padding-top: 20%;                
             }
         }
     }

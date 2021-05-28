@@ -22,7 +22,7 @@ $grey : #f3efef;
         text-align: left;
 
         h4 {
-            margin: 0 0 5% 0;
+            margin: 0 0 3% 0;
             color: $pink;
             font-size: 4em;
         }
@@ -48,7 +48,7 @@ $grey : #f3efef;
 
             .icon {
                 position: relative;
-                margin: 0 2% 2% 0%;
+                margin: 0 2% 1% 0%;
                 width: 70px;
                 height: 70px;
                 background-size: cover;
@@ -92,9 +92,22 @@ $grey : #f3efef;
                 background-image: url('./img/styled.png');
             }
 
+            .git {
+                background-image: url('./img/github.png');
+            }
+
             .content {
                 width: 100%;
                 text-align: left;
+                line-height: 20px;
+
+                .title {
+                    margin-top: 10px;
+                }
+
+                p {
+                    margin: 0;
+                }
             }
         }
     }
