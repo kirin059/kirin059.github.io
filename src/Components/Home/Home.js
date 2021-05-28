@@ -1,22 +1,7 @@
 import React, { useState } from 'react';
-import ModalHtml from '../../Components/Modal/ModalHtml/ModalHtml';
-import ModalCss from '../../Components/Modal/ModalCss/ModalCss';
-import ModalJavascript from '../Modal/ModalJavascript/ModalJavascript';
-import ModalReact from '../Modal/ModalReact/ModalReact';
-import ModalRedux from '../Modal/ModalRedux/ModalRedux';
-import ModalSass from '../Modal/ModalSass/ModalSass';
-import ModalStyled from '../Modal/ModalStyled/ModalStyled';
 import './Home.scss';
 
 const Home = () => {
-
-    let [htmlAlert, sethtmlAlert] = useState(false);
-    let [cssAlert, setcssAlert] = useState(false);
-    let [javascriptAlert, setjavascriptAlert] = useState(false);
-    let [reactAlert, setreactAlert] = useState(false);
-    let [reduxAlert, setreduxAlert] = useState(false);
-    let [sassAlert, setsassAlert] = useState(false);
-    let [styledAlert, setstyledAlert] = useState(false);
 
     return (
         <div className="home">

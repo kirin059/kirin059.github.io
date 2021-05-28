@@ -20,6 +20,12 @@ const Nav = () => {
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
+    function scrollSkills() {
+        let location = document.querySelector(".skills").offsetTop;
+        let navHeight = document.querySelector(".Nav").offsetHeight;
+        window.scrollTo({top:location - navHeight, behavior:'smooth'});
+    }
+
     function scrollProject() {
         let location = document.querySelector(".project").offsetTop;
         let navHeight = document.querySelector(".Nav").offsetHeight;
@@ -42,6 +48,7 @@ const Nav = () => {
                 <ul>
                     <li className="li" onClick={scrollHome}> Home </li>
                     <li className="li" onClick={scrollIntroduce}> Introduce </li>
+                    <li className="li" onClick={scrollSkills}> Skills </li>
                     <li className="li" onClick={scrollProject}> Project </li>
                     <li className="li" onClick={scrollContact}> Contact </li>
                 </ul>
