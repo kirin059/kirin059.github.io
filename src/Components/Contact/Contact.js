@@ -7,41 +7,41 @@ const Contact = () => {
         function getFormData(form) {
           let elements = form.elements;
       
-          let fields = Object.keys(elements).map(function(k) {
-            if(elements[k].name !== undefined) {
-              return elements[k].name;
-            }
-            else if (elements[k].length > 0) {
-              return elements[k].item(0).name;
-            }
-          }).filter(function(item, pos, self) {
-            return self.indexOf(item) == pos && item;
-          });
+          // let fields = Object.keys(elements).map(function(k) {
+          //   if(elements[k].name !== undefined) {
+          //     return elements[k].name;
+          //   }
+          //   else if (elements[k].length > 0) {
+          //     return elements[k].item(0).name;
+          //   }
+          // }).filter(function(item, pos, self) {
+          //   return self.indexOf(item) == pos && item;
+          // });
       
-          let formData = {};
-          fields.forEach(function(name){
-            let element = elements[name];
+          // let formData = {};
+          // fields.forEach(function(name){
+          //   let element = elements[name];
 
-            formData[name] = element.value;
+          //   formData[name] = element.value;
 
-            if (element.length) {
-                let data = [];
-              for (let i = 0; i < element.length; i++) {
-                let item = element.item(i);
-                if (item.checked || item.selected) {
-                  data.push(item.value);
-                }
-              }
-              formData[name] = data.join(', ');
-            }
-          });
+          //   if (element.length) {
+          //       let data = [];
+          //     for (let i = 0; i < element.length; i++) {
+          //       let item = element.item(i);
+          //       if (item.checked || item.selected) {
+          //         data.push(item.value);
+          //       }
+          //     }
+          //     formData[name] = data.join(', ');
+          //   }
+          // });
 
-          formData.formDataNameOrder = JSON.stringify(fields);
-          formData.formGoogleSheetName = form.dataset.sheet || "responses";
-          formData.formGoogleSendEmail = form.dataset.email || ""; 
+        //   formData.formDataNameOrder = JSON.stringify(fields);
+        //   formData.formGoogleSheetName = form.dataset.sheet || "responses";
+        //   formData.formGoogleSendEmail = form.dataset.email || ""; 
       
-          return {data: formData};
-        }
+        //   return {data: formData};
+         }
       
         function handleFormSubmit(event) {  
           event.preventDefault();
