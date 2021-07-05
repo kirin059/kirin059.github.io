@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import emailjs from 'emailjs-com';
+import apiKey from '../apiKey/apiKey';
 import useInput from '../useInput/useInput';
 import './Contact.scss';
 import{ init } from 'emailjs-com';
@@ -7,65 +8,20 @@ init("user_YzHq14EAddnCfRqc5eU7V");
 
 const Contact = () => {
 
-    // function handleCheck() {
-    //     const email = document.getElementById("submit")
-	// 		if (email.value != "") {
-	// 			let exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/; //이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우	
-	// 			if (exptext.test(email) == false) {		
-	// 				alert("입력한 메일형식이 올바르지 않습니다.");
-    //                 email.focus();
-	// 				return false;
-	// 			}
-	// 		}
-	// 		return true;
-    // }
+    const onSubmit=(e)=>{
+        e.preventDefault()
 
-    // (function(){
-    //     emailjs.init("YOUR_USER_ID");
-    // })();
-    
-    // function sendEmail(e) {
-    //     e.preventDefault();
-        
-    //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-    //         .then((result) => {
-    //             console.log(result.text);
-    //         }, (error) => {
-    //             console.log(error.text);
-    //         });
-    // }
-
-    const [name, onChangeName] = useInput('');
-    const [email, onChangeEmail] = useInput('');
-    const [subject, onChangeSubject] = useInput('');
-    const [text, onChangeText] = useInput('');
-    
-    const onSubmit = useCallback((e) => {
-        e.preventDefault();
-        
-        const inputNum = e.target.childElementCount - 1; // [D] 버튼한개 제외 
-        const data = new FormData(e.target);
-        const entries = data.entries();
-        
-        let failNum = 0;
-        for (let i = 0; i < inputNum; i++) {
-            const next = entries.next();
-            const key = next.value[0];
-            const value = next.value[1];
-            
-            if (!value) {
-                failNum++;
-                alert(`${key} 비어있습니다.`);
-                break;
-            }
-        }
-        if (!failNum) {
-            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-                .then((result) => {
-                    console.log('result.text', result.text);
-                }, (error) => { console.log(error.text); });
-        }
-    }, []);
+        emailjs.sendForm("service_3vc7fac", apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+            .then((result) => {
+                console.log(result)
+                alert('Message Sent, I\'ll get back to you shortly', result.text);
+            },            
+            (error) => {
+                console.log(error)
+                alert('An error occured, Please try again', error.text)
+            });
+            e.target.reset()
+    }
 
 
     return (
@@ -97,10 +53,10 @@ const Contact = () => {
             </div>
                     
             <div className="right">
-                <form className="form" method="POST" data-email="boma91@gmail.com" onSubmit={onSubmit} action="https://script.google.com/macros/s/AKfycbxNDN1M6kzFBoWvH83Fu3VcHYDIUDJ8IcXvWQbl07jHcWSe_YiCGTfWUIlMkydkAld0/exec">          
-                    <input type="text" name="user_name" placeholder="Name" value={name} onChange={onChangeName} required />
-                    <input type="email" name="user_email" placeholder="Email" value={email} onChange={onChangeEmail} required/>
-                    <textarea name="user_message" cols="40" rows="50" placeholder="Message" value={text}  onChange={onChangeText} required></textarea>
+                <form onSubmit={onSubmit} >          
+                    <input name="name" type="text" placeholder="Name" required />
+                    <input name="email" type="email" placeholder="Email" required/>
+                    <textarea name="text" placeholder="Message" cols="40" rows="50" required></textarea>
                     <input type="submit" value="SEND" id="submit" />
                 </form>
             </div>
