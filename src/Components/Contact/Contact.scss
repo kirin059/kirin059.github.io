@@ -20,13 +20,11 @@ $grey : #f3efef;
 
     .left {
         text-align: left;
-
         h4 {
             margin: 0 0 10% 0;
             color: $pink;
             font-size: 4em;
         }
-
         h4::after {
             display: block;
             content: "";
@@ -35,28 +33,22 @@ $grey : #f3efef;
             border-bottom: 1px solid #bcbcbc;
             color: $pink;
         }
-
         .info {
             display: flex;
             flex-direction: column;
-
-            p {
+           p {
                 margin: 0;
                 font-size: 1.3em;
             }
-
             .second {
                 margin-top: 5%;
             }
-
             .third {
                 margin-bottom: 15%;
             }
-
             div {
                 display: flex;
                 margin-bottom: 5%;
-
                 .fas {
                     padding-bottom: 2%;
                     color: $pink;
@@ -65,13 +57,11 @@ $grey : #f3efef;
                 .fas:hover {
                     transform: scale(1.1);
                 }
-
                 p {
                     margin: 0 0 0 5%;
                     font-size: 1.4em;
                 }
-
-                .fab {
+               .fab {
                     margin-top: 10%;
                     padding-right: 5%;
                     color: $pink;
@@ -89,121 +79,82 @@ $grey : #f3efef;
         display: flex;
         flex-direction: column;
         height: 100%;
-
-        .gform {
-            box-sizing: border-box;
+        .form {
             display: flex;
             flex-direction: column;
             margin: 0;
-            padding: 10% ;
-            width: 100%;
+            padding: 10%;
+            width: 110%;
             height: 90%;
             background-color: $pink;
             border-radius: 10px;
             font-size: 1.2em;
             box-shadow: 3px 3px 5px 3px silver;
             font-family: 'Noto Sans KR', sans-serif;
-
-            p {
-                margin: 0;
+            box-sizing: border-box;
+            input {
+                position: relative;
+                width: 100%;
+                height: 10%;
                 margin-bottom: 6%;
-                height: 47%;
+                color: #fff;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 2px solid #fff;
+                font-size: 1.05em;
                 font-weight: 300;
-
-                span {
-                    position: relative;
-
-                    .message {
-                        padding-bottom: 66%;
-                    }
-
-                    input {
-                        width: 100%;
-                        height: 50%;
-                        margin-bottom: 5%;
-                        color: #fff;
-                        background-color: transparent;
-                        border: 0;
-                        border-bottom: 2px solid #fff;
-                        font-size: 1.05em;
-                        box-sizing: initial;
-                    }
-
-                    input:focus {
-                        outline: none;
-                    }
-
-                    input:focus::placeholder {
-                        color: transparent;
-                    }
-
-                    input::placeholder {
-                        color: #fff;
-                    }
-
-                    textarea {
-                        width: 100%;
-                        height: 5%;
-                        padding-top: 2%;
-                        background-color: transparent;
-                        border: 0;
-                        border-bottom: 2px solid #fff;
-                        font-size: 1.2em;
-                        font-weight: 300;
-                        box-sizing: initial;
-                        overflow: auto;
-                        resize: none;
-                        overflow-wrap: break-word;
-                        overflow: hidden;
-                        font-family: 'Noto Sans KR', sans-serif;
-                    }
-
-                    textarea:focus {
-                        outline: none;
-                    }
-
-                    textarea:focus::placeholder {
-                        color: transparent;
-                    }
-
-                    textarea::placeholder {
-                        color: #fff;
-                    }
-
-                    input[type=submit] {
-                        display: inline-block;
-                        border: 1px solid;
-                        text-align: center;
-                        padding: 1px 0px;
-                        font-size: 1em;
-                        vertical-align: middle;
-                        text-decoration: none;
-                        background-color: transparent;
-                        color: #fff;
-                        font-weight: 700;
-                        width: 100%;
-                        letter-spacing: 8px;
-                        transition: opacity .3s ease;
-                        cursor: pointer;
-                    }
-                }
+                box-sizing: initial;
             }
-        }
-    }
-}
-
-@media only screen and (max-width: 1800px) { 
-    .contact {            
-        .right {           
-            .gform {               
-                height: 95%;   
-                p {                   
-                    span {    
-                        textarea {
-                            height: 3%;
-                        }
-                    }
-                }
+            input:focus {
+                outline: none;
+            }
+            input:focus::placeholder {
+                color: transparent;
+            }
+            input::placeholder {
+                color: #fff;
+            }
+            textarea {
+                width: 100%;
+                height: 70%;
+                padding-top: 1%;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #fff;
+                font-size: 1.2em;
+                font-weight: 300;
+                box-sizing: initial;
+                overflow: auto;
+                resize: none;
+                overflow-wrap: break-word;
+                overflow: hidden;
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            textarea:focus {
+                outline: none;
+            }
+            textarea:focus::placeholder {
+                color: transparent;
+            }
+            textarea::placeholder {
+                color: #fff;
+            }
+            input[type=submit] {
+                display: inline-block;
+                margin-top: 2%;
+                padding: 3% 0px;
+                width: 100%;
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid;
+                font-size: 1em;
+                font-weight: 700;
+                vertical-align: middle;
+                text-align: center;
+                text-decoration: none;
+                letter-spacing: 8px;
+                transition: opacity .3s ease;
+                cursor: pointer;
             }
         }
     }
@@ -211,65 +162,10 @@ $grey : #f3efef;
 
 @media only screen and (max-width: 1600px) {
     .contact {
-        padding: 8% 15% 0;
-    }    
-}
-
-@media only screen and (max-width: 1500px) {
-    .contact {
-        padding: 8% 12% 0;
-    }    
-}
-
-@media only screen and (max-width: 1400px) {
-    .contact {
-        padding: 8% 9% 0;
-    }    
-}
-
-@media only screen and (max-width: 1300px) {
-    .contact {
-        padding: 8% 6% 0;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .contact {
-        padding: 8% 6% 0;
-
-        .left {
-            h4 {
-                margin: 0 0 10% 0;
-                color: $pink;
-                font-size: 3.5em;
-            }
-            h4::after {
-                display: block;
-                content: "";
-                width: 100%;
-                margin-top: 30px;
-                border-bottom: 1px solid #bcbcbc;
-                color: $pink;
-            }
-            .info {
-                p {
-                    margin: 0;
-                    font-size: 1.1em;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .contact {
         display: flex;
-        flex-direction: column;
-        padding: 8% 6% 0;
-    
+        padding: 8% 10% 0; 
         .left {
-            text-align: left;
-
+            margin-right: 5%;
             h4 {
                 margin: 0 0 2% 0;
                 font-size: 3.5em;
@@ -282,32 +178,64 @@ $grey : #f3efef;
                 border-bottom: 1px solid #bcbcbc;
                 color: $pink;
             }
+        }
+    
+        .right {
+            margin: 0 auto;
+            width: 40%;
+            height: 90%; 
+            .form {
+                padding: 5% 8%;
+                height: 100%;
+                textarea {
+                    width: 100%;
+                    height: 80%;
+                }
+                input[type=submit] {
+                    font-weight: 500;
+                    font-size: 1em;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 8% 6% 0; 
+        .left {
+            h4 {
+                width: 100%;
+                margin: 0 0 1% 0;
+                font-size: 3.5em;
+            }
+            h4::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin-top: 5%;
+                border-bottom: 1px solid #bcbcbc;
+                color: $pink;
+            }
             .info {
                 display: none;
             }
         }
-    
         .right {
-            display: flex;
-            flex-direction: column;    
-            margin: 0 auto;
+            margin: 3% auto;
             width: 80%;
-            height: 75%;
-    
+            height: 75%; 
             .gform {
                 padding: 3% 8%;
                 p {
                     margin: 0;
                     height: 40%;
-                    font-weight: 200;
-    
+                    font-weight: 200;  
                     span {
-                        position: relative;
-    
-                        .message {
-                            padding-bottom: 66%;
-                        }
-    
+                        position: relative;    
                         input {
                             width: 100%;
                             height: 50%;
@@ -322,19 +250,10 @@ $grey : #f3efef;
     
                         textarea {
                             width: 100%;
-                            height: 5%;
-                            padding-top: 2%;
+                            height: 100%;
+                            padding: 50%;
                             background-color: transparent;
                             border: 0;
-                            border-bottom: none;
-                            font-size: 1.2em;
-                            font-weight: 300;
-                            box-sizing: initial;
-                            overflow: auto;
-                            resize: none;
-                            overflow-wrap: break-word;
-                            overflow: hidden;
-                            font-family: 'Noto Sans KR', sans-serif;
                         }
     
                         input[type=submit] {
@@ -350,125 +269,3 @@ $grey : #f3efef;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        color: $black;
-        background-color: $grey;
-        font-family: 'Noto Sans KR', sans-serif;
-    
-        .left {
-            margin: 40px 0;
-    
-            h4 {
-                margin: 0 0 4% 0;
-                font-size: 2.5em;
-                color: $pink;
-            }
-    
-            h4::after {
-                display: block;
-                content: "";
-                width: 100%;
-                margin-top: 30px;
-                border-bottom: 1px solid #bcbcbc;
-                color: $pink;
-            }
-    
-            .info {
-                display: none;
-            }
-        }       
-    
-        .right {
-            display: flex;
-            justify-content: center;
-            margin: 20px auto;
-    
-            .gform {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin: 0 auto;
-                padding: 35px 25px 15px 25px;
-                width: 100%;
-                height: 100%;
-                background-color: $pink;
-                border-radius: 10px;
-                font-size: 20px;
-                box-shadow: 3px 3px 5px 3px silver;
-    
-                p {
-                    margin: 0;
-                    margin-bottom: 10px;
-                    line-height: 15px;
-                    font-weight: 300;
-    
-                    span {
-                        position: relative;
-    
-                        .message {
-                            padding-bottom: 60px;
-                        }
-    
-                        input {
-                            width: 100%;
-                            height: 28px;
-                            padding-top: 13px;
-                            padding-bottom: 0px;
-                            margin-bottom: 20px;
-                            color: #fff;
-                            background-color: transparent;
-                            border: 0;
-                            border-bottom: 2px solid #fff;
-                            font-size: 16px;
-                            line-height: 25px;
-                            box-sizing: initial;
-                        }
-    
-                        textarea {
-                            width: 100%;
-                            height: 50px;
-                            padding-top: 13px;
-                            padding-bottom: 0px;
-                            margin-bottom: 20px;
-                            background-color: transparent;
-                            border: 0;
-                            border-bottom: none;
-                            font-size: 18px;
-                            font-weight: 600;
-                            line-height: 25px;
-                            box-sizing: initial;
-                            overflow: auto;
-                            resize: none;
-                            overflow-wrap: break-word;
-                        }
-    
-                        input[type=submit] {
-                            display: inline-block;
-                            border: 2px solid;
-                            text-align: center;
-                            padding: 10px 0px;
-                            vertical-align: middle;
-                            text-decoration: none;
-                            background-color: transparent;
-                            color: #fff;
-                            font-size: 0.8em;
-                            width: 100%;
-                            letter-spacing: 8px;
-                            transition: opacity .3s ease;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
