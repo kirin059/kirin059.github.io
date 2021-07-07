@@ -26,7 +26,7 @@ const ModalShop = (props) => {
                             <div style={{'margin-bottom':'10px' }}>
                                 <i class="fas fa-circle"></i>기술스택
                             </div>
-                            <div style={{'margin-bottom':'30px'}}> HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition, Express.js</div>
+                            <div style={{'margin-bottom':'30px'}}> HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition</div>
                             
                             <div style={{'margin-bottom':'10px'}}>
                                 <i class="fas fa-circle"></i>구현사항
@@ -40,7 +40,7 @@ const ModalShop = (props) => {
                             <div><i class="fas fa-check"></i> CSSTransition으로 transition효과 적용</div>
                             <div><i class="fas fa-check"></i> React hook(useState, useEffect, useContext 등) 적극 활용 </div>
                             <div><i class="fas fa-check"></i> React Router hook(useHistory, useParams등) 적극 활용 </div>
-                            <div><i class="fas fa-check"></i> LocalStorage를 활용한 최근 본 상품 기능 적용 </div>
+                            <div><i class="fas fa-check"></i> LocalStorage를 활용한 '최근 본 상품' 기능 적용 </div>
                             <div><i class="fas fa-check"></i> Responsive Web 구현</div>
 
                             <div class="bottom_container">
