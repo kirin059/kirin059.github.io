@@ -17,23 +17,20 @@ $grey : #f3efef;
     color: $black;
     background-color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
-
     .header {
         text-align: left;
-
         h4 {
             margin: 0 0 5% 0;
             color: $pink;
             font-size: 4em;
         }
-
         h4::after {
             display: block;
             content: "";
             width: 50%;
             height: 100%;
             border-bottom: 1px solid #bcbcbc;
-            margin-top: 3%;
+            margin-top: 2%;
         }
     }
 
@@ -42,10 +39,8 @@ $grey : #f3efef;
         flex-direction: column;
         flex-grow: 1;
         width: 100%;
-
         .stack_box {
             display: flex;
-
             .icon {
                 position: relative;
                 margin: 0 2% 1% 0%;
@@ -55,56 +50,43 @@ $grey : #f3efef;
                 background-position: center;
                 cursor: pointer;
             }
-    
             .icon:hover {
                 transform: scale(1.1);
             }
-    
             .icon:last-child {
                 margin-right: 0;
             }
-    
             .html {
                 background-image: url('./img/html.png');
-            }
-                  
+            }            
             .css {
                 background-image: url('./img/css3.png');
-            }
-             
+            }  
             .javascript {
                 background-image: url('./img/javascript.png');
             }
-    
             .react {
                 background-image: url('./img/react.png');
             }
-    
             .redux {
                 background-image: url('./img/redux.png');
             }
-    
             .sass {
                 background-image: url('./img/sass.png');
             }
-    
             .styled {
                 background-image: url('./img/styled.png');
             }
-
             .git {
                 background-image: url('./img/github.png');
             }
-
             .content {
                 width: 90%;
                 text-align: left;
                 line-height: 20px;
-
                 .title {
                     margin-top: 10px;
                 }
-
                 p {
                     margin: 0;
                 }
@@ -115,7 +97,7 @@ $grey : #f3efef;
 
 @media only screen and (max-width: 1360px) {
     .skills {
-        padding: 5% 8% 0;
+        padding: 3% 8% 0;
     }
 }
 

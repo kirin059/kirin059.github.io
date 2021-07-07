@@ -37,7 +37,7 @@ const Portfolio = () => {
                     <div className="img" onClick={() => {
                             setBangModal(true)
                         }}></div>
-                    <div className="project_contents">#부동산 사이트</div>
+                    <div className="project_contents">#Register Room</div>
                 </div>
                 <div className="projects first">
                     {

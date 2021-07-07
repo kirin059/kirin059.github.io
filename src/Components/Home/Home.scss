@@ -88,15 +88,6 @@ $grey : #f3efef;
         background-size: 70%;
         background-position-x: -40px;
         background-position-y: 50px;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    .home {
-        padding: 10% 5% 0;
-        background-size: 70%;
-        background-position-x: -40px;
-        background-position-y: 50px;
 
         .contents {               
             .main {
@@ -122,39 +113,13 @@ $grey : #f3efef;
 @media only screen and (max-width: 1500px) {
     .home {
         padding: 10% 4% 0;
-        background-size: 70%;
-    
-        .contents {               
-            .main {
-                span {
-                    font-size: 2.6em;
-                }       
-                .pink {
-                    font-size: 2.8em;
-                    font-weight: 700;
-                }
-            }   
-            .story {
-                font-size: 1.2em;
-        
-                .pinks {
-                    font-size: 1em;
-                }
-            } 
-        }
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .home {
-        padding: 10% 4% 0;
         background-size: 57%;
         background-position-x: -22px;
         background-position-y: 112px;
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
     .home {
         padding: 10% 4% 0;
         background-size: 50%;
@@ -165,7 +130,7 @@ $grey : #f3efef;
 
 @media only screen and (max-width: 1024px) {
     .home {
-        padding: 14% 6.5% 0;
+        padding: 15% 6.5% 0;
         background-image: none;   
         .contents {
             text-align: center;
@@ -201,17 +166,14 @@ $grey : #f3efef;
         background-image: none;
         width: 100vw;
         height: 100vh;
-        padding: 0% 6.5% 0;
-
+        padding: 24% 6.5% 0;
         .contents {
-            text-align: center;
-    
             .main {
                 span {
-                    font-size: 24px;
+                    font-size: 26px;
                 }       
                 .pink {
-                    font-size: 24px;
+                    font-size: 33px;
                     font-weight: 700;
                 }
             }

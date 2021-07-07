@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 import emailjs from 'emailjs-com';
 import apiKey from '../apiKey/apiKey';
-import useInput from '../useInput/useInput';
 import './Contact.scss';
 import{ init } from 'emailjs-com';
 init("user_YzHq14EAddnCfRqc5eU7V");
