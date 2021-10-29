@@ -46,6 +46,13 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="stack_box">
+                    <div className="icon svelte"></div>
+                    <div className="content">
+                        <p className="title"><strong>Svelte</strong></p>
+                        <p>svelte 기본 문법을 활용할 수 있으며, svelte 를 활용하여 제작 경험이 있습니다. </p> 
+                    </div>
+                </div>
+                <div className="stack_box">
                     <div className="icon sass"></div>
                     <div className="content">
                         <p className="title"><strong>Sass</strong></p>

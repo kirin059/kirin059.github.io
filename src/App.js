@@ -16,14 +16,13 @@ function App() {
     <div className="App">
       <Nav />
       <Switch>
-        <Route exact path='/'> 
+        <Route exact path='/'>
           <Home />
-          <Introduce />
-          <Skills />
-          <Project />
-          <Contact />
-          <Top />
-          <Footer />
+            <Introduce />
+            <Skills />
+            <Project />
+            <Contact />
+            <Top />    
         </Route>
 
         <Route path="/:id"> 
@@ -35,6 +34,7 @@ function App() {
         </Route>
 
       </Switch>
+      <Footer />
       </div>
   );
 }

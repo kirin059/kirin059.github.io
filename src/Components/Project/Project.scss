@@ -6,39 +6,46 @@ $black : #534847;
 $blue : #47596B;
 $grey : #f3efef;
 
-
-.project{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+@mixin default-option {
+    width: 100%;
     height: 100vh;
-    padding: 5% 17% 0;
+    margin: 0;
+    padding: 10px 40px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: $black;
-    background-color:  $grey;
     font-family: 'Noto Sans KR', sans-serif;
+    color: $black;
+    text-align: center;
+  }
 
+  @mixin content-maxwidth {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+.project{
+    @include default-option;
+    background-color:  $grey;
     .header {
-        text-align: left;
-
+        @include content-maxwidth;
+        text-align: center;
         h4 {
-            margin: 0 0 10% 0;
+            margin: 20px 0 40px;
             color: $pink;
-            font-size: 4em;
+            font-size: 3.3em;
         }
-
         h4::after {
             display: block;
             content: "";
             width: 100%;
-            margin-top: 30px;
+            height: 100%;
             border-bottom: 1px solid #bcbcbc;
-            color: $pink;
+            margin-top: 2% ;
         }
     }
 
     .project_container {
+        @include content-maxwidth;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -48,8 +55,8 @@ $grey : #f3efef;
             flex-direction: column;
 
             .img {
-                width: 400px;
-                height: 250px;
+                width: 320px;
+                height: 220px;
                 margin-bottom: 13%;
                 background: #f4f4f4;
                 border-radius: 10px;
@@ -60,7 +67,6 @@ $grey : #f3efef;
                 transition: all .2s ease-in-out;
                 cursor: pointer;
             }
-
             .img:hover {
                 transform: scale(1.03);
             }

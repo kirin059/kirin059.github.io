@@ -10,36 +10,37 @@ const Nav = () => {
 
     function scrollHome() {
         let location = document.querySelector(".home").offsetTop;
-        let navHeight = document.querySelector(".Nav").offsetHeight;
+        let navHeight =document.querySelector(".nav_container").offsetHeight;
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
     function scrollIntroduce() {
         let location = document.querySelector(".introduce").offsetTop;
-        let navHeight = document.querySelector(".Nav").offsetHeight;
-        window.scrollTo({top:location - navHeight, behavior:'smooth'});
+        let navHeight = document.querySelector(".nav_container").offsetHeight;
+        console.log('네브헤잇트는? ',  navHeight)
+        window.scrollTo({top:location - navHeight , behavior:'smooth'});
     }
 
     function scrollSkills() {
         let location = document.querySelector(".skills").offsetTop;
-        let navHeight = document.querySelector(".Nav").offsetHeight;
+        let navHeight = document.querySelector(".nav_container").offsetHeight;
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
     function scrollProject() {
         let location = document.querySelector(".project").offsetTop;
-        let navHeight = document.querySelector(".Nav").offsetHeight;
+        let navHeight = document.querySelector(".nav_container").offsetHeight;
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
 
     function scrollContact() {
         let location = document.querySelector(".contact").offsetTop;
-        let navHeight = document.querySelector(".Nav").offsetHeight;
+        let navHeight = document.querySelector(".nav_container").offsetHeight;
         window.scrollTo({top:location - navHeight, behavior:'smooth'});
     }
     
     return (
-        <div className="Nav">
+        <div id="nav-box">
             <nav className="nav_container">
                 <div className="name" onClick={scrollHome}>
                     <p><span className="name_pink">CREATIVE</span> SAEBOM LEE </p>

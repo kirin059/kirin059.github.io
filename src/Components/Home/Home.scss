@@ -6,227 +6,70 @@ $black : #534847;
 $blue : #47596B;
 $grey : #f3efef;
 
-.home {
-    margin: 0;
-    width: 100vw;
+@mixin default-option {
+    width: 100%;
     height: 100vh;
-    padding: 8% 6.5% 0;
+    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: $black;
-    background-image: url('./img/team.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: -17px;
     font-family: 'Noto Sans KR', sans-serif;
+    color: $black;
+    text-align: center;
+}
 
-    .contents {
-        text-align: right;
-
-        .main {
-            span {
-                font-size: 3em;
-            }
-    
-            .pink {
-                color: $pink;
-                font-size: 3.3em;
-                font-weight: 900;
-            }
+.home {
+    @include default-option;
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0) 10%,
+        rgba(20, 20, 20, 0.05) 25%,
+        rgba(20, 20, 20, 0.1) 50%,
+        rgba(20, 20, 20, 0.4) 75%,
+        rgba(20, 20, 20, 0.9) 100%
+      ), url('./img/sea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .main {
+        padding-top: 5em;
+        color: white;
+        p {
+            font-size: 3.5em;
+            font-weight: 600;
+            color: white;
         }
-
+        .bold {
+            font-weight: 900;
+            color: #edc3b1;
+        }
         .story {
-            padding-top: 5%;
-            font-size: 1.6em;
-    
-            .pinks {
-                color: $pink;
-                font-size: 1.2em;
-                font-weight: 500;
-            }
-        }
-
-        .link {
-            display: flex;
-            flex-direction: row-reverse;
-            flex-grow: 1;
-            width: 100%;
-            margin-top: 20%;
-
-            div {
-                margin-left: 1%;
-                width: 70px;
-                height: 70px;
-                background-size: cover;
-                background-position: center;
-                cursor: pointer;
-            }
-
-            .github {
-                background-image: url('./img/github.png');
-            }
-
-            .github:hover {
-                transform: scale(1.1);
-            }
-
-            .velog {
-                background-image: url('./img/velog.PNG');
-            }
-
-            .velog:hover {
-                transform: scale(1.1);
-            }
-        }
-       
-    }
-}
-
-@media only screen and (max-width: 1650px) {
-    .home {
-        padding: 10% 5% 0;
-        background-size: 70%;
-        background-position-x: -40px;
-        background-position-y: 50px;
-
-        .contents {               
-            .main {
-                span {
-                    font-size: 2.8em;
-                }      
-                .pink {
-                    font-size: 3em;
-                    font-weight: 900;
-                }
-            }
-            .story {
-                font-size: 1.4em;
-        
-                .pinks {
-                    font-size: 1.1em;
-                }
-            } 
+            margin: 0;
+            color: white;
+            font-size: 1.8em;
+            font-weight: 400;
         }
     }
 }
 
-@media only screen and (max-width: 1500px) {
-    .home {
-        padding: 10% 4% 0;
-        background-size: 57%;
-        background-position-x: -22px;
-        background-position-y: 112px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .home {
-        padding: 10% 4% 0;
-        background-size: 50%;
-        background-position-x: -22px;
-        background-position-y: 150px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .home {
-        padding: 15% 6.5% 0;
-        background-image: none;   
-        .contents {
-            text-align: center;
-    
-            .main {
-                span {
-                    font-size: 2.6em;
-                }
-                .pink {
-                    font-size: 2.8em;
-                    font-weight: 700;
-                }
-            }
-    
-            .story {
-                font-size: 1.2em;
-        
-                .pinks {
-                    font-size: 1em;
-                }
-            }
-            .link {
-                display: flex;
-                justify-content: center;
-                padding-top: 20%;                
-            }
+@media only screen and (max-width: 900px) {
+    .home{
+        p {
+            font-size: 3em;
+        }
+        .story {
+            font-size: 1.3em;
         }
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .home {
-        background-image: none;
-        width: 100vw;
-        height: 100vh;
-        padding: 24% 6.5% 0;
-        .contents {
-            .main {
-                span {
-                    font-size: 26px;
-                }       
-                .pink {
-                    font-size: 33px;
-                    font-weight: 700;
-                }
-            }
-    
-            .story {
-                padding-top: 30px;
-                font-size: 15px;
-        
-                .pinks {
-                    font-size: 17px;
-                    font-weight: 500;
-                }
-            }
-
-            .icons {
-                padding-top: 60px;
-    
-                .link {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: center;
-                    flex-grow: 1;
-                    width: 100%;
-                    margin-top: 10px;
-    
-                    div {
-                        margin-right: 0px;
-                        width: 45px;
-                        height: 45px;
-                        background-size: cover;
-                        background-position: center;
-                        cursor: pointer;
-                    }
-    
-                    .github {
-                        background-image: url('./img/github.png');
-                    }
-    
-                    .github:hover {
-                        transform: scale(1.1);
-                    }
-    
-                    .velog {
-                        background-image: url('./img/velog.PNG');
-                    }
-    
-                    .velog:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
+    .home{
+        p {
+            font-size: 2em;
         }
-        
+        .story {
+            font-size: 0.6em;
+        }
     }
 }
 
