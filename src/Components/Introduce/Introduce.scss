@@ -16,12 +16,12 @@ $grey : #f3efef;
     font-family: 'Noto Sans KR', sans-serif;
     color: $black;
     text-align: center;
-  }
+}
 
-  @mixin content-maxwidth {
+@mixin content-maxwidth {
     max-width: 1020px;
     margin: 0 auto;
-  }
+}
 
 .introduce {
     @include default-option;
