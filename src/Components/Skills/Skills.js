@@ -10,6 +10,49 @@ const Skills = () => {
             </div>
 
             <div className="stack">
+                <div className="stack_box front-end">
+                    <h3>Front-end</h3>
+                    <div className="icon html-css-js"></div>
+                    <div style={{ display: "flex", padding: "30px 0" }}>
+                        <div className="icon ts"></div>
+                        <div className="icon sass"></div>
+                        <div className="icon styled"></div>
+                    </div>
+                    <div className="icon react"></div>
+                    <div className="icon redux"></div>
+                    <div className="icon svelte"></div>   
+                </div>
+                
+                <div className="side-skills">
+                    <div className="stack_box version-control">
+                        <h3>Version Control</h3>
+                        <div style={{ display: "flex" }}>
+                            <div className="icon git"></div>
+                            <div className="icon github"></div>
+                        </div>
+                        <div className="icon tree"></div>
+                    </div>
+                    <div className="stack_box deployment">
+                        <h3>Deployment</h3>
+                        <div className="icon amazon"></div>
+                        <div className="icon netlify"></div>
+                    </div>
+                </div>
+                <div className="stack_box communication">
+                    <h3>Communication</h3>
+                    <div className="icon zeplin"></div>
+                    <div className="icon figma"></div>
+                    <div className="icon slack"></div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Skills;
+
+
+{/* <div className="stack">
                 <div className="stack_box">
                     <div className="icon html"></div>
                     <div className="content">
@@ -74,9 +117,4 @@ const Skills = () => {
                         <p>Git, Github를 이용해 능률적인 프로젝트 협업이 가능합니다.</p>
                     </div>
                 </div>  
-            </div>
-        </div>
-    );
-};
-
-export default Skills;
+            </div> */}

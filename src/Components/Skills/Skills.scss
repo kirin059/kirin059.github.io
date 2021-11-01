@@ -18,15 +18,14 @@ $grey : #f3efef;
     text-align: center;
   }
 
-  @mixin content-maxwidth {
+@mixin content-maxwidth {
     max-width: 1020px;
     margin: 0 auto;
-  }
+}
 
 .skills {
     @include default-option;
     background-color: #ffffff;
-
     .header {
         @include content-maxwidth;
         text-align: center;
@@ -47,96 +46,129 @@ $grey : #f3efef;
     .stack {
         @include content-maxwidth;
         display: flex;
-        flex-direction: column;
-        flex-grow: 1;
+        justify-content: space-between;
         .stack_box {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 330px;
+            height: 100%;
+            padding: 10px 0;
+            background-color: $grey;
+            border-radius: 30px;
+            h3 {
+                margin: 10px 0;
+                color: $blue;
+                font-size: 25px;
+                font-weight: 800;
+            }
+            h3::after {
+                display: block;
+                content: "";
+                width: 100%;
+                margin: 0 auto;
+                border-bottom: 1px solid #bcbcbc;
+                margin-top: 2% ;
+            }
             .icon {
                 position: relative;
-                margin: 0 2% 1% 0%;
-                width: 65px;
-                height: 65px;
-                background-size: cover;
+                height: 100px;
+                background-size: 100%;
+                background-repeat: no-repeat;
                 background-position: center;
                 cursor: pointer;
             }
-            .icon:hover {
-                transform: scale(1.1);
-            }
-            .icon:last-child {
-                margin-right: 0;
-            }
-            .html {
-                background-image: url('./img/html.png');
+            .html-css-js {
+                width: 310px;
+                height: 120px;
+                background-image: url('./img/html_css_js.png');
             }            
-            .css {
-                background-image: url('./img/css3.png');
-            }  
-            .javascript {
-                background-image: url('./img/javascript.png');
-            }
             .react {
+                width: 200px;
+                height: 60px;
                 background-image: url('./img/react.png');
             }
             .redux {
+                width: 180px;
                 background-image: url('./img/redux.png');
             }
             .svelte {
+                width: 200px;
                 background-image: url('./img/svelte.png');
             }
+            .ts {
+                width: 70px;
+                background-image: url('./img/ts.png');
+            }
             .sass {
+                margin: 0 20px;
+                width: 80px;
                 background-image: url('./img/sass.png');
             }
             .styled {
+                width: 70px;
                 background-image: url('./img/styled.png');
             }
             .git {
-                background-image: url('./img/github.png');
+                margin-right: 10%;
+                width: 100px;
+                background-image: url('./img/git.png');
             }
-            .content {
-                width: 90%;
-                text-align: left;
-                line-height: 20px;
-                .title {
-                    margin-top: 10px;
-                }
-                p {
-                    margin: 0;
-                }
+            .github {
+                width: 180px;
+                background-image: url('./img/github.png'); 
             }
+            .tree {
+                width: 180px;
+                margin-bottom: 10px;
+                background-image: url('./img/tree.png'); 
+            }
+            .zeplin {
+                width: 190px;
+                background-image: url('./img/zeplin.png'); 
+            }
+            .figma {
+                width: 170px;
+                background-image: url('./img/figma.png'); 
+            }
+            .slack {
+                width: 170px;
+                background-image: url('./img/slack.png');
+            }
+            .amazon {
+                width: 160px;
+                margin-right: 10%;
+                background-image: url('./img/amazon.png'); 
+            }
+            .netlify {
+                width: 150px;
+                background-image: url('./img/netlify.png'); 
+            }
+        }
+        .stack_box:hover {
+            transform: scale(1.03);
+        }
+        .version-control {
+            width: 350px;
+            height: 230px;
+            margin-bottom: 5%;
+        }
+        .deployment {
+            width: 350px;
+            height: 250px;
+        }
+        .communication {
+            width: 300px;
+            height: 350px;
         }
     }
 }
 
-@media only screen and (max-width: 1360px) {
-    .skills {
-        padding: 3% 8% 0;
-    }
-}
 
-@media only screen and (max-width: 1250px) {
-    .skills {
-        padding: 5% 8% 0;
 
-        .header {
-    
-            h4 {
-                font-size: 3.5em;
-            }
-    
-            h4::after {
-                display: block;
-                content: "";
-                width: 80%;
-                height: 100%;
-                border-bottom: 1px solid #bcbcbc;
-                margin-top: 3%;
-            }
-        }
-    }
-}
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 900px) {
     .skills {
         padding: 5% 6% 0;
         .header {
