@@ -27,35 +27,42 @@ const Introduce = () => {
                     <div>
                         <i class="fas fa-user-alt"></i>
                         <div className="text">
-                            <p className="sub-text">이름</p>
-                            <p >이 새 봄</p>
+                            <p className="sub-text">Name</p>
+                            <p className="sub-text-content"> 이새봄 </p>
                         </div>
                     </div>
                     <div>
                         <i class="fas fa-birthday-cake"></i>
                         <div className="text">
-                            <p className="sub-text">생년월일</p>
-                            <p>91. 05. 02</p>
+                            <p className="sub-text">Birth</p>
+                            <p className="sub-text-content">91. 05. 02</p>
                         </div>
                     </div>
                     <div>
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                         <div className="text">
-                        <p className="sub-text">학력</p>
-                            <p>덕성여자대학교</p>
-                            <p className="major">유아교육학과 전공<br /> 영어영문학과 복수전공</p>
+                            <p className="sub-text">Adress</p>
+                            <p className="sub-text-content">서울특별시 관악구</p>
                         </div>
                     </div>
                 </div>
                 <div className="bottom-container-bottom">
                     <div>
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-graduation-cap"></i>
                         <div className="text">
-                            <p className="sub-text">경력</p>
-                            <p>번역(영) 2년 <br /> 기획(AE) 2년 근무 <br /> 프론트엔드 인턴 2개월</p>
+                        <p className="sub-text">Educated</p>
+                            <p className="sub-text-content">덕성여자대학교</p>
+                            <p className="major">유아교육학과 전공<br /> 영어영문학과 복수전공</p>
                         </div>
                     </div>
                     <div>
+                        <i class="fas fa-building"></i>
+                        <div className="text">
+                            <p className="sub-text">Career</p>
+                            <p className="sub-text-content">번역(영) 2년 <br /> 기획(AE) 2년 근무 <br /> 프론트엔드 인턴 2개월</p>
+                        </div>
+                    </div>
+                    {/* <div>
                         <i class="fas fa-key"></i>
                         <div>
                             <div className="text">
@@ -63,7 +70,15 @@ const Introduce = () => {
                                 <p className="motto">JavaScript, HTML5, CSS3 활용 역량을 키워왔고, <br />
                                     <strong>가독성</strong>과 <strong>재활용성</strong> 높은 코드 구현을 지향합니다.</p>
                             </div>
-                            {/* <p className="motto">트렌디한 UI와 인터랙티브한 UX를 최우선으로 생각하며,</p>*/}
+                            {/* <p className="motto">트렌디한 UI와 인터랙티브한 UX를 최우선으로 생각하며,</p>
+                        </div>
+                    </div> */}
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <div className="text">
+                        <p className="sub-text">contact</p>
+                            <p className="sub-text-content">boma91@gmail.com</p>
+                            <p className="sub-text-content">010-9152-5192</p>
                         </div>
                     </div>
                 </div>
