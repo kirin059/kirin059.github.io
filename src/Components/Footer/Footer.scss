@@ -17,6 +17,7 @@ $grey : #f3efef;
     text-align: center;
 }
 
+
 @mixin content-maxwidth {
     max-width: 1020px;
     margin: 0 auto;
@@ -24,16 +25,17 @@ $grey : #f3efef;
 
 .footer {
     @include default-option;
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: $blue;
     .icon-container {
         @include content-maxwidth;
+        margin: 15px auto;
         width: 130px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
-        .fab {  
-            color: $pink;
+        .fab {
+
+            color: #fff;
             font-size: 3.2em;
             cursor: pointer;
         }
