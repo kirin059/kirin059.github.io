@@ -17,7 +17,6 @@ const Nav = () => {
     function scrollIntroduce() {
         let location = document.querySelector(".introduce").offsetTop;
         let navHeight = document.querySelector(".nav_container").offsetHeight;
-        console.log('네브헤잇트는? ',  navHeight)
         window.scrollTo({top:location - navHeight , behavior:'smooth'});
     }
 

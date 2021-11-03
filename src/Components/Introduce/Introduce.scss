@@ -136,9 +136,6 @@ $grey : #f3efef;
     }
 }
 
-
-
-
 @media only screen and (max-width: 900px) {
     .introduce {
         .top-container {
@@ -199,6 +196,10 @@ $grey : #f3efef;
 @media only screen and (max-width: 480px) {
     .introduce {
         .top-container {
+            h4 {
+                margin: 20px 0 30px;
+                font-size: 2.3em;
+            }
             .info {
                 max-width: 40%;
                 .img {
