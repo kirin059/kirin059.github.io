@@ -94,7 +94,6 @@ $grey : #f3efef;
                 overflow: hidden;
                 font-family: 'Noto Sans KR', sans-serif;
             }
-
             button{
                 display: inline-block;
                 margin-top: 2%;
@@ -122,138 +121,50 @@ $grey : #f3efef;
 
 @media only screen and (max-width: 900px) {
     .contact {
-        display: flex;
-        padding: 8% 10% 0; 
-        .left {
-            margin-right: 5%;
+        .container {
             h4 {
-                margin: 0 0 2% 0;
-                font-size: 3.5em;
-            }
-            h4::after {
-                margin-top: 30px;
-            }
-        }
-    
-        .right {
-            margin: 0 auto;
-            width: 40%;
-            height: 90%; 
-            form {
-                padding: 5% 8%;
-                height: 100%;
-                textarea {
-                    width: 100%;
-                    height: 80%;
-                }
-                input[type=submit] {
-                    font-weight: 500;
-                    font-size: 1em;
-                    letter-spacing: 4px;
-                }
-            }
+                margin: 20px 0 30px;
+                font-size: 3em;
+            }           
         }
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
     .contact {
-        display: flex;
-        flex-direction: column;
-        padding: 8% 6% 0; 
-        .left {
-            margin-right: 0;
-            h4 {
-                width: 100%;
-                margin: 0 0 1% 0;
-                font-size: 3.5em;
+        .container {
+            p {
+                font-size: 1em;
             }
-            h4::after {
-                display: block;
-                content: "";
-                width: 100%;
-                margin-top: 5%;
-                border-bottom: 1px solid #bcbcbc;
-                color: $pink;
-            }
-            .info {
-                display: none;
-            }
-        }
-        .right {
-            margin: 3% auto;
-            width: 80%;
-            height: 75%; 
             form {
-                padding: 3% 8%;
-                input {
-                    width: 100%;
-                    margin-bottom: 8%;
-                    color: #fff;
-                }
-                textarea {
-                    width: 100%;
-                    height: 80%;
-                  
-                    background-color: transparent;
-                    border: 0;
-                }
-                input[type=submit] {
-                    font-weight: 500;
-                    width: 100%;
-                    letter-spacing: 4px;
-                    font-size: 1em;
-                }
-            }
+                width: 80%;
+                height: 700px;    
+            }             
         }
     }
 }
 
 @media only screen and (max-width: 480px) {
     .contact {
-        display: flex;
-        flex-direction: column;
-        padding: 8% 4% 0; 
-        .left {
+        .container {
             h4 {
-                width: 100%;
-                margin: 0 0 1% 0;
-                font-size: 3em;
+                margin: 20px 0 30px;
+                font-size: 2.3em;
             }
-            h4::after {
-                display: block;
-                content: "";
-                width: 100%;
-                margin-top: 5%;
-                border-bottom: 1px solid #bcbcbc;
-                color: $pink;
+            p {
+                font-size: 1em;
             }
-        }
-        .right {
-            margin: 3% 5%;
-            width: 80%;
-            height: 75%; 
             form {
-                padding: 3% 8%;
+                width: 100%;
+                height: 600px;
                 input {
-                    width: 100%;
-                    margin-bottom: 8%;
-                    color: #fff;
-                }
-                textarea {
-                    width: 100%;
-                    height: 80%;
-                  
-                    background-color: transparent;
-                    border: 0;
-                }
-                input[type=submit] {
-                    font-weight: 500;
-                    width: 100%;
-                    letter-spacing: 4px;
+                    height: 5%;
                     font-size: 1em;
                 }
-            }
+                textarea {
+                    font-size: 1em;
+                }
+            }             
         }
     }
 }
