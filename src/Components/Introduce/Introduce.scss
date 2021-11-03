@@ -139,10 +139,6 @@ $grey : #f3efef;
 @media only screen and (max-width: 900px) {
     .introduce {
         .top-container {
-            h4 {
-                margin: 20px 0 30px;
-                font-size: 3em;
-            }
             .info {
                 .img {
                     width: 200px;
@@ -161,7 +157,6 @@ $grey : #f3efef;
             .bottom-container-top, .bottom-container-bottom {
                 margin: 0 20px;
                 div {
-                    display: flex;
                     .fas {
                         padding-bottom: 7%;
                         font-size: 1.5em;
@@ -193,6 +188,70 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .introduce {
+        height: 100%;
+        .top-container {
+            h4 {
+                margin: 20px 0 30px;
+                font-size: 3em;
+            }
+            .info {
+                max-width: 50%;
+                .img {
+                    width: 180px;
+                    height: 180px;
+                }
+                .tags {
+                    font-size: 0.9em;
+                    div {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }   
+        .bottom-container {
+            padding: 30px 0;
+            width: 90%;
+            height: 100%;
+            .bottom-container-top, .bottom-container-bottom {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                margin-left: 20%;
+                div {
+                    margin-bottom: 10px;
+                    .fas {
+                        padding-bottom: 7%;
+                        font-size: 1.5em;
+                    }
+                    .text {
+                        .sub-text {
+                            margin: 0 0 0 6%;
+                            font-size: 1.3em;
+                        }
+                        .sub-text-content {
+                            margin: 2% 0 0 6%;
+                            font-size: 1.05em;
+                            width: 210px;
+                        }
+                    }
+    
+                }
+            }
+            .bottom-container-bottom {
+                margin-top: 0;
+                div {
+                    .major {
+                        margin: 0 0 0 6%;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .introduce {
         .top-container {
@@ -201,49 +260,37 @@ $grey : #f3efef;
                 font-size: 2.3em;
             }
             .info {
-                max-width: 40%;
+                max-width: 70%;
                 .img {
-                    width: 200px;
-                    height: 200px;
+                    width: 160px;
+                    height: 160px;
                 }
             }
         }   
         .bottom-container {
+            padding: 25px 0;
             .bottom-container-top, .bottom-container-bottom {
-                padding: 30px 40px;
                 div {
                     .fas {
-                        font-size: 1.8em;
-                    }
-                    p {
-                        margin: 0 0 0 6%;
                         font-size: 1.3em;
-                        text-align: left;
-                        width: 160px;
                     }
                     .text {
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 0.6em;
-                    }
-                    .major {
-                        width: 100%;
-                        font-size: 1em;
+                        .sub-text {
+                            margin: 0 0 0 6%;
+                            font-size: 1em;
+                        }
+                        .sub-text-content {
+                            margin: 2% 0 0 6%;
+                            font-size: 1em;
+                        }
                     }
                 }
             }
             .bottom-container-bottom {
                 div {
-                    display: flex;
-                    p {
+                    .major {
                         margin: 0 0 0 6%;
-                        font-size: 1em;
-                        text-align: left;
-                        width: 180px;
-                    }
-                    .motto {
-                        width: 425px;
-                        font-size: 1.2em;
+                        font-size: 0.75em;
                     }
                 }
             }
