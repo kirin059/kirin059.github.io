@@ -193,75 +193,57 @@ $grey : #f3efef;
                 .html-css-js {
                     width: 280px;
                     height: 100px;
-                    background-image: url('./img/html_css_js.png');
                 }            
                 .react {
                     width: 170px;
                     height: 50px;
-                    background-image: url('./img/react.png');
                 }
                 .redux {
                     width: 150px;
-                    background-image: url('./img/redux.png');
                 }
                 .svelte {
                     width: 170px;
                     height: 50px;
-                    background-image: url('./img/svelte.png');
                 }
                 .ts {
                     width: 65px;
-                    background-image: url('./img/ts.png');
                 }
                 .sass {
                     margin: 0 18px;
                     width: 75px;
-                    background-image: url('./img/sass.png');
                 }
                 .styled {
                     width: 65px;
-                    background-image: url('./img/styled.png');
                 }
                 .git {
                     margin-right: 8%;
                     width: 90px;
-                    background-image: url('./img/git.png');
                 }
                 .github {
                     width: 160px;
-                    background-image: url('./img/github.png'); 
                 }
                 .tree {
                     width: 160px;
                     margin-bottom: 5%;
-                    background-image: url('./img/tree.png'); 
                 }
                 .zeplin {
                     width: 160px;
-                    background-image: url('./img/zeplin.png'); 
                 }
                 .figma {
                     width: 150px;
                     height: 70px;
-                    background-image: url('./img/figma.png'); 
                 }
                 .slack {
                     width: 150px;
                     height: 70px;
-                    background-image: url('./img/slack.png');
                 }
                 .amazon {
                     width: 160px;
                     margin: 3% 0;
-                    background-image: url('./img/amazon.png'); 
                 }
                 .netlify {
                     width: 130px;
-                    background-image: url('./img/netlify.png'); 
                 }
-            }
-            .stack_box:hover {
-                transform: scale(1.03);
             }
             .version-control {
                 width: 350px;
@@ -286,6 +268,78 @@ $grey : #f3efef;
             h4 {
                 margin: 20px 0 30px;
                 font-size: 2.3em;
+            }
+        }
+        .stack {
+            .stack_box {
+                .html-css-js {
+                    width: 250px;
+                    height: 100px;
+                }            
+                .react {
+                    width: 150px;
+                    height: 45px;
+                }
+                .redux {
+                    width: 130px;
+                    height: 60px;
+                }
+                .svelte {
+                    width: 150px;
+                }
+                .ts {
+                    width: 60px;
+                }
+                .sass {
+                    margin: 0 15px;
+                    width: 70px;
+                }
+                .styled {
+                    width: 60px;
+                }
+                .git {
+                    margin-right: 8%;
+                    width: 80px;
+                }
+                .github {
+                    width: 140px;
+                }
+                .tree {
+                    width: 140px;
+                    margin-bottom: 3%;
+                }
+                .zeplin {
+                    width: 140px;
+                    height: 60px;
+                }
+                .figma {
+                    width: 130px;
+                    height: 60px;
+                }
+                .slack {
+                    width: 130px;
+                    height: 60px;
+                }
+                .amazon {
+                    width: 140px;
+                    margin: 0;
+                }
+                .netlify {
+                    width: 120px;
+                }
+            }
+            .version-control {
+                width: 350px;
+                height: 200px;
+                margin-bottom: 5%;
+            }
+            .deployment {
+                width: 350px;
+                height: 200px;
+            }
+            .communication {
+                width: 300px;
+                height: 250px;
             }
         }
    }
