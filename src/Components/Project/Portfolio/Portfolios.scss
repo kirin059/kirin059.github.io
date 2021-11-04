@@ -15,7 +15,7 @@ $grey : #f3efef;
     box-shadow: 3px 3px 5px 3px silver;
 }
 
-.shop {
+.portfolios {
     @include content-maxwidth;
     .head {
         margin: 0 0 35px 0;
@@ -47,11 +47,11 @@ $grey : #f3efef;
                 background-repeat: no-repeat;
             }
             .first {
-                background-image: url('./img/shopImg.PNG');
+                background-image: url('./img/insta.PNG');
             }
             .second {
                 margin: 0;
-                background-image: url('./img/shop2.PNG');
+                background-image: url('./img/insta.PNG');
             }
         }
         .script {

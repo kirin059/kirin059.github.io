@@ -1,11 +1,11 @@
 import React from 'react';
 import './Shop.scss';
 
-const ModalShop = () => {
+const Shop = () => {
     return (
-        <div className="modal_shop">
+        <div className="shop">
             <div className="head">
-                <span>Shopping Mall</span> Project
+                Shopping Mall
                 <div>개인 프로젝트</div> 
             </div>         
             <div className="main">
@@ -44,4 +44,4 @@ const ModalShop = () => {
     );
 };
 
-export default ModalShop;
+export default Shop;

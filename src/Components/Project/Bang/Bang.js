@@ -1,12 +1,12 @@
 import React from 'react';
 import './Bang.scss';
 
-const ModalBang = () => {
+const Bang = () => {
 
     return (
-        <div className="modal_bang">               
+        <div className="bang">               
             <div className="head">
-                <span>Register Room</span> Project
+                Register Room
                 <div>개인 프로젝트</div> 
             </div>
             <div className="main">
@@ -42,4 +42,4 @@ const ModalBang = () => {
     );
 };
 
-export default ModalBang;
+export default Bang;

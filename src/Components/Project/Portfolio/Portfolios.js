@@ -1,12 +1,12 @@
 import React from 'react';
-import './Cycle.scss';
+import './Portfolios.scss'
 
-const ModalShop = () => {
+const Portfolios = () => {
     return (
-        <div className="cycle">
+        <div className="portfolios">
             <div className="head">
-                MyCycle
-                <div>개인 프로젝트</div> 
+                Portfolio
+                <div>개인 포트폴리오</div> 
             </div>       
             <div className="main">
                 <div className="img_container">
@@ -41,4 +41,4 @@ const ModalShop = () => {
     );
 };
 
-export default ModalShop;
+export default Portfolios;

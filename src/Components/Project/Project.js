@@ -2,9 +2,10 @@ import React from 'react';
 import Cycle from './Cycle/Cycle';
 import Shop from './Shop/Shop';
 import Bang from './Bang/Bang';
+import Portfolio from './Portfolio/Portfolios';
 import './Project.scss';
 
-const Portfolio = () => {
+const Project = () => {
 
     return (
         <div className="project">
@@ -16,9 +17,10 @@ const Portfolio = () => {
                 <Cycle />
                 <Bang />
                 <Shop />
+                <Portfolio />
             </div>
         </div>
     );
 };
 
-export default Portfolio;
+export default Project;
