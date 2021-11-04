@@ -36,7 +36,9 @@ const Shop = () => {
                         <i class="fab fa-github" onClick={() => {
                             window.open('https://github.com/kirin059/React_shoppingmall_project', '_blank')
                         }}></i>
-                        <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
+                        <div onClick={() => {
+                            window.open('https://github.com/kirin059/React_shoppingmall_project', '_blank')
+                        }}>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                     </div>
                 </div>
             </div>

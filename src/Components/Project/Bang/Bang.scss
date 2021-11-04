@@ -20,7 +20,7 @@ $grey : #f3efef;
     .head {
         margin: 0 0 35px 0;
         font-size: 35px;
-        font-weight: 900;    
+        font-weight: 900;     
         div {
             margin: 10px 0 0 0;
             font-size: 18px;
@@ -47,11 +47,11 @@ $grey : #f3efef;
                 background-repeat: no-repeat;
             }
             .first {
-                background-image: url('./img/Bang.PNG');
+                background-image: url('./img/bang_detail.PNG');
             }
             .second {
                 margin: 0;
-                background-image: url('./img/bang_detail.PNG');
+                background-image: url('./img/bang.gif');
             }
         }
         .script {
@@ -89,156 +89,93 @@ $grey : #f3efef;
                     color: $pink;
                     font-size: 0.9em;
                     line-height: 3.4;
+                    cursor: pointer;
                 }
             }          
         }
     }
 }
 
-
 @media only screen and (max-width: 900px) {
-    .modal_bang {
-    
-                .head {
-                        margin: 0;
-                        font-size: 30px;
-                        font-weight: 900;     
-                   span {
-                       color: $pink;
-                   }
+    .bang {
+        .head {
+            margin: 0 0 30px 0;
+            font-size: 32px;    
+            div {
+                margin: 10px 0 0 0;
+                font-size: 16px;
+            }
+        }
+        .main {
+            flex-direction: column;
+            .img_container {
+                display: flex;
+                width: 100%;
+                .imgs {   
+                    width: 400px;      
+                    margin: 0 auto 5%;
                 }
-                
-                .main {
-                    flex-direction: column;
-                    .img_container {
-                        margin: 0;
-                        width: 50%;
-                        height: 450px;
-                        .imgs {           
-                            height: 100%;
-                            margin: 0 0 3% 0;
-                        }
-                    }
-                    .script {
-                        position: relative;
-                        text-align: left;
-                        font-size: .9em;
-                        .script-main {
-                            .fa-circle {
-                                color: $pink;
-                                padding-right: 1.3%;
-                            }
-                            .fa-check{
-                                padding-right: 1.3%;
-                                color: $pink;
-                                font-size: 0.8em;
-                            }
-                        }
-                        .script-bottom {
-                            .fa-github {
-                                color: $pink;
-                                padding-right: 1.5%;
-                                font-size: 35px;
-                                cursor: pointer;
-                            }
-                            .fa-github:hover {
-                                transform: scale(1.1);
-                            }
-                            div {
-                                width: 100%;
-                                color: $pink;
-                                font-size: 0.9em;
-                                line-height: 3.4;
-                            }
-                        }
-                        
-                    }
+                .second {
+                    margin: 0 auto 5%;
+                }
+            }
+            .script {
+                width: 100%;
+                .script-bottom {
+                    margin-top: 20px;
+                }          
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bang {
+        .main {
+            .img_container {
+                .imgs {  
+                    width: 80%;      
+                    margin: 0 auto 4%;
+                }
+                .second {
+                    margin: 0 auto 4%;
                 }
             }
         }
-
-
-@media only screen and (max-width: 768px) {
-    .modal_insta {    
-        .bg {
-           .content {
-               width: 80%;
-                height: 80%;
-                
-                p {
-                    text-align: center;
-                }
-                .title {
-                    text-align: center;
-                    font-size: 1.5em;
-                    font-weight: 600;
-                    margin: 10% 0;
-                }
-                .contents {     
-                    display: block;
-                    height: 100%; 
-
-                    .img_container {
-                        display: flex;   
-                        flex-direction: row;    
-                        margin: 0 0 10%;
-
-                        .imgs {
-                            display: block;   
-                        }
-                    }
-                    .script {
-                        display: flex;
-                        flex-direction: column;
-                        font-size: .65em;
-
-                        .bottom_container {
-                            text-align: left;
-                      
-                            bottom: -75px;
-                            div {
-                                display: inline-block;
-                            }
-                        }
-                        
-                    }
-                }
-            }
-        }    
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .modal_insta {    
-        .bg {
-           .content {
-            width: 80%;
-                .title {
-                    margin: 9% 0;
+    .bang {
+        .head {
+            margin: 0 0 25px 0;
+            font-size: 30px;    
+            div {
+                font-size: 14px;
+            }
+        }
+        .main {
+            flex-direction: column;
+            .img_container {
+                .imgs {   
+                    width: 100%;    
+                    margin: 0 auto 6%;  
                 }
-                button {
-                    position: absolute;
-                    top: 2%;
-                    right: 2%;
-                    font-size: 30px;
-                }
-                .contents {     
-                    .img_container {
-                        .imgs {
-                            display: block;  
-                            width: 200px;
-                            height: 110px;
-                        }
-                    }
-                    .script {
-                        .bottom_container {
-                            .fa-github {
-                                font-size: 25px;
-                            }
-                        }
-                    }
+                .second {
+                    margin: 0 auto 6%;
                 }
             }
-        }    
+            .script {
+                .script-bottom {
+                    margin-top: 23px;
+                    .fa-github {
+                        margin: 0 auto;
+                    }
+                    div {
+                        display: none;
+                    }
+                }          
+            }
+        }
     }
 }

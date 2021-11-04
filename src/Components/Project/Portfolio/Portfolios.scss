@@ -47,11 +47,11 @@ $grey : #f3efef;
                 background-repeat: no-repeat;
             }
             .first {
-                background-image: url('./img/insta.PNG');
+                background-image: url('./img/main1.PNG');
             }
             .second {
                 margin: 0;
-                background-image: url('./img/insta.PNG');
+                background-image: url('./img/main2.PNG');
             }
         }
         .script {
@@ -89,9 +89,93 @@ $grey : #f3efef;
                     color: $pink;
                     font-size: 0.9em;
                     line-height: 3.4;
+                    cursor: pointer;
                 }
             }          
         }
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .portfolios {
+        .head {
+            margin: 0 0 30px 0;
+            font-size: 32px;    
+            div {
+                margin: 10px 0 0 0;
+                font-size: 16px;
+            }
+        }
+        .main {
+            flex-direction: column;
+            .img_container {
+                display: flex;
+                width: 100%;
+                .imgs {   
+                    width: 400px;        
+                    margin: 0 auto 5%;
+                }
+                .second {
+                    margin: 0 auto 5%;
+                }
+            }
+            .script {
+                width: 100%;
+                .script-bottom {
+                    margin-top: 20px;
+                }          
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolios {
+        .main {
+            .img_container {
+                .imgs {       
+                    width: 80%;     
+                    margin: 0 auto 4%;
+                }
+                .second {
+                    margin: 0 auto 4%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .portfolios {
+        .head {
+            margin: 0 0 25px 0;
+            font-size: 30px;    
+            div {
+                font-size: 14px;
+            }
+        }
+        .main {
+            flex-direction: column;
+            .img_container {
+                .imgs {   
+                    width: 100%;    
+                    margin: 0 auto 6%;  
+                }
+                .second {
+                    margin: 0 auto 6%;
+                }
+            }
+            .script {
+                .script-bottom {
+                    margin-top: 23px;
+                    .fa-github {
+                        margin: 0 auto;
+                    }
+                    div {
+                        display: none;
+                    }
+                }          
+            }
+        }
+    }
+}

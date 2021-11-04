@@ -50,19 +50,28 @@ $grey : #f3efef;
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .footer {
+        padding: 13px 0;
+        .icon-container {
+            margin: 13px auto;
+            width: 120px;
+        }
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .footer {
-        width: 100%;
-        padding: 15px 0;
-        margin: 0;
-        background-color: $blue;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        text-align: center;
-
-        p:first-child {
-            display: none;
+        padding: 12px 0;
+        .icon-container {
+            margin: 10px auto;
+            width: 100px;
+            .fab {
+                font-size: 3em;
+            }
         }
-
+        p {
+            font-size: 13px;
+        }
     }
 }

@@ -51,7 +51,7 @@ $grey : #f3efef;
             margin: 50px auto 20px;
             padding: 5%;
             width: 60%;
-            height: 800px;
+            height: 700px;
             background-color: $pink;
             border-radius: 10px;
             font-size: 1.1em;
@@ -61,7 +61,7 @@ $grey : #f3efef;
             input {
                 position: relative;
                 width: 100%;
-                height: 4%;
+                height: 5%;
                 margin-bottom: 5%;
                 color: #fff;
                 background-color: transparent;
@@ -77,11 +77,11 @@ $grey : #f3efef;
             }
             input::placeholder, textarea::placeholder {
                 color: #fff;
+                padding: 2px;
             }
             textarea {
                 width: 100%;
-                height: 63%;
-                padding-top: 1%;
+                height: 70%;
                 background-color: transparent;
                 border: 0;
                 border-bottom: 1px solid #fff;
@@ -91,7 +91,6 @@ $grey : #f3efef;
                 overflow: auto;
                 resize: none;
                 overflow-wrap: break-word;
-                overflow: hidden;
                 font-family: 'Noto Sans KR', sans-serif;
             }
             button{
@@ -137,8 +136,7 @@ $grey : #f3efef;
                 font-size: 1em;
             }
             form {
-                width: 80%;
-                height: 700px;    
+                width: 90%;  
             }             
         }
     }
@@ -151,14 +149,11 @@ $grey : #f3efef;
                 margin: 20px 0 30px;
                 font-size: 2.3em;
             }
-            p {
-                font-size: 1em;
-            }
             form {
                 width: 100%;
                 height: 600px;
                 input {
-                    height: 5%;
+                    height: 6%;
                     font-size: 1em;
                 }
                 textarea {

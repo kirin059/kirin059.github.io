@@ -2,7 +2,6 @@ import React from 'react';
 import './Bang.scss';
 
 const Bang = () => {
-
     return (
         <div className="bang">               
             <div className="head">
@@ -34,7 +33,9 @@ const Bang = () => {
                         <i class="fab fa-github" onClick={() => {
                             window.open('https://github.com/kirin059/Register_Room', '_blank')
                         }}></i>
-                        <div>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
+                        <div onClick={() => {
+                            window.open('https://github.com/kirin059/Register_Room', '_blank')
+                        }}>깃허브 코드를 통해 더 자세히 살펴보실 수 있어요!</div>
                     </div>
                 </div>
             </div>
