@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+// color
+$pink : #D09E88;
+$black : #534847;
+$blue : #47596B;
+$grey : #f3efef;
+
+@mixin content-maxwidth {
+    max-width: 1020px;
+    margin-bottom: 40px;
+}
+
+.modal_shop {
+    @include content-maxwidth;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    .head {
+        margin: 0 0 20px 0;
+        font-size: 35px;
+        font-weight: 900;     
+        span {
+            color: $pink;
+        }
+        div {
+            font-size: 18px;
+            font-weight: 300;
+            color: #A4A4A4;
+        }
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        .img_container {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 500px;
+            .imgs {         
+                height: 70%;
+                margin: 0 0 5% 0;
+                background: #f4f4f4;
+                border-radius: 10px;
+                box-shadow: 3px 3px 5px 3px silver;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .first {
+                background-image: url('./img/shopImg.PNG');
+            }
+            .second {
+                margin: 0;
+                background-image: url('./img/shop2.PNG');
+            }
+        }
+        .script {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 53%;
+            text-align: left;
+            font-size: .9em;
+            .script-main {
+                .fa-circle {
+                    color: $pink;
+                    padding-right: 1.3%;
+                }
+                .fa-check{
+                    padding-right: 1.3%;
+                    color: $pink;
+                    font-size: 0.8em;
+                }
+            }
+            .script-bottom {
+                display: flex;
+                width: 100%;
+                .fa-github {
+                    color: $pink;
+                    padding-right: 1.5%;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+                .fa-github:hover {
+                    transform: scale(1.1);
+                }
+                div {
+                    width: 100%;
+                    color: $pink;
+                    font-size: 0.9em;
+                    line-height: 3.4;
+                }
+            }          
+        }
+    }
+}
+
