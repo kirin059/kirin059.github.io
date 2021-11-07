@@ -19,17 +19,15 @@ const Shop = () => {
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>기술스택</strong>
                         </div>
-                        <div style={{marginBottom:'30px'}}>HTML5, CSS3, Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition</div>   
+                        <div style={{marginBottom:'30px'}}> Javascript, React, Redux, React-router-dom, axios, Sass, Bootstrap, CSSTransition </div>   
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>구현 사항</strong>
                         </div>
                         <div><i class="fas fa-check"></i> React-Router를 활용한 SPA 라우팅</div>
-                        <div><i class="fas fa-check"></i> useParams를 통해 상품고유 id와 매칭되는 url을 특정하여 객체에 접근 </div>
-                        <div><i class="fas fa-check"></i> Axios를 통한 오픈 API 요청</div>
-                        <div><i class="fas fa-check"></i> Bootstrap/Sass 라이브러리를 활용한 스타일링</div>
-                        <div><i class="fas fa-check"></i> CSSTransition으로 transition효과 적용</div>
                         <div><i class="fas fa-check"></i> Hook 과  Redux를 통한 상태 관리 </div>
+                        <div><i class="fas fa-check"></i> Axios를 활용해 open API 요청/응답 처리</div>
                         <div><i class="fas fa-check"></i> LocalStorage를 활용한 '최근 본 상품' 기능 적용 </div>
+                        <div><i class="fas fa-check"></i> Bootstrap/CSSTransition/Sass 라이브러리  등 다양한 툴을 활용한 스타일링</div>
                         <div><i class="fas fa-check"></i> Responsive Web 구현</div>
                     </div>
                     <div class="script-bottom">

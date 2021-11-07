@@ -15,17 +15,18 @@ const Portfolios = () => {
                 </div>
                 <div className="script">
                     <div className="script-main">
-                        <div style={{marginBottom:'30px'}}>순수 자바스크립트를 활용하여 <strong>Goodal 사이트 클론</strong> 제작한 프로젝트입니다. </div>
+                        <div style={{ marginBottom: '30px' }}>포트폴리오 용도로 제작한 웹사이트입니다. React로 개발 후 AWS 서버에 배포하였습니다. 
+                            페이지는 반응형으로 제작되었으며 EmailJS와 연동하여 자바스크립트로 이메일 전송 기능을 구현하였습니다. </div>
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>기술스택</strong>
                         </div>
-                        <div style={{marginBottom:'30px'}}>HTML5, CSS3, Javascript, React, Styled-Component, Ant-design</div>
+                        <div style={{marginBottom:'30px'}}>React, JavaScript, Sass, AWS</div>
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>구현 사항</strong>
                         </div>
-                        <div><i class="fas fa-check"></i> Hook 과  Redux를 통한 상태 관리 </div>
-                        <div><i class="fas fa-check"></i> LocalStorage를 활용한 회원가입/로그인 인증 기능 구현 </div>
-                        <div><i class="fas fa-check"></i> Styled-Component/Antd를 활용한 스타일링 </div>
+                        <div><i class="fas fa-check"></i> AWS 서버 배포 </div>
+                        <div><i class="fas fa-check"></i> 이메일 전송 및 전송 여부 알림 기능 구현 </div>
+                        <div><i class="fas fa-check"></i> Sass(SCSS)를 활용한 Nested Styling </div>
                         <div><i class="fas fa-check"></i> Responsive Web 구현</div>
                     </div>
                     <div class="script-bottom">

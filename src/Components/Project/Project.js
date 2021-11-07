@@ -14,10 +14,10 @@ const Project = () => {
             </div>
 
             <div className="project_container">
-                <Portfolio />
                 <Cycle />
                 <Bang />
                 <Shop />
+                <Portfolio />
             </div>
         </div>
     );
