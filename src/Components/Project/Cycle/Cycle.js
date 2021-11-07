@@ -15,7 +15,7 @@ const ModalShop = () => {
                 </div>
                 <div className="script">
                     <div className="script-main">
-                        <div style={{ marginBottom: '30px' }}>자전거 라이더들을 위한 <strong>라이더 웹애플리케이션</strong> 를 제작한 프로젝트입니다.
+                        <div style={{ marginBottom:'30px'}}>자전거 라이더들을 위한 <strong>라이더 웹애플리케이션</strong>을 제작한 프로젝트입니다.
                         라이더들에게 지도 제공, 기록 저장 및 커뮤니티 참여 기능 등을 제공하여 자전거 취미 활동에 필요한 기능을 모은 웹 서비스 입니다.</div>
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>기술스택</strong>

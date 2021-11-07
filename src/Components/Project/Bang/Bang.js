@@ -15,7 +15,8 @@ const Bang = () => {
                 </div>
                 <div className="script">
                     <div className="script-main">
-                        <div style={{marginBottom:'30px'}}>React 함수형 컴포넌트와 Sass를 활용하여 <strong>방 등록 기능 구현</strong>에 포커스를 맞춰 제작하였습니다. Form과 Input기능을 적극 활용하여 데이터 입력/수정 기능을 중점적으로 적용한 프로젝트 입니다.</div>
+                        <div style={{ marginBottom: '30px' }}>방(매물) 등록 서비스를 제공해주는 웹 서비스 입니다. React 와 Redux를 조합하여  Store 전역상태 관리 숙달에 중점을 두었으며, <strong>방 등록 기능 구현</strong>에 포커스를 맞춰 제작하였습니다.
+                           </div>
                         <div style={{marginBottom:'10px'}}>
                             <i class="fas fa-circle"></i><strong>기술스택</strong>
                         </div>
