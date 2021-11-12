@@ -41,6 +41,7 @@ const Skills = () => {
                 <div className="stack_box communication">
                     <h3>Communication</h3>
                     <div className="icon zeplin"></div>
+                    <div className="icon asana"></div>
                     <div className="icon figma"></div>
                     <div className="icon slack"></div>
                 </div>
